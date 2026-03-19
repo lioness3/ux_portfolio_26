@@ -5,11 +5,11 @@
 
 .nav-inner {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.75rem 1rem;
-  max-width: 1100px;
+  padding-inline: 3rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -25,16 +25,17 @@
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 0.5rem;
 }
 .nav-links a {
-  color: var(--muted);
+  color: var(--text);
 }
 .nav-links a:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .nav-actions {

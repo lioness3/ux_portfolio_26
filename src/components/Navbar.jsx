@@ -13,16 +13,19 @@ function Navbar() {
 
         <ul className="nav-links">
           <li>
-            <a href="/">Portfolio</a>
+            <a href="/">Case Studies</a>
           </li>
           <li>
-            <a href="/resume">Resume</a>
+            <a href="/MyProcess">My Process</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/Resume">Resume</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/AboutMe">About Me</a>
+          </li>
+          <li>
+            <a href="/Contact">Contact</a>
           </li>
         </ul>
 
