@@ -1,12 +1,15 @@
 //top navigation bar
 import "../styles/navbar.css";
 import ThemeToggle from "./ThemeToggle";
+import Logo from "../assets/images/logo_joanncarter.png";
 
 function Navbar() {
   return (
     <nav className="nav-bar">
       <div className="nav-inner">
-        <div className="logo">My Name</div>
+        <div className="logo">
+          <img src={Logo} alt="Logo" />
+        </div>
 
         <ul className="nav-links">
           <li>
