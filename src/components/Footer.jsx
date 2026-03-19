@@ -1,0 +1,41 @@
+import React from "react";
+import "../styles/footer.css";
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaBehance } from "react-icons/fa";
+
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer-col left">
+      <h2 className="footer-heading">Contact Details</h2>
+      <div className="footer-contact">
+        <div className="footer-contact-item">
+          <FaEnvelope className="footer-icon" />
+          <span>Joann333Carter@gmail.com</span>
+        </div>
+        <div className="footer-contact-item">
+          <FaPhone className="footer-icon" />
+          <span>(603)566-5610</span>
+        </div>
+      </div>
+    </div>
+    <div className="footer-col center">
+      <div className="footer-name">Joann<br />Carter</div>
+      <div className="footer-location">Based in New Hampshire, EST</div>
+      <div className="footer-updated">Last Updated: March 2026</div>
+      <div className="footer-socials">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer"><FaBehance /></a>
+      </div>
+      <div className="footer-copyright">© 2026 Joann Carter. All rights reserved</div>
+    </div>
+    <div className="footer-col right">
+      <div className="footer-values">
+        <div>Designing with empathy.</div>
+        <div>Driven by curiosity.</div>
+        <div>Committed to growth.</div>
+      </div>
+    </div>
+  </footer>
+);
+
+export default Footer;

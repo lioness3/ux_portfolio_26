@@ -2,52 +2,10 @@ import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudies from "../components/CaseStudies";
 import section_banner from "../assets/images/section_banner.png";
-import campstoreImg from "../assets/images/campstore.png";
-import OHCImg from "../assets/images/oceanharbor.png";
-import dineOrDitchImg from "../assets/images/dineorditch.png";
-import thermostatImg from "../assets/images/thermostat.png";
-import SOSImg from "../assets/images/SOS.png";
-import inventoryImg from "../assets/images/inventory.png";
-const studies = [
-  {
-    mainImage: campstoreImg,
-    bgColor: "#8DA293",
-    title: "Camp Store App",
-    description: "UX Design.",
-  },
-  {
-    mainImage: OHCImg,
-    bgColor: "#A2C9C9",
-    title: "Ocean Harbor Condominium",
-    description: "Full Stack Development.",
-  },
-  {
-    mainImage: dineOrDitchImg,
-    bgColor: "#FFDFB1",
-    title: "Dine or Ditch",
-    description: "Full Stack Development.",
-  },
-  {
-    mainImage: thermostatImg,
-    bgColor: "#E7E7E7",
-    title: "Thermostat",
-    description: "Embedded Systems.",
-  },
-  {
-    mainImage: SOSImg,
-    bgColor: "#D6ABA5",
-    title: "SOS",
-    description: "Embedded Systems.",
-  },
-  {
-    mainImage: inventoryImg,
-    bgColor: "#D6ABA5",
-    title: "Inventory",
-    description: "Full Stack Development.",
-  },
-];
+import section_resume_banner from "../assets/images/section_resume_banner.png";
+import MyProcess from "../components/MyProcess";
 
-function Portfolio() {
+function Portfolio({ studies }) {
   return (
     <main>
       <Hero />
@@ -59,6 +17,26 @@ function Portfolio() {
         image={section_banner}
       />
       <CaseStudies studies={studies} />
+      <SectionTitle
+        title={"My Process"}
+        subtitle={"A look into how I approach design challenges."}
+        image={section_banner}
+      />
+      <MyProcess />
+      <SectionTitle
+        title={"About me"}
+        subtitle={
+          "Learn more about my background, skills, and experience as a UX designer."
+        }
+        image={section_resume_banner}
+      />
+      <SectionTitle
+        title={"Resume"}
+        subtitle={
+          "Download my resume to learn more about my background, skills, and experience."
+        }
+        image={section_resume_banner}
+      />
     </main>
   );
 }

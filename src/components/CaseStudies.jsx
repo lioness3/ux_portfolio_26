@@ -6,7 +6,7 @@ const CaseStudies = ({ studies }) => {
   return (
     <div className="case-studies-list">
       {studies.map((study, idx) => (
-        <CaseStudyCard key={idx} {...study} />
+        <CaseStudyCard key={idx} id={idx} {...study} />
       ))}
     </div>
   );
