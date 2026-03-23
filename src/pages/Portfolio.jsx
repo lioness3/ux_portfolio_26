@@ -1,8 +1,8 @@
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudies from "../components/CaseStudies";
-import section_banner from "../assets/images/section_banner.png";
-import section_resume_banner from "../assets/images/section_resume_banner.png";
+import section_banner from "../assets/images/section-banner.png";
+import section_resume_banner from "../assets/images/section-resume-banner.png";
 import MyProcess from "../components/MyProcess";
 
 function Portfolio({ studies }) {

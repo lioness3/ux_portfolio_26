@@ -1,7 +1,7 @@
 //top navigation bar
 import "../styles/navbar.css";
 import ThemeToggle from "./ThemeToggle";
-import Logo from "../assets/images/logo_joanncarter.png";
+import Logo from "../assets/images/logo-joanncarter.png";
 
 function Navbar() {
   return (
