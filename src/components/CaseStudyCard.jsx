@@ -13,6 +13,9 @@ const CaseStudyCard = ({ mainImage, bgColor, title, description, id }) => {
         style={{
           backgroundImage: `url(${mainImage})`,
           backgroundColor: bgColor,
+          backgroundSize: "90% auto",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
         <div style={{ background: bgColor }}>

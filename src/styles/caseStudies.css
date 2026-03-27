@@ -4,6 +4,8 @@
   gap: 2rem;
   justify-content: center;
   padding-bottom: 3rem;
+  max-width: 80%;
+  margin-inline: auto;
 }
 
 .case-study-card {
