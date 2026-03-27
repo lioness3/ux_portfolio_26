@@ -59,7 +59,7 @@
   padding-bottom: 3%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero {
     flex-direction: column-reverse;
     padding-bottom: 10%;

@@ -4,6 +4,7 @@ import CaseStudies from "../components/CaseStudies";
 import section_banner from "../assets/images/section-banner.png";
 import section_resume_banner from "../assets/images/section-resume-banner.png";
 import MyProcess from "../components/MyProcess";
+import AboutMe from "../components/AboutMe";
 
 function Portfolio({ studies }) {
   return (
@@ -30,6 +31,7 @@ function Portfolio({ studies }) {
         }
         image={section_resume_banner}
       />
+      <AboutMe />
       <SectionTitle
         title={"Resume"}
         subtitle={

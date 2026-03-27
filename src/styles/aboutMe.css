@@ -1,0 +1,77 @@
+.about-wrapper {
+  width: 100%;
+  padding: 4rem 0;
+}
+.about-bio-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto 6rem auto;
+}
+.about-quote {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 30%;
+
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 480px;
+  margin: auto;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* ⭐ MOBILE VERSION — matches your screenshot */
+@media (max-width: 1000px) {
+  .about-bio-panel {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .about-quote {
+    position: absolute;
+    bottom: 20%;
+    font-size: 1.6rem;
+    z-index: 10;
+    line-height: 1.25;
+    /* 100 pixels less than the max size of the portrait image */
+    max-width: 300px;
+
+    margin: 0;
+    color: white;
+  }
+
+  .about-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+  }
+  .about-image img {
+    background-color: #0a143c; /* navy */
+    mix-blend-mode: multiply;
+    filter: brightness(0.6);
+  }
+
+  .about-description {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}

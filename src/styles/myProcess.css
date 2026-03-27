@@ -46,6 +46,10 @@
   color: var(--accent);
   cursor: pointer;
 }
+/* adds padding to the bottom of the entire my process section  */
+.process-section:last-child {
+  padding-bottom: 4rem;
+}
 
 /* ⭐ Mobile layout */
 @media (max-width: 800px) {
