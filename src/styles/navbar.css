@@ -14,13 +14,15 @@
 }
 
 .logo {
-  flex: 0 0 12.5%; /* 1/8 of the nav width */
+  flex: 0 0 10%; /* 1/10 of the nav width */
 }
 
 .logo img {
   display: block;
-  width: 100%;
+  width: 60%;
   height: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-links {
@@ -33,6 +35,7 @@
 }
 .nav-links a {
   color: var(--text);
+  font-weight: bold;
 }
 .nav-links a:hover {
   color: var(--accent);

@@ -1,0 +1,44 @@
+.info-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.info-trigger {
+  font-size: 1.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info-popup {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--text);
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  z-index: 20;
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeIn 0.25s ease forwards;
+}
+#title-bold {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

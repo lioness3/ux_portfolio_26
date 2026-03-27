@@ -2,16 +2,14 @@ import React from "react";
 import "../styles/hero.css";
 import heroImage from "../assets/images/heroImage.png";
 import Button from "./Button";
+import InfoPopup from "./InfoPopup";
 import { FaArrowRight } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-left">
         <h1 className="hero-name">Joann Carter</h1>
-        <a className="hero-title">User Experience Engineer</a>
-        <p className="hero-description">
-          Designing intuitive, accessible experiences that empower every user.
-        </p>
+        <InfoPopup />
 
         <Button
           className="btn-cta"
