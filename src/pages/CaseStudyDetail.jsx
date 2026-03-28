@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import InfoCard from "../components/InfoCard";
+import roleIcon from "../assets/icons/Role.svg";
 
 function CaseStudyDetail({ studies }) {
   const { id } = useParams();
@@ -9,9 +11,17 @@ function CaseStudyDetail({ studies }) {
   return (
     <div className="case-study-detail">
       <h1>{study.title}</h1>
-      <img src={study.mainImage} alt={study.title} className="case-study-detail-image" />
+      <img
+        src={study.mainImage}
+        alt={study.title}
+        className="case-study-detail-image"
+      />
       <p>{study.description}</p>
-      {/* Add more details as needed */}
+      <InfoCard
+        label={"My Role"}
+        labelIcon={roleIcon}
+        study={study.categories.myRole}
+      />
     </div>
   );
 }

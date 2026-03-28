@@ -69,7 +69,7 @@
   }
 
   .about-description {
-    max-width: 90%;
+    max-width: 400px;
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.55;
