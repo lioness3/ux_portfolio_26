@@ -12,6 +12,12 @@ export const caseStudies = [
     bgColor: "#8DA293",
     title: "Camp Store App",
     description: "UX Design.",
+    palette: [
+      "rgba(217, 199, 162, 0.1)",
+      "rgba(230, 126, 34, 0.1)",
+      "rgba(46, 83, 57, 0.1)",
+      "rgba(0, 0, 0, 0.1)",
+    ],
 
     categories: {
       myRole: {
