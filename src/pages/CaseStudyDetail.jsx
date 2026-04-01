@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import InfoCard from "../components/InfoCard";
 import CaseStudySideMenu from "../components/CaseStudySideMenu";
-import { categoryDefinitions } from "../data/categoryDefinitions";
 
 function CaseStudyDetail({ studies }) {
   const { id } = useParams();
@@ -10,7 +9,7 @@ function CaseStudyDetail({ studies }) {
   if (!study) return <div>Case study not found.</div>;
 
   const categories = study.categories;
-  const entries = Object.entries(categories);
+  const caseStudyInfo = Object.entries(categories);
 
   return (
     <div className="case-study-detail-layout">
@@ -29,19 +28,8 @@ function CaseStudyDetail({ studies }) {
 
         <p>{study.description}</p>
 
-        {entries.map(([key, content], idx) => {
-          const def = categoryDefinitions[key];
-          const sectionId = key.toLowerCase();
-
-          return (
-            <InfoCard
-              key={idx}
-              id={sectionId}
-              title={def.title}
-              titleIcon={def.icon}
-              study={content}
-            />
-          );
+        {caseStudyInfo.map(([key, category]) => {
+          return <InfoCard key={key} id={key} category={category} />;
         })}
       </div>
     </div>
