@@ -1,18 +1,10 @@
-// Mini block to render on the cards
-export default function BlockCardList({ items }) {
+// Mini block to render on the cards that uses the color palette as the background
+import "../styles/blockCard.css";
+export default function BlockCardList({ item, bgColor }) {
   return (
-    <div className="block-card-list">
-      {items.map((item, idx) => (
-        <div
-          key={idx}
-          className="block-card"
-          // style={{ backgroundColor: bgColor }}
-        >
-          <div className="block-card-number">{idx + 1}</div>
-          <h4 className="block-card-title">{item.title}</h4>
-          <p className="block-card-description">{item.description}</p>
-        </div>
-      ))}
+    <div className="block-card" style={{ backgroundColor: bgColor }}>
+      <h3 className="block-card-title">{item.title}</h3>
+      <p className="block-card-description">{item.description}</p>
     </div>
   );
 }

@@ -10,6 +10,8 @@ function CaseStudyDetail({ studies }) {
 
   const categories = study.categories;
   const caseStudyInfo = Object.entries(categories);
+  // color palette of the case study used for block coloring on some info cards
+  const colorPalette = study.palette;
 
   return (
     <div className="case-study-detail-layout">
@@ -29,7 +31,14 @@ function CaseStudyDetail({ studies }) {
         <p>{study.description}</p>
 
         {caseStudyInfo.map(([key, category]) => {
-          return <InfoCard key={key} id={key} category={category} />;
+          return (
+            <InfoCard
+              key={key}
+              id={key}
+              category={category}
+              colorPalette={colorPalette}
+            />
+          );
         })}
       </div>
     </div>

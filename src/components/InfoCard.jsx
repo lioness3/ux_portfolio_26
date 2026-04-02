@@ -2,10 +2,10 @@
 import React from "react";
 import "../styles/infoCard.css";
 import BlockCard from "./BlockCard";
-//uses the category definitions data for the card title, icon and typeto determine what type of info card to display.
+
 // Gets the data to display from the case studies data
-export default function InfoCard({ id, category }) {
-  console.log("Rendering InfoCard with type:", category);
+// determines what card to display through the type key in the categories part of the data
+export default function InfoCard({ id, category, colorPalette }) {
   return (
     <section className="info-card" id={id}>
       <div className="info-card-col1">
@@ -26,9 +26,17 @@ export default function InfoCard({ id, category }) {
             <p className="info-card-description">{category.description}</p>
           </div>
         )}
-        {/* {typeToDisplay === "block" && (
-          <BlockCard items={study} bgColor={study.palette[0]} />
-        )} */}
+        {category.type === "block" && (
+          <div className="info-card-block-row">
+            {category.items.map((item, index) => (
+              <BlockCard
+                key={index}
+                item={item}
+                bgColor={colorPalette[index]}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

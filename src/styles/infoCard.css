@@ -37,3 +37,10 @@
   margin: 0 0;
   white-space: pre-line;
 }
+.info-card-block-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* spacing between cards */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  align-self: stretch;
+}
