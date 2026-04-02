@@ -25,13 +25,21 @@ import thermostatImg from "../assets/images/thermostat.png";
 import SOSImg from "../assets/images/SOS.png";
 import inventoryImg from "../assets/images/inventory.png";
 import personaCampStore from "../assets/images/persona.png";
+import campstoreHeaderImg from "../assets/images/campstorePreview-doublescreen.png";
 
 export const caseStudies = [
   {
     mainImage: campstoreImg,
+    caseStudyHeaderImage: campstoreHeaderImg,
     bgColor: "#8DA293",
     title: "Camp Store App",
-    description: "UX Design.",
+    type: "UX Case Study",
+    description: "UX Design",
+    summary:
+      "The Camp Store app gives campers a faster, easier way to shop by letting them browse items, check product details, and place orders without waiting in line. It also keeps users informed about current inventory, special offers, and upcoming events at their campground.",
+    catchPhrase: "Camp More, Stress Less!",
+    timeline: "4 Months",
+    tools: "Figma",
     palette: [
       "rgba(217, 199, 162, 0.1)",
       "rgba(230, 126, 34, 0.1)",

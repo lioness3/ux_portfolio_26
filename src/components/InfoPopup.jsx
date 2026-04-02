@@ -3,7 +3,7 @@ import "../styles/infoPopup.css";
 import "../styles/hero.css";
 export default function InfoPopup() {
   const [open, setOpen] = useState(false);
-
+  // handles pop up when clicking on user experience engineer
   useEffect(() => {
     function handlePointerDown() {
       setOpen(false);
@@ -31,6 +31,7 @@ export default function InfoPopup() {
         </div>
       )}
       {open && (
+        //pop up that opens and closes based on user click
         <div className="info-popup">
           A <span id="title-bold">User Experience Engineer</span> uses how
           people feel when interacting with a product to make technology easier

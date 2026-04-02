@@ -1,0 +1,105 @@
+/* used for the entire case study detail page, including case study side menu  */
+
+/* case study details page layout */
+.case-study-detail-layout {
+  display: grid;
+
+  grid-template-areas:
+    "menu head"
+    "menu content";
+}
+
+/* right sticker header */
+.case-study-header {
+  min-width: none;
+  grid-area: head;
+  align-self: start;
+  position: sticky;
+  top: var(--nav-height);
+  background-color: lightblue;
+  display: grid;
+
+  grid-template-areas:
+    "col1 col2"
+    "bottom bottom";
+  padding: 0.25rem;
+}
+.case-study-header-col1 {
+  grid-area: col1;
+}
+.case-study-header-summary {
+  min-width: 350px;
+  max-width: 500px;
+}
+.case-study-header-title {
+  margin: 0;
+}
+.case-study-header-catchPhrase {
+  font-weight: bold;
+}
+
+/* header image */
+.case-study-header-col2 {
+  grid-area: col2;
+}
+.case-study-header-image {
+  max-width: 400px;
+}
+.case-study-header-bottom {
+  grid-area: bottom;
+}
+
+/* scrolling container that holds cards */
+.case-study-scrolling-container {
+  background-color: black;
+  grid-area: content;
+}
+
+/* side menu  */
+.side-menu {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-self: start;
+  position: sticky;
+  top: 10%;
+  left: 0;
+  max-width: 200px;
+  grid-area: menu;
+}
+
+.side-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu-item {
+  flex: 1;
+}
+
+.side-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #6b6f76;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.side-menu-link:hover {
+  color: #0a143c;
+}
+
+.side-menu-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+}
+
+.side-menu-text {
+  line-height: 1;
+}

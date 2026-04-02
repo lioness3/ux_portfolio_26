@@ -22,6 +22,9 @@ GLOBAL STYLE SHEET  */
 
   /* Shadows */
   --shadow-soft: 0 4px 20px rgba(2, 6, 23, 0.06);
+
+  /* Height for the top navigation bar  */
+  --nav-height: 70px;
 }
 
 /* Dark theme overrides */

@@ -1,4 +1,4 @@
-import "../styles/CaseStudySideMenu.css";
+import "../styles/caseStudyDetailPage.css";
 export default function CaseStudySideMenu({ categories }) {
   const menuItems = Object.entries(categories);
 

@@ -1,6 +1,10 @@
 .nav-bar {
-  background: transparent;
+  background: lightblue;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: var(--nav-height);
 }
 
 .nav-inner {

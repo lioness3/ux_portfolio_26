@@ -10,6 +10,8 @@
   margin-top: 32px;
   display: flex;
   flex-direction: row;
+  /* used to place the card in the users view when the menu item on the left is clicked  */
+  scroll-margin-top: 50vh;
 }
 .info-card-col1 {
   margin-right: 24px;
