@@ -3,7 +3,7 @@
 /* case study details page layout */
 .case-study-detail-layout {
   display: grid;
-
+  grid-template-columns: auto 1fr;
   grid-template-areas:
     "menu head"
     "menu content";
@@ -26,6 +26,7 @@
 }
 .case-study-header-col1 {
   grid-area: col1;
+  padding-left: 1rem;
 }
 .case-study-header-summary {
   min-width: 350px;
@@ -34,7 +35,11 @@
 .case-study-header-title {
   margin: 0;
 }
+.case-study-header-type {
+  padding-left: 0.25rem;
+}
 .case-study-header-catchPhrase {
+  margin: 1rem 0 0 0;
   font-weight: bold;
 }
 
@@ -47,6 +52,7 @@
 }
 .case-study-header-bottom {
   grid-area: bottom;
+  padding: 1rem;
 }
 
 /* scrolling container that holds cards */
@@ -63,8 +69,9 @@
   position: sticky;
   top: 10%;
   left: 0;
-  max-width: 200px;
+
   grid-area: menu;
+  border: 2px solid yellow;
 }
 
 .side-menu-list {
@@ -74,6 +81,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
+  border: 2px solid red;
 }
 
 .side-menu-item {
@@ -102,4 +110,34 @@
 
 .side-menu-text {
   line-height: 1;
+}
+
+@media (max-width: 969px) {
+  .case-study-detail-layout {
+    display: flex; /* stack everything */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* hide  the side menu */
+  .side-menu {
+    display: none;
+  }
+  /* display the contents button for smaller screen instead of the side menu */
+  .contents-btn {
+    display: block;
+  }
+  /* header becomes full-width block */
+  .case-study-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+  }
+  .case-study-header-summary {
+    padding: 0;
+    margin: auto;
+    width: 80vw;
+  }
 }

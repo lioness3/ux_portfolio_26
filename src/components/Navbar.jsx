@@ -6,32 +6,22 @@ import Logo from "../assets/images/logo-joanncarter.png";
 function Navbar() {
   return (
     <nav className="nav-bar">
-      <div className="nav-inner">
-        <div className="logo">
-          <img src={Logo} alt="Logo" />
-        </div>
+      <div className="logo">
+        <img src={Logo} alt="Logo" />
+      </div>
 
-        <ul className="nav-links">
-          <li>
-            <a href="/">Case Studies</a>
-          </li>
-          <li>
-            <a href="/MyProcess">My Process</a>
-          </li>
-          <li>
-            <a href="/Resume">Resume</a>
-          </li>
-          <li>
-            <a href="/AboutMe">About Me</a>
-          </li>
-          <li>
-            <a href="/Contact">Contact</a>
-          </li>
-        </ul>
+      <a href="/">Case Studies</a>
 
-        <div className="nav-actions">
-          <ThemeToggle />
-        </div>
+      <a href="/MyProcess">My Process</a>
+
+      <a href="/Resume">Resume</a>
+
+      <a href="/AboutMe">About Me</a>
+
+      <a href="/Contact">Contact</a>
+
+      <div className="nav-actions">
+        <ThemeToggle />
       </div>
     </nav>
   );

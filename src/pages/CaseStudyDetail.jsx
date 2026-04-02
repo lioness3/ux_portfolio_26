@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import InfoCard from "../components/InfoCard";
 import CaseStudySideMenu from "../components/CaseStudySideMenu";
+import CaseStudyContentsMenu from "../components/CaseStudyContentsMenu";
 import "../styles/caseStudyDetailPage.css";
 
 function CaseStudyDetail({ studies }) {
   const { id } = useParams();
   const study = studies.find((s, idx) => String(idx) === id);
-
+  const [contentsOpen, setContentsOpen] = useState(false);
   if (!study) return <div>Case study not found.</div>;
 
   const categories = study.categories;
@@ -55,6 +57,20 @@ function CaseStudyDetail({ studies }) {
           <span>Tools: </span>
           {tools}
         </div>
+        {/* Mobile-only Contents button */}
+        <button
+          className="contents-btn"
+          onClick={() => setContentsOpen((prev) => !prev)}
+        >
+          Contents ▾
+        </button>
+
+        {/* Mobile Contents Drawer */}
+        <CaseStudyContentsMenu
+          categories={study.categories}
+          open={contentsOpen}
+          setOpen={setContentsOpen}
+        />
       </div>
       <div className="case-study-scrolling-container">
         {caseStudyInfo.map(([key, category]) => {
