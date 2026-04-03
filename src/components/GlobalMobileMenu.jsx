@@ -1,5 +1,7 @@
 import "../styles/globalMobileMenu.css";
+// used for the hamburger button instead of top nav on smaller screens
 export default function GlobalMobileMenu({ open, setOpen }) {
+  // look into this and why not using prev +> !prev
   return (
     <>
       <div
@@ -12,7 +14,7 @@ export default function GlobalMobileMenu({ open, setOpen }) {
           ×
         </button>
 
-        <ul>
+        <ul className="global-mobile-menu-list">
           <li>
             <a href="#case-studies">Case Studies</a>
           </li>

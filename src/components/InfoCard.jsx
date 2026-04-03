@@ -8,6 +8,7 @@ import BlockCard from "./BlockCard";
 export default function InfoCard({ id, category, colorPalette }) {
   return (
     <section className="info-card" id={id}>
+      {/* Icon display on card */}
       <div className="info-card-col1">
         {category.icon && (
           <img
@@ -20,12 +21,14 @@ export default function InfoCard({ id, category, colorPalette }) {
 
       <div className="info-card-col2">
         <h2 className="info-card-title">{category.title}</h2>
+        {/* Display for text cards */}
         {category.type === "text" && (
           <div>
             <h4 className="info-card-headline">{category.headline}</h4>
             <p className="info-card-description">{category.description}</p>
           </div>
         )}
+        {/* Display for block cards that use the color palette of that project for background */}
         {category.type === "block" && (
           <div className="info-card-block-row">
             {category.items.map((item, index) => (
@@ -33,6 +36,18 @@ export default function InfoCard({ id, category, colorPalette }) {
                 key={index}
                 item={item}
                 bgColor={colorPalette[index]}
+              />
+            ))}
+          </div>
+        )}
+        {category.type === "image" && (
+          <div className="info-card-image-row">
+            {category.image.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`${category.title} image `}
+                className="info-card-image"
               />
             ))}
           </div>

@@ -73,6 +73,7 @@ function CaseStudyDetail({ studies }) {
         />
       </div>
       <div className="case-study-scrolling-container">
+        {/* Loops through the caseStudies.js data file and displays the info on cards  */}
         {caseStudyInfo.map(([key, category]) => {
           return (
             <InfoCard

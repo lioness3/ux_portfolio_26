@@ -42,6 +42,9 @@
   padding: 2rem 1.5rem;
   z-index: 999;
 }
+.global-mobile-menu-list {
+  list-style: none;
+}
 
 .global-mobile-menu.open {
   transform: translateX(0);
