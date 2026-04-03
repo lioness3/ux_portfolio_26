@@ -46,3 +46,9 @@
   flex-wrap: wrap; /* allows wrapping on smaller screens */
   align-self: stretch;
 }
+@media (max-width: 969px) {
+  /* used to place the card in the users view  */
+  .info-card {
+    scroll-margin-top: 80vh;
+  }
+}

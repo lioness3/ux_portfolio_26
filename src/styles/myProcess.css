@@ -7,6 +7,9 @@
   justify-content: center;
   margin: auto;
 }
+#my-process {
+  scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
+}
 /* Zig-zag: even sections flip */
 .process-section:nth-child(even) {
   flex-direction: row-reverse;

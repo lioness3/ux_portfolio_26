@@ -1,8 +1,11 @@
 .about-wrapper {
   width: 100%;
-  padding: 4rem 0;
+}
+#about-me {
+  scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
 }
 .about-bio-panel {
+  padding: 4rem 0;
   display: flex;
   flex-direction: row;
   gap: 10rem;

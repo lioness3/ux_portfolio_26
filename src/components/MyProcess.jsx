@@ -7,7 +7,7 @@ import "../styles/myProcess.css";
 export default function MyProcess() {
   return (
     <section>
-      <div className="process-section">
+      <div className="process-section" id="my-process">
         <div className="process-text-container">
           <h2>User Research</h2>
           <p className="process-text">

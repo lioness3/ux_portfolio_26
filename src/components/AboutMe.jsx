@@ -3,7 +3,7 @@ import "../styles/aboutMe.css";
 export default function AboutMe() {
   return (
     <section className="about-wrapper">
-      <div className="about-bio-panel">
+      <div className="about-bio-panel" id="about-me">
         <h2 className="about-quote">
           “I believe good design should feel natural, not instructional.”
         </h2>

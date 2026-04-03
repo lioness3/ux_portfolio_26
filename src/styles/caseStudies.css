@@ -7,6 +7,9 @@
   max-width: 80%;
   margin-inline: auto;
 }
+#case-studies {
+  scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
+}
 
 .case-study-card {
   position: relative;

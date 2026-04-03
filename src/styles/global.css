@@ -25,6 +25,9 @@ GLOBAL STYLE SHEET  */
 
   /* Height for the top navigation bar  */
   --nav-height: 70px;
+
+  /* Height for each section title */
+  --section-title-height: 300px;
 }
 
 /* Dark theme overrides */
