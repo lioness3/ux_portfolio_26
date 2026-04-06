@@ -55,6 +55,11 @@
   padding: 1rem;
 }
 
+/* contents button  */
+.contents-btn {
+  display: none;
+}
+
 /* scrolling container that holds cards */
 .case-study-scrolling-container {
   background-color: black;
@@ -71,7 +76,6 @@
   left: 0;
 
   grid-area: menu;
-  border: 2px solid yellow;
 }
 
 .side-menu-list {
@@ -81,7 +85,6 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
 }
 
 .side-menu-item {
@@ -126,6 +129,15 @@
   /* display the contents button for smaller screen instead of the side menu */
   .contents-btn {
     display: block;
+    margin: 0.25rem;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #ddd;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+  }
+  .case-study-header-image {
+    max-width: 200px;
   }
   /* header becomes full-width block */
   .case-study-header {
@@ -133,11 +145,15 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding: 1rem;
+
+    font-size: 0.75rem;
   }
   .case-study-header-summary {
     padding: 0;
     margin: auto;
     width: 80vw;
+  }
+  .case-study-header-bottom {
+    padding: 0;
   }
 }

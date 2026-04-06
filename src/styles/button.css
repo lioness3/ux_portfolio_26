@@ -1,4 +1,5 @@
-.custom-button {
+/* CUSTOM PRIMARY BUTTON */
+.custom-primary-button {
   background: var(--accent);
   color: #fff;
   border: none;
@@ -15,23 +16,49 @@
   margin-bottom: 3rem;
 }
 
-.custom-button:hover {
+.custom-primary-button:hover {
   opacity: 1;
 }
 
-.btn-cta {
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-}
-
-.button-text {
+.custom-primary-button-text {
   display: flex;
   align-items: center;
 }
-.button-icon {
+.custom-primary-button-icon {
   display: flex;
   align-items: center;
   color: white;
   vertical-align: middle;
+}
+
+/* CUSTOM SECONDARY BUTTON-outline style */
+
+.custom-secondary-button {
+  background: white;
+  color: var(--accent);
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.custom-secondary-button:hover {
+  background-color: rgb(from var(--accent) r g b / 0.1);
+}
+
+.custom-secondary-button-text {
+  display: flex;
+  align-items: center;
+}
+
+/* HERO BUTTON - view my work */
+.btn-cta {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
 }

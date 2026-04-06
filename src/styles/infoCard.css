@@ -46,6 +46,10 @@
   flex-wrap: wrap; /* allows wrapping on smaller screens */
   align-self: stretch;
 }
+.info-card-image-row {
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 969px) {
   /* used to place the card in the users view  */
   .info-card {

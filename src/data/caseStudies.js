@@ -27,6 +27,15 @@ import inventoryImg from "../assets/images/inventory.png";
 import personaCampStore from "../assets/images/persona.png";
 import campstoreHeaderImg from "../assets/images/campstorePreview-doublescreen.png";
 
+import campstoreWireframe1 from "../assets/images/campstore_wireframe1.png";
+import campstoreWireframe2 from "../assets/images/campstore_wireframe2.png";
+import campstoreWireframe3 from "../assets/images/campstore_wireframe3.png";
+import campstoreWireframe4 from "../assets/images/campstore_wireframe4.png";
+import campstoredesign1 from "../assets/images/campstore_designsystem1.png";
+import campstoredesign2 from "../assets/images/campstore_designsystem2.png";
+
+import campstorelofi from "../assets/images/campstore_lofi_prototype.png";
+
 export const caseStudies = [
   {
     mainImage: campstoreImg,
@@ -117,27 +126,32 @@ export const caseStudies = [
         type: "image",
         title: "Wireframes",
         icon: wireframesIcon,
-        images: [],
+        images: [
+          campstoreWireframe1,
+          campstoreWireframe2,
+          campstoreWireframe3,
+          campstoreWireframe4,
+        ],
+        imagesIntro:
+          "Paper sketches were translated into digital wireframes to define the structure of the ordering flow and event browsing experience.",
         imageDescriptions: ["Responsive Wireframes"],
       },
       designSystem: {
         type: "image",
         title: "Design System",
         icon: designSystemIcon,
-        images: [],
+        images: [campstoredesign1, campstoredesign2],
         imageDescriptions: ["Example Components", "Sticker Sheet"],
       },
       prototypes: {
-        type: "image",
+        type: "prototype",
         title: "Prototype",
         icon: prototypesIcon,
         description:
           "This is the first prototype for the camp store. The bottom navigation tabs are Home, Events, Weather, and Profile. The cart is accessed from the top right of the home page.",
         buttonText: "Lo-Fi Prototype",
-        link: "",
-        buttonDescription: "View the prototype on Figma.",
-        images: [],
-        imageDescriptions: [],
+        link: "https://www.figma.com/proto/jriTfKyq2FG2ypO0JcesR7/CAMP-STORE-APP-prototype-update.1?node-id=0-1&t=NivYPPN1VYXImYGF-1",
+        images: [campstorelofi],
       },
       usabilityStudies: {
         type: "block studies",

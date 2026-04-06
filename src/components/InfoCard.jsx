@@ -3,6 +3,7 @@ import React from "react";
 import "../styles/infoCard.css";
 import BlockCard from "./BlockCard";
 import ImageCard from "./ImageCard";
+import PrototypeCard from "./PrototypeCard";
 
 // Gets the data to display from the case studies data
 // determines what card to display through the type key in the categories part of the data
@@ -46,6 +47,17 @@ export default function InfoCard({ id, category, colorPalette }) {
             <ImageCard
               images={category.images || []}
               descriptions={category.imageDescriptions || []}
+              intro={category.imagesIntro || ""}
+            />
+          </div>
+        )}
+        {category.type === "prototype" && (
+          <div>
+            <PrototypeCard
+              image={category.images || []}
+              link={category.link || ""}
+              btnText={category.buttonText || ""}
+              description={category.description || ""}
             />
           </div>
         )}

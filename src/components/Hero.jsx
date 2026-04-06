@@ -12,12 +12,12 @@ export default function Hero() {
         <InfoPopup />
 
         <Button
-          className="btn-cta"
+          classN="btn-cta"
           icon={<FaArrowRight />}
           onClick={() => (window.location.href = "/CaseStudies")}
-        >
-          View My Work
-        </Button>
+          btnText={"View My Work"}
+          primary={true}
+        />
       </div>
 
       <div className="hero-right">

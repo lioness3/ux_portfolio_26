@@ -1,31 +1,32 @@
 import "../styles/imageCard.css";
-export default function ImageCard({ images, descriptions }) {
-  console.log("====================================");
-  console.log(images, descriptions, "here");
-  console.log("====================================");
+
+export default function ImageCard({ images, descriptions, intro }) {
+  // used to determine if there is 0 or mor ethan 1 image in the images array. used for css style class name
   const isSingle = images.length === 1;
-  // If images is missing, null, or empty → render nothing (or a fallback)
+
+  // No images → graceful fallback
   if (!Array.isArray(images) || images.length === 0) {
     return (
       <div className="image-card empty">
-        {/* optional fallback */}
         <p>No images available.</p>
       </div>
     );
   }
-  return (
-    <div className={`image-card ${isSingle ? "single" : "multiple"}`}>
-      {images.map((img, index) => (
-        <figure key={index} className="image-card-item">
-          <img src={img} alt="" />
 
-          {descriptions[index] && (
+  return (
+    <div className="image-card ">
+      {intro && <p className="image-card-intro">{intro}</p>}
+
+      <div className={` ${isSingle ? "single" : "multiple"}`}>
+        {images.map((img, index) => (
+          <figure key={index} className="image-card-item">
+            <img src={img} alt="" />
             <figcaption className="image-card-caption">
-              {descriptions[index]}
+              {descriptions[index] || ""}
             </figcaption>
-          )}
-        </figure>
-      ))}
+          </figure>
+        ))}
+      </div>
     </div>
   );
 }

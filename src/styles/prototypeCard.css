@@ -1,0 +1,16 @@
+.prototype-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.prototype-col1 {
+  flex-direction: column;
+}
+.prototype-col2 {
+  max-width: 60%;
+}
+.prototype-btn-desc {
+  font-size: 0.5rem;
+  text-align: center;
+}
