@@ -5,7 +5,7 @@
   width: 80%;
   margin: auto;
   border-radius: var(--borderRadius);
-  padding: 24px 50px 24px 24px;
+  padding: 2rem 3rem 3rem 2rem;
   box-shadow: 0 10px 30px rgba(10, 20, 60, 0.04);
   margin-top: 32px;
   display: flex;
@@ -42,7 +42,7 @@
 .info-card-block-row {
   display: flex;
   flex-direction: row;
-  gap: 1rem; /* spacing between cards */
+  gap: var(--blockGap);
   flex-wrap: wrap; /* allows wrapping on smaller screens */
   align-self: stretch;
 }

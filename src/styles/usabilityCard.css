@@ -47,13 +47,13 @@
   padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.5rem;
   list-style: none;
 }
 
 .usability-item {
   font-size: 0.75rem;
-  line-height: 1.4;
+  line-height: 0.9;
 }
 
 .usability-list li::before {

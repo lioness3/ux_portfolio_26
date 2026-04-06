@@ -216,9 +216,9 @@ export const caseStudies = [
         type: "feedback",
         title: "User Feedback",
         icon: userFeedbackIcon,
-        items: [
-          "If I was at a campground with my kids, this would make things easier!",
-          "Simple… intuitive and easy!",
+        quotes: [
+          "'If I was at a campground with my kids, this would make things easier!'",
+          "'Simple… intuitive and easy!'",
         ],
       },
       takeaways: {

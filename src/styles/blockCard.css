@@ -13,3 +13,12 @@
 .block-card-description {
   text-align: center;
 }
+
+/* FEEDBACK styling */
+
+.block-card-feedback {
+  font-weight: bold;
+  padding: 4rem 1rem;
+  margin: auto;
+  text-align: center;
+}

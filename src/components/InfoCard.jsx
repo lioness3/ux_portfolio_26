@@ -72,6 +72,19 @@ export default function InfoCard({ id, category, colorPalette }) {
             />
           </div>
         )}
+        {/* Display for FEEDBACK block cards that use the color palette of that project for background */}
+        {category.type === "feedback" && (
+          <div className="info-card-block-row">
+            {category.quotes.map((quote, index) => (
+              <BlockCard
+                key={index}
+                feedback={true}
+                quote={quote}
+                bgColor={colorPalette[index]}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
