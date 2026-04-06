@@ -28,6 +28,12 @@ GLOBAL STYLE SHEET  */
 
   /* Height for each section title */
   --section-title-height: 300px;
+
+  /* Border Radius for all cards and blocks */
+  --borderRadius: 12px;
+
+  /* Space between dual blocks */
+  --blockGap: 0.25rem;
 }
 
 /* Dark theme overrides */

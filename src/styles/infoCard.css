@@ -4,7 +4,7 @@
   max-width: 850px;
   width: 80%;
   margin: auto;
-  border-radius: 12px;
+  border-radius: var(--borderRadius);
   padding: 24px 50px 24px 24px;
   box-shadow: 0 10px 30px rgba(10, 20, 60, 0.04);
   margin-top: 32px;

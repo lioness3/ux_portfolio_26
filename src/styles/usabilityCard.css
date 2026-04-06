@@ -1,0 +1,64 @@
+.usability-card {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
+}
+
+.usability-headline {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.usability-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.usability-rounds {
+  display: flex;
+  flex-direction: row;
+  gap: var(--blockGap);
+}
+
+.usability-block {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: var(--borderRadius);
+  color: #222;
+}
+
+.usability-round-label {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.usability-round-subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.usability-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.usability-item {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.usability-list li::before {
+  content: "›";
+  color: #666;
+  margin-right: 0.4rem;
+  font-weight: 500;
+}

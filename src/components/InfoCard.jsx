@@ -4,6 +4,7 @@ import "../styles/infoCard.css";
 import BlockCard from "./BlockCard";
 import ImageCard from "./ImageCard";
 import PrototypeCard from "./PrototypeCard";
+import UsabilityCard from "./UsabilityCard";
 
 // Gets the data to display from the case studies data
 // determines what card to display through the type key in the categories part of the data
@@ -58,6 +59,16 @@ export default function InfoCard({ id, category, colorPalette }) {
               link={category.link || ""}
               btnText={category.buttonText || ""}
               description={category.description || ""}
+            />
+          </div>
+        )}
+        {category.type === "usability" && (
+          <div>
+            <UsabilityCard
+              headline={category.headline}
+              intro={category.intro}
+              rounds={category.rounds}
+              colorPalette={colorPalette}
             />
           </div>
         )}

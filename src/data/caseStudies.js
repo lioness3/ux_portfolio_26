@@ -154,28 +154,28 @@ export const caseStudies = [
         images: [campstorelofi],
       },
       usabilityStudies: {
-        type: "block studies",
+        type: "usability",
         title: "Usability Studies",
         icon: usabilityStudiesIcon,
         headline: "Two Rounds",
-        description:
+        intro:
           "I carried out two rounds of usability studies. Insights from the first study helped guide the designs from wireframes to mockups. The second study used a high-fidelity prototype to reveal what areas needed refining.",
-        items: [
+        rounds: [
           {
-            title: "Round 1 Findings",
-            headline: "Low-Fidelity Prototype",
-            findings: [
-              "Users need more detail to understand the app.",
-              "Users want to navigate between event dates.",
-              "Users find the events exciting.",
+            label: "Round 1 Findings",
+            subtitle: "Low-Fidelity Prototype",
+            items: [
+              "Users need <strong>more detail</strong> to understand the app.",
+              "Users want to <strong>navigate</strong> between event dates.",
+              "Users find the <strong>events</strong> exciting.",
             ],
           },
           {
-            title: "Round 2 Findings",
-            headline: "High-Fidelity Prototype",
-            findings: [
-              "The cart icon is confusing.",
-              "The profile tab is mislabeled.",
+            label: "Round 2 Findings",
+            subtitle: "High-Fidelity Prototype",
+            items: [
+              "The <strong>cart icon</strong> is confusing.",
+              "The <strong>profile tab</strong> is mislabeled.",
             ],
           },
         ],
