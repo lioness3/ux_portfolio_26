@@ -1,0 +1,40 @@
+.image-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Single image: full width */
+.image-card.single .image-card-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Multiple images: row or wrap */
+.image-card.multiple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.image-card.multiple .image-card-item {
+  flex: 1 1 calc(50% - 1.5rem);
+  max-width: calc(50% - 1.5rem);
+}
+
+.image-card-item img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Caption */
+.image-card-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}

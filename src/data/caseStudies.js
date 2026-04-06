@@ -111,6 +111,7 @@ export const caseStudies = [
         title: "Persona",
         icon: personaIcon,
         images: [personaCampStore],
+        imageDescriptions: ["Persona Card Created By Joann Carter"],
       },
       wireframes: {
         type: "image",
@@ -136,6 +137,7 @@ export const caseStudies = [
         link: "",
         buttonDescription: "View the prototype on Figma.",
         images: [],
+        imageDescriptions: [],
       },
       usabilityStudies: {
         type: "block studies",
