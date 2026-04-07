@@ -6,7 +6,6 @@ import CaseStudyDetail from "./pages/CaseStudyDetail";
 
 import "./styles/global.css";
 import { caseStudies as studies } from "./data/caseStudies.js";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,9 +22,6 @@ function App() {
             />
           </Routes>
         </main>
-        <footer>
-          <Footer />
-        </footer>
       </div>
     </Router>
   );

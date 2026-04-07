@@ -2,11 +2,30 @@ import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudies from "../components/CaseStudies";
 import section_banner from "../assets/images/section-banner.png";
+import section_about_banner from "../assets/images/Section-about-banner.png";
+import section_contact_banner from "../assets/images/section_contact_banner.png";
 import section_resume_banner from "../assets/images/section-resume-banner.png";
 import MyProcess from "../components/MyProcess";
 import AboutMe from "../components/AboutMe";
+import Footer from "../components/Footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Portfolio({ studies }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const sectionId = location.state.scrollTo;
+      const el = document.getElementById(sectionId);
+
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 50);
+      }
+    }
+  }, [location]);
   return (
     <main>
       <Hero />
@@ -29,7 +48,7 @@ function Portfolio({ studies }) {
         subtitle={
           "Learn more about my background, skills, and experience as a UX designer."
         }
-        image={section_resume_banner}
+        image={section_about_banner}
       />
       <AboutMe />
       <SectionTitle
@@ -39,6 +58,14 @@ function Portfolio({ studies }) {
         }
         image={section_resume_banner}
       />
+      <SectionTitle
+        title={"Contact"}
+        subtitle={"Get in touch with me through email, text, or call."}
+        image={section_contact_banner}
+      />
+      <footer>
+        <Footer />
+      </footer>
     </main>
   );
 }

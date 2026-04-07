@@ -11,7 +11,6 @@ import logo_navy from "../assets/images/logo-navy-joann-carter.png";
 const Footer = () => (
   <footer className="footer">
     <div className="footer-col left">
-      <h2 className="footer-heading">Contact Details</h2>
       <div className="footer-contact">
         <div className="footer-contact-item">
           <FaEnvelope className="footer-icon" />

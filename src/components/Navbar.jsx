@@ -1,5 +1,6 @@
 //top navigation bar
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import ThemeToggle from "./ThemeToggle";
 import Logo from "../assets/images/logo-joanncarter.png";
@@ -16,20 +17,41 @@ function Navbar() {
         <img src={HamburgerIcon} alt="Hamburger Icon" />
       </button>
       <div className="logo">
-        <img src={Logo} alt="Logo" />
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <img src={Logo} alt="Logo" />
+        </Link>
       </div>
 
       <GlobalMobileMenu open={globalOpen} setOpen={setGlobalOpen} />
       <div className="nav-bar-menu-items">
-        <a href="#case-studies">Case Studies</a>
+        <Link to="/" state={{ scrollTo: "case-studies" }}>
+          Case Studies
+        </Link>
 
-        <a href="#my-process">My Process</a>
+        <Link to="/" state={{ scrollTo: "my-process" }}>
+          My Process
+        </Link>
 
         <a href="#resume">Resume</a>
 
-        <a href="#about-me">About Me</a>
+        <Link to="/" state={{ scrollTo: "about-me" }}>
+          About Me
+        </Link>
 
-        <a href="#contact">Contact</a>
+        <Link
+          to="/"
+          onClick={() =>
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: "smooth",
+            })
+          }
+        >
+          Contact
+        </Link>
       </div>
 
       <div className="nav-actions">

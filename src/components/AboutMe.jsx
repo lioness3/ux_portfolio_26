@@ -2,8 +2,8 @@ import portraitImage from "../assets/images/portrait.jpeg";
 import "../styles/aboutMe.css";
 export default function AboutMe() {
   return (
-    <section className="about-wrapper">
-      <div className="about-bio-panel" id="about-me">
+    <section className="about-wrapper" id="about-me">
+      <div className="about-bio-panel">
         <h2 className="about-quote">
           “I believe good design should feel natural, not instructional.”
         </h2>

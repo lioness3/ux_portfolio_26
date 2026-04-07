@@ -14,7 +14,7 @@ export default function Hero() {
         <Button
           classN="btn-cta"
           icon={<FaArrowRight />}
-          onClick={() => (window.location.href = "/CaseStudies")}
+          onClick={() => (window.location.href = "#case-studies")}
           btnText={"View My Work"}
           primary={true}
         />

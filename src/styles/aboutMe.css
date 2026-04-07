@@ -1,5 +1,6 @@
 .about-wrapper {
   width: 100%;
+  padding-bottom: 10rem;
 }
 #about-me {
   scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
@@ -29,7 +30,7 @@
   line-height: 1.6;
   max-width: 480px;
   margin: auto;
-  padding-top: 3rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@
   .about-bio-panel {
     flex-direction: column;
     position: relative;
+    margin-bottom: 1rem;
   }
 
   .about-quote {
@@ -76,5 +78,7 @@
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.55;
+    padding-top: 0;
+    border: 2px solid yellow;
   }
 }

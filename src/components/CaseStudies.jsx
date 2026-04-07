@@ -4,11 +4,13 @@ import CaseStudyCard from "./CaseStudyCard";
 
 const CaseStudies = ({ studies }) => {
   return (
-    <div id="case-studies" className="case-studies-list">
-      {studies.map((study, idx) => (
-        <CaseStudyCard key={idx} id={idx} {...study} />
-      ))}
-    </div>
+    <section id="case-studies">
+      <div className="case-studies-list">
+        {studies.map((study, idx) => (
+          <CaseStudyCard key={idx} id={idx} {...study} />
+        ))}
+      </div>
+    </section>
   );
 };
 
