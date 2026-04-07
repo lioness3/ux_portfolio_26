@@ -5,6 +5,7 @@ import BlockCard from "./BlockCard";
 import ImageCard from "./ImageCard";
 import PrototypeCard from "./PrototypeCard";
 import UsabilityCard from "./UsabilityCard";
+import FinalDesignCard from "./FinalDesignCard";
 
 // Gets the data to display from the case studies data
 // determines what card to display through the type key in the categories part of the data
@@ -83,6 +84,23 @@ export default function InfoCard({ id, category, colorPalette }) {
                 bgColor={colorPalette[index]}
               />
             ))}
+          </div>
+        )}
+        {/* Display for FINAL DESIGN Card */}
+        {category.type === "final design" && (
+          <div>
+            `
+            {console.log(
+              "===================== PADSSING TO DESIGN CARS",
+              category.buttonText,
+            )}
+            `
+            <FinalDesignCard
+              images={category.images}
+              btnText={category.buttonText}
+              link={category.link}
+              buttonDescription={category.buttonDescription}
+            />
           </div>
         )}
       </div>

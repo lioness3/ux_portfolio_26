@@ -35,6 +35,8 @@ import campstoredesign1 from "../assets/images/campstore_designsystem1.png";
 import campstoredesign2 from "../assets/images/campstore_designsystem2.png";
 
 import campstorelofi from "../assets/images/campstore_lofi_prototype.png";
+import campstorefinalDesign1 from "../assets/images/campstore_finalDesign1.png";
+import campstorefinalDesign2 from "../assets/images/campstore_finalDesign2.png";
 
 export const caseStudies = [
   {
@@ -203,13 +205,13 @@ export const caseStudies = [
         ],
       },
       finalDesign: {
-        type: "center button",
+        type: "final design",
         title: "Final Design",
         icon: finalDesignIcon,
-        buttonText: "View Prototype",
-        link: "",
+        buttonText: "Final Prototype",
+        link: "https://www.figma.com/proto/jriTfKyq2FG2ypO0JcesR7/CAMP-STORE-APP-prototype-update.1?node-id=4111-257&t=NivYPPN1VYXImYGF-1",
         buttonDescription: "View the final prototype on Figma.",
-        images: [],
+        images: [campstorefinalDesign1, campstorefinalDesign2],
       },
 
       userFeedback: {

@@ -1,0 +1,31 @@
+.final-design-card {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "bottom";
+  align-items: center;
+  gap: 1.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.final-design-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-area: "top";
+}
+.final-design-images img {
+  max-width: 50%;
+}
+
+.final-design-bottom {
+  grid-area: "bottom";
+  place-items: center;
+}
+.final-design-desc {
+  font-size: 0.75rem; /*match prototypeCard */
+  color: #666;
+  max-width: 420px;
+  line-height: 1.5;
+}

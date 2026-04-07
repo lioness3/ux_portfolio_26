@@ -8,6 +8,9 @@ export default function Button({
   primary = true,
   link = "",
 }) {
+  console.log("====================================");
+  console.log(btnText);
+  console.log("====================================");
   // PRIMARY BUTTON (real button)
   if (primary) {
     return (
