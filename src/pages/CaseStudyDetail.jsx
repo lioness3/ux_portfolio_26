@@ -8,6 +8,7 @@ import "../styles/caseStudyDetailPage.css";
 function CaseStudyDetail({ studies }) {
   const { id } = useParams();
   const study = studies.find((s, idx) => String(idx) === id);
+
   const [contentsOpen, setContentsOpen] = useState(false);
   if (!study) return <div>Case study not found.</div>;
 

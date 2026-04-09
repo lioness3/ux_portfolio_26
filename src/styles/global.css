@@ -8,11 +8,31 @@ GLOBAL STYLE SHEET  */
 */
 :root {
   /* Semantic colors (light mode defaults) */
+
+  /* backgrounds */
+  --offWhite: #f7f7f8;
+  --ltGrey: #efeff1;
+  --medGrey: #e4e4e7;
+  --transparent-bg: rgb(from var(--offWhite) r g b / 0.8);
+
+  /* Color palette */
+  --primary: #ff65a7;
+  --secondary: #112240;
+
+  /* Text colors */
+  --text-90: rgb(from var(--secondary) r g b / 0.9); /* important text */
+  --text-70: rgb(from var(--secondary) r g b / 0.7); /* body text */
+  --text-50: rgb(from var(--secondary) r g b / 0.5); /* light text */
+
+  /* Shadows */
+  --box-shadow: 0 4px 24px rgb(from var(--secondary) r g b / 0.08);
+  --box-shadow-hover: 0 8px 32px rgb(from var(--secondary) r g b / 0.16);
+
   --bg: #ffffff;
   --surface: #f9f9f9;
   --text: #213547;
   --muted: #6b7280;
-  --accent: #ff4d94;
+
   --accent-foreground: #ffffff;
   --border: rgba(33, 53, 71, 0.08);
 
@@ -67,30 +87,13 @@ body {
   margin: 0;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  color: var(--text);
-  background-color: var(--bg);
+  color: var(--text-70);
+  background-color: var(--offWhite);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition:
     background-color 220ms ease,
     color 220ms ease;
-}
-
-/* Utility: elements using surface color */
-.surface {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
-}
-
-/* Basic element styles */
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.9;
 }
 
 h1 {

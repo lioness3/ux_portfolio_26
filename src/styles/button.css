@@ -1,6 +1,6 @@
 /* CUSTOM PRIMARY BUTTON */
 .custom-primary-button {
-  background: var(--accent);
+  background: var(--primary);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -35,8 +35,8 @@
 
 .custom-secondary-button {
   background: white;
-  color: var(--accent);
-  border: 3px solid var(--accent);
+  color: var(--primary);
+  border: 3px solid var(--primary);
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
@@ -50,7 +50,7 @@
 }
 
 .custom-secondary-button:hover {
-  background-color: rgb(from var(--accent) r g b / 0.1);
+  background-color: rgb(from var(--primary) r g b / 0.1);
 }
 
 .custom-secondary-button-text {

@@ -1,4 +1,4 @@
-/* overlay */
+/* overlay for section/ contents menu list*/
 .contents-overlay {
   position: fixed;
   inset: 0;
@@ -7,6 +7,7 @@
   transition: background 0.3s ease;
 }
 
+/* dulls background of contents menu */
 .contents-overlay.open {
   background: rgba(0, 0, 0, 0.4);
   pointer-events: auto;
@@ -15,20 +16,42 @@
 /* slide-out panel */
 .contents-menu {
   position: fixed;
-  top: 0;
+  top: var(nav-height);
   left: 0;
-  width: 260px;
+  width: 55vw;
   height: 100vh;
-  background: white;
+  background: var(--offWhite);
   transform: translateX(-100%);
   transition: transform 0.35s ease;
-  padding: 2rem 1.5rem;
-  z-index: 999;
+  padding: 2rem;
+  /* padding needs to be less than the global mobile menu at 999 */
+  z-index: 777;
 }
 .contents-menu-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* even spacing between items */
 }
 
+.contents-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between icon + text */
+  text-decoration: none;
+  color: var(--text-90);
+  font-weight: bold;
+}
+.contents-menu-link:hover {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.contents-menu-icon {
+  max-width: 25px;
+}
 .contents-menu.open {
   transform: translateX(0);
 }

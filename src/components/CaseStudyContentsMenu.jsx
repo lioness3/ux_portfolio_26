@@ -17,9 +17,17 @@ export default function CaseStudyContentsMenu({ categories, open, setOpen }) {
         <ul className="contents-menu-list">
           {Object.entries(categories).map(([key, category]) => (
             <li key={key}>
-              <a href={`#${key}`} onClick={() => setOpen(false)}>
+              <a
+                className="contents-menu-link"
+                href={`#${key}`}
+                onClick={() => setOpen(false)}
+              >
                 {category.icon && (
-                  <img src={category.icon} alt={`${category.title} icon`} />
+                  <img
+                    className="contents-menu-icon"
+                    src={category.icon}
+                    alt={`${category.title} icon`}
+                  />
                 )}
                 {category.title}
               </a>

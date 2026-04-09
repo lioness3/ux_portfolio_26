@@ -1,3 +1,5 @@
+/* DISPLAYS ON INFO CARDS  */
+/* backgound color is determined by prop passed into componenet blockcard */
 .block-card {
   display: flex;
   flex-direction: column;
