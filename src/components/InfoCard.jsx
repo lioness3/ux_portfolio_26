@@ -25,6 +25,8 @@ export default function InfoCard({ id, category, colorPalette }) {
 
       <div className="info-card-col2">
         <h2 className="info-card-title">{category.title}</h2>
+        <div className="info-card-divider" />
+
         {/* Display for text cards */}
         {category.type === "text" && (
           <div>
@@ -89,12 +91,6 @@ export default function InfoCard({ id, category, colorPalette }) {
         {/* Display for FINAL DESIGN Card */}
         {category.type === "final design" && (
           <div>
-            `
-            {console.log(
-              "===================== PADSSING TO DESIGN CARS",
-              category.buttonText,
-            )}
-            `
             <FinalDesignCard
               images={category.images}
               btnText={category.buttonText}

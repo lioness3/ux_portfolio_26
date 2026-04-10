@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-
   grid-template-areas:
     "menu head"
     "menu content";
@@ -25,12 +24,13 @@
   align-self: start;
   position: sticky;
   top: var(--nav-height);
-  background-color: var(--offWhite);
+  background-color: white;
   display: grid;
   grid-template-areas:
     "col1 col2"
     "bottom bottom";
   padding: 2rem 0.25rem;
+  border-bottom: 2px solid var(--border-secondary);
 }
 .case-study-header-col1 {
   grid-area: col1;
@@ -85,6 +85,7 @@
   padding: 1rem;
   gap: 2rem;
   background-color: var(--offWhite);
+  border-right: 1px solid var(--border-secondary);
 }
 
 .side-menu-list {
@@ -96,6 +97,7 @@
   flex: 2;
   overflow-y: auto;
   min-height: 0;
+  border-bottom: 1px solid var(--border-secondary);
 }
 
 .side-menu-item {
@@ -107,18 +109,21 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #6b6f76;
+  color: var(--text-70);
   font-size: 14px;
   transition: color 0.2s ease;
 }
 
 .side-menu-link:hover,
 .side-menu-back:hover {
-  color: #0a143c;
+  color: var(--primary);
 }
 
 .side-menu-back {
   flex: 1;
+  color: var(--text-60);
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 .side-menu-icon {
@@ -137,6 +142,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .case-study-header {
+    padding: 0.5rem;
+  }
 
   /* hide  the side menu */
   .side-menu {
@@ -145,10 +153,10 @@
   /* display the contents button for smaller screen instead of the side menu */
   .contents-btn {
     display: block;
-    margin: 0.25rem;
+    margin-top: 0.5rem;
     font-size: 1rem;
     background: none;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-secondary);
     padding: 0.25rem 0.75rem;
     border-radius: 6px;
   }

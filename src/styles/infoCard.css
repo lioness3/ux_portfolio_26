@@ -1,15 +1,11 @@
 .info-card {
   background: white;
   border: 1px solid #e4e6ea;
-
   width: 80%;
   margin: auto;
   border-radius: var(--borderRadius);
   padding: 3rem;
-
-  /* DONT FORGET TO FIX BOX SHADOW VARIABLES  */
-
-  box-shadow: 0 10px 30px rgba(10, 20, 60, 0.04);
+  box-shadow: var(--box-shadow-deep);
   margin-top: 32px;
   display: flex;
   flex-direction: row;
@@ -27,16 +23,21 @@
   display: flex;
   flex-direction: column;
 }
+.info-card-divider {
+  border-top: 1px solid var(--border-secondary);
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+}
 .info-card-title {
   font-size: 1.75rem;
   font-weight: bold;
   color: var(--text-90);
-  margin: 0 0 2.5rem 0;
+  margin: 0;
 }
 .info-card-headline {
   font-size: 1rem;
   color: var(--text-90);
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 .info-card-description {
@@ -59,8 +60,15 @@
   flex-direction: row;
 }
 @media (max-width: 969px) {
+  .info-card {
+    width: 50%;
+  }
   .info-card-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+  .card-icon {
+    max-width: 30px;
+    max-height: 30px;
   }
 }
 @media (min-width: 1200px) {

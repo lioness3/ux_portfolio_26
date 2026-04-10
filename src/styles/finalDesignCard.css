@@ -1,3 +1,4 @@
+/* Styles the final design case study card */
 .final-design-card {
   display: grid;
   grid-template-areas:
@@ -25,7 +26,7 @@
 }
 .final-design-desc {
   font-size: 0.75rem; /*match prototypeCard */
-  color: #666;
+  color: var(--text-60);
   max-width: 420px;
   line-height: 1.5;
 }

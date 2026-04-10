@@ -1,20 +1,20 @@
 .nav-bar {
-  background: var(--offWhite);
-  border-bottom: 1px solid var(--border);
+  background: white;
+  border-bottom: 1px solid var(--border-primary);
   position: sticky;
   top: 0;
   z-index: 10;
   height: var(--nav-height);
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
   align-items: end;
+
+  font-size: 0.75rem;
 }
 .nav-bar-menu-items {
   display: flex;
   align-items: end;
-  width: 100%;
-  justify-content: space-between;
+  width: 70%;
 }
 
 .logo {
@@ -29,11 +29,11 @@
 
 .nav-bar a {
   flex: 1;
-  color: var(--text);
+  color: var(--text-80);
   font-weight: bold;
 }
 .nav-bar a:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .nav-actions {
@@ -44,7 +44,7 @@
 
 .theme-toggle {
   background: none;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-primary);
   padding: 0.35rem 0.6rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -70,6 +70,7 @@
   .hamburger-btn,
   .hamburger-btn img {
     display: block;
+    padding-left: 1rem;
   }
   .logo {
     flex: 0 0 20%; /* 1/5 of the nav width */
