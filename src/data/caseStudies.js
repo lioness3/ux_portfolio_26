@@ -184,7 +184,7 @@ export const caseStudies = [
       },
       Accessibility: {
         type: "block",
-        title: "Accessibility Considerations",
+        title: "Accessibility",
         icon: accessibilityIcon,
         items: [
           {

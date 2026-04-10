@@ -4,11 +4,20 @@
 .case-study-detail-layout {
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+
   grid-template-areas:
     "menu head"
     "menu content";
 }
-
+.case-study-right-col {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "head"
+    "content";
+  min-height: 0; /* CRITICAL for scroll */
+}
 /* right sticker header */
 .case-study-header {
   min-width: none;
@@ -16,13 +25,12 @@
   align-self: start;
   position: sticky;
   top: var(--nav-height);
-  background-color: lightblue;
+  background-color: var(--offWhite);
   display: grid;
-
   grid-template-areas:
     "col1 col2"
     "bottom bottom";
-  padding: 0.25rem;
+  padding: 2rem 0.25rem;
 }
 .case-study-header-col1 {
   grid-area: col1;
@@ -62,29 +70,32 @@
 
 /* scrolling container that holds cards */
 .case-study-scrolling-container {
-  background-color: black;
+  background-color: var(--medGrey);
   grid-area: content;
 }
 
 /* side menu  */
 .side-menu {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  align-self: start;
-  position: sticky;
-  top: 10%;
-  left: 0;
-
   grid-area: menu;
+  position: sticky;
+  top: var(--nav-height);
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  background-color: var(--offWhite);
 }
 
 .side-menu-list {
   list-style: none;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
-  height: 80vh;
   display: flex;
   flex-direction: column;
+  flex: 2;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 .side-menu-item {
@@ -101,8 +112,13 @@
   transition: color 0.2s ease;
 }
 
-.side-menu-link:hover {
+.side-menu-link:hover,
+.side-menu-back:hover {
   color: #0a143c;
+}
+
+.side-menu-back {
+  flex: 1;
 }
 
 .side-menu-icon {

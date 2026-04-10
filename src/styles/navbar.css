@@ -1,5 +1,5 @@
 .nav-bar {
-  background: lightblue;
+  background: var(--offWhite);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;

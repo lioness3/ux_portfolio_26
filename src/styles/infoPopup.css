@@ -7,8 +7,8 @@
 
 .info-trigger {
   font-size: 1.75rem;
-  color: var(--accent);
-  font-weight: 600;
+  color: var(--primary);
+  font-weight: bold;
   cursor: pointer;
 }
 
