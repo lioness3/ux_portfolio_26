@@ -1,4 +1,5 @@
 import "../styles/globalMobileMenu.css";
+import { Link } from "react-router-dom";
 // used for the hamburger button instead of top nav on smaller screens
 export default function GlobalMobileMenu({ open, setOpen }) {
   // look into this and why not using prev +> !prev
@@ -14,23 +15,31 @@ export default function GlobalMobileMenu({ open, setOpen }) {
           ×
         </button>
 
-        <ul className="global-mobile-menu-list">
-          <li>
-            <a href="#case-studies">Case Studies</a>
-          </li>
-          <li>
-            <a href="#my-process">My Process</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <Link to="/" state={{ scrollTo: "case-studies" }}>
+          Case Studies
+        </Link>
+
+        <Link to="/" state={{ scrollTo: "my-process" }}>
+          My Process
+        </Link>
+
+        <a href="#resume">Resume</a>
+
+        <Link to="/" state={{ scrollTo: "about-me" }}>
+          About Me
+        </Link>
+
+        <Link
+          to="/"
+          onClick={() =>
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: "smooth",
+            })
+          }
+        >
+          Contact
+        </Link>
       </nav>
     </>
   );

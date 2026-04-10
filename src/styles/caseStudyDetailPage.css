@@ -19,6 +19,7 @@
 }
 /* right sticker header */
 .case-study-header {
+  color: var(--text-80);
   min-width: none;
   grid-area: head;
   align-self: start;
@@ -42,9 +43,11 @@
 }
 .case-study-header-title {
   margin: 0;
+  color: var(--text-90);
 }
 .case-study-header-type {
   padding-left: 0.25rem;
+  color: var(--text-60);
 }
 .case-study-header-catchPhrase {
   margin: 1rem 0 0 0;
@@ -61,6 +64,7 @@
 .case-study-header-bottom {
   grid-area: bottom;
   padding: 1rem;
+  color: var(--text-60);
 }
 
 /* contents button  */

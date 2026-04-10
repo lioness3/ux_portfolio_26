@@ -1,13 +1,13 @@
+/* Styles the contact section at bottom of portfolio page */
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 2rem;
-  background: #fff;
-  color: var(--text);
+  background: white;
+  color: var(--text-70);
   font-size: 1rem;
   gap: 2rem;
   flex-wrap: wrap;
+  height: 70vh;
 }
 
 .footer-col {
@@ -21,6 +21,7 @@
 .footer-col.center {
   align-items: center;
   text-align: center;
+  justify-content: end;
 }
 
 .footer-image {
@@ -38,7 +39,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .footer-icon {
@@ -48,11 +49,12 @@
 .footer-location {
   font-size: 0.95rem;
   margin: 0.5rem 0 0.25rem 0;
+  color: var(--text-70);
 }
 
 .footer-updated {
   font-size: 0.7rem;
-  color: #888;
+  color: var(--text-50);
   margin-bottom: 0.5rem;
 }
 
@@ -74,13 +76,13 @@
 
 .footer-copyright {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-50);
   margin-top: 0.5rem;
 }
 
 .right {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--text-80);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
