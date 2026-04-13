@@ -1,18 +1,43 @@
 import React from "react";
-// import "./Resume.css";
+import { useState } from "react";
+import { skillsList } from "../../data/skillsList";
+import workIcon from "../../assets/icons/work.svg";
+import eduIcon from "../../assets/icons/Edu.svg";
+import skillsIcon from "../../assets/icons/brain.svg";
+import "../../styles/sections/Resume.css";
 
 const Resume = () => {
+  // Default to UX
+  const [activeFilter, setActiveFilter] = useState("UX");
+
+  // Extract arrays from your data structure
+  const { Software, UX } = skillsList[0];
+
+  // Build "All" dynamically
+  const allSkills = [...new Set([...UX, ...Software])];
+
+  // Determine which list to show
+  const getFilteredSkills = () => {
+    if (activeFilter === "UX") return UX;
+    if (activeFilter === "Software") return Software;
+    return allSkills;
+  };
   return (
-    <section className="resume">
+    <section className="resume-wrapper" id="resume">
       {/* Work History */}
       <div className="resume-section">
-        <h2>Work History</h2>
+        <div className="resume-title-wrapper">
+          <img src={workIcon} alt="briefcase icon" />
+          <h2 className="resume-title">Work History</h2>
+        </div>
+
         <div className="resume-item">
-          <h3>
-            AI Training Specialist <span>(2025 – Present)</span>
+          <h3 className="resume-job-title">
+            AI Training Specialist{" "}
+            <span className="resume-date">(2025 – Present)</span>
           </h3>
-          <p className="resume-sub">Private Contract</p>
-          <p>
+          <p className="resume-job-type">Private Contract</p>
+          <p classname="resume-job-description">
             Contributes to AI model development by testing, writing, and
             comparing code across HTML, Python, React, and JavaScript. Provides
             feedback to refine AI output and improve model accuracy.
@@ -20,11 +45,12 @@ const Resume = () => {
         </div>
 
         <div className="resume-item">
-          <h3>
-            Web and Mobile Development <span>(2020 – Present)</span>
+          <h3 className="resume-job-title">
+            Web and Mobile Development{" "}
+            <span className="resume-date">(2020 – Present)</span>
           </h3>
-          <p className="resume-sub">Private Contract</p>
-          <p>
+          <p className="resume-job-type">Private Contract</p>
+          <p classname="resume-job-description">
             Builds and refines front‑end and back‑end code for responsive web
             and mobile experiences. Focuses on clean performance, strong
             security, and smooth interaction.
@@ -32,11 +58,11 @@ const Resume = () => {
         </div>
 
         <div className="resume-item">
-          <h3>
-            Full‑Stack Internship <span>(2020)</span>
+          <h3 className="resume-job-title">
+            Full‑Stack Internship <span className="resume-date">(2020)</span>
           </h3>
-          <p className="resume-sub">Molica</p>
-          <p>
+          <p className="resume-job-type">Molica</p>
+          <p classname="resume-job-description">
             Worked on an Ionic app using TypeScript and React. Improved scroll
             functions in the app’s calendar and organized codebase into reusable
             parts.
@@ -46,13 +72,17 @@ const Resume = () => {
 
       {/* Education */}
       <div className="resume-section">
-        <h2>Education</h2>
+        <div className="resume-title-wrapper">
+          <img src={eduIcon} alt="education icon" />
+          <h2>Education</h2>
+        </div>
         <div className="resume-item">
-          <h3>
-            UX Design Course <span>(2025 – Present)</span>
+          <h3 className="resume-job-title">
+            UX Design Course{" "}
+            <span className="resume-date">(2025 – Present)</span>
           </h3>
-          <p className="resume-sub">Google, Coursera</p>
-          <p>
+          <p className="resume-job-type">Google, Coursera</p>
+          <p classname="resume-job-description">
             Expands skills in UX research, prototyping, and ideation. Includes
             hands‑on experience with user interviews, wireframing, and usability
             testing.
@@ -60,11 +90,11 @@ const Resume = () => {
         </div>
 
         <div className="resume-item">
-          <h3>
-            B.S. in Computer Science <span>(2023)</span>
+          <h3 className="resume-job-title">
+            B.S. in Computer Science <span className="resume-date">(2023)</span>
           </h3>
-          <p className="resume-sub">Southern New Hampshire University</p>
-          <p>
+          <p className="resume-job-type">Southern New Hampshire University</p>
+          <p classname="resume-job-description">
             Earned a Bachelor of Science in Software Engineering with a 4.0 GPA.
             Coursework included full‑stack development, system architecture, and
             cybersecurity.
@@ -72,11 +102,12 @@ const Resume = () => {
         </div>
 
         <div className="resume-item">
-          <h3>
-            Web and Mobile Development <span>(2020)</span>
+          <h3 className="resume-job-title">
+            Web and Mobile Development{" "}
+            <span className="resume-date">(2020)</span>
           </h3>
-          <p className="resume-sub">Epicodus, Portland, OR</p>
-          <p>
+          <p className="resume-job-type">Epicodus, Portland, OR</p>
+          <p classname="resume-job-description">
             Completed an intensive coding bootcamp with pair‑programming.
             Strengthened communication and teamwork skills.
           </p>
@@ -85,23 +116,38 @@ const Resume = () => {
 
       {/* Skills */}
       <div className="resume-section">
-        <h2>Skills</h2>
-        <div className="skills-filter">
-          <button>All</button>
-          <button>UX</button>
-          <button>Software</button>
+        <div className="resume-title-wrapper">
+          <img src={skillsIcon} alt="skillset icon" />
+          <h2>Skills</h2>
         </div>
+        {/* FILTER BUTTONS */}
+        <div className="skills-filter">
+          <button
+            className={activeFilter === "UX" ? "active" : ""}
+            onClick={() => setActiveFilter("UX")}
+          >
+            UX
+          </button>
+
+          <button
+            className={activeFilter === "Software" ? "active" : ""}
+            onClick={() => setActiveFilter("Software")}
+          >
+            Software
+          </button>
+
+          <button
+            className={activeFilter === "All" ? "active" : ""}
+            onClick={() => setActiveFilter("All")}
+          >
+            All
+          </button>
+        </div>
+        {/* FILTERED SKILLS */}
         <ul className="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>UX Design</li>
-          <li>Accessibility</li>
-          <li>Figma</li>
-          <li>Problem Solving</li>
-          <li>Communication</li>
+          {getFilteredSkills().map((skill, idx) => (
+            <li key={idx}>{skill}</li>
+          ))}
         </ul>
       </div>
     </section>

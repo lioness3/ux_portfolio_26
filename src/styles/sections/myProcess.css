@@ -7,6 +7,9 @@
   justify-content: center;
   margin: auto;
 }
+.process-wrapper {
+  padding-bottom: var(--section-padding-bottom);
+}
 #my-process {
   scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
 }

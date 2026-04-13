@@ -6,7 +6,7 @@ import "../../styles/sections/myProcess.css";
 
 export default function MyProcess() {
   return (
-    <section id="my-process">
+    <section id="my-process" className="process-wrapper">
       <div className="process-section">
         <div className="process-text-container">
           <h2>User Research</h2>

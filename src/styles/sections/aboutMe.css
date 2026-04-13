@@ -1,7 +1,7 @@
 /* ABOUT ME SECTION ON PORTFOLIO PAGE  */
 .about-wrapper {
   width: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: var(--section-padding-bottom);
 }
 /* so the section lines up at the correct y- axis when clicking on link to section */
 #about-me {

@@ -9,7 +9,9 @@
   max-width: 80%;
   margin-inline: auto;
 }
-
+.case-wrapper {
+  padding-bottom: var(--section-padding-bottom);
+}
 /* Adjusts scroll position so linked sections land at the proper vertical offset */
 #case-studies {
   scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));

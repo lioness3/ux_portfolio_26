@@ -1,0 +1,72 @@
+.resume-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--text-90);
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: var(--section-padding-bottom);
+}
+.resume-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid var(--border-secondary);
+  gap: 2rem;
+}
+
+.resume-item {
+  margin-bottom: 1.5rem;
+}
+.resume-job-title {
+  font-weight: 600;
+}
+
+.resume-date {
+  font-weight: 400;
+}
+
+.resume-job-type {
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+.resume-job-description {
+  color: var(--text-50);
+}
+
+.skills-filter {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.skills-filter button {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills-filter button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: var(--secondary);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

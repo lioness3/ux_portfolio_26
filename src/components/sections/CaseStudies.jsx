@@ -4,7 +4,7 @@ import CaseStudyCard from "../cards/CaseStudyCard";
 
 const CaseStudies = ({ studies }) => {
   return (
-    <section id="case-studies">
+    <section className="case-wrapper" id="case-studies">
       <div className="case-studies-list">
         {studies.map((study, idx) => (
           <CaseStudyCard key={idx} id={idx} {...study} />

@@ -55,6 +55,9 @@ GLOBAL STYLE SHEET  */
   /* Height for each section title */
   --section-title-height: 300px;
 
+  /* bottom spacing for each section  */
+  --section-padding-bottom: 300px;
+
   /* Border Radius for all cards and blocks */
   --borderRadius: 12px;
 
