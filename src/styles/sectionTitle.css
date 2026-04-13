@@ -1,8 +1,10 @@
 .section-title-bg {
+  margin-bottom: 6rem;
   background: linear-gradient(to bottom, rgba(255, 192, 220, 0.1) 10%, #ffffff);
-
   text-align: center;
   height: var(--section-title-height);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-title-content {
