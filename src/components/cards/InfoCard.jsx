@@ -1,6 +1,6 @@
 // StudyCard.jsx
 import React from "react";
-import "../styles/infoCard.css";
+import "../../styles/cards/infoCard.css";
 import BlockCard from "./BlockCard";
 import ImageCard from "./ImageCard";
 import PrototypeCard from "./PrototypeCard";

@@ -1,5 +1,5 @@
-import "../styles/finalDesignCard.css";
-import Button from "./Button";
+import "../../styles/cards/finalDesignCard.css";
+import Button from "../Button";
 
 export default function FinalDesignCard({
   images = [],

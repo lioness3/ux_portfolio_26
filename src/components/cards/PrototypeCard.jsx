@@ -1,5 +1,5 @@
-import "../styles/prototypeCard.css";
-import Button from "./Button";
+import "../../styles/cards/prototypeCard.css";
+import Button from "../Button";
 
 export default function PrototypeCard({ image, link, btnText, description }) {
   return (

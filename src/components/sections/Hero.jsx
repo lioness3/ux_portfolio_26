@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/hero.css";
-import heroImage from "../assets/images/heroImage.png";
-import Button from "./Button";
-import InfoPopup from "./InfoPopup";
+import "../../styles/sections/hero.css";
+import heroImage from "../../assets/images/heroImage.png";
+import Button from "../Button";
+import InfoPopup from "../InfoPopup";
 import { FaArrowRight } from "react-icons/fa";
 export default function Hero() {
   return (

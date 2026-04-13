@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/caseStudies.css";
-import CaseStudyCard from "./CaseStudyCard";
+import "../../styles/sections/caseStudies.css";
+import CaseStudyCard from "../cards/CaseStudyCard";
 
 const CaseStudies = ({ studies }) => {
   return (

@@ -1,4 +1,4 @@
-import "../styles/usabilityCard.css";
+import "../../styles/cards/usabilityCard.css";
 
 export default function UsabilityCard({
   headline,

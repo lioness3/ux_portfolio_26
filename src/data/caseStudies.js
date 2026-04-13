@@ -18,25 +18,25 @@ import takeawaysIcon from "../assets/icons/Takeaways.svg";
 import nextStepsIcon from "../assets/icons/NextSteps.svg";
 
 //images
-import campstoreImg from "../assets/images/campstore.png";
+import campstoreImg from "../assets/images/campstore/campstore.png";
 import OHCImg from "../assets/images/oceanharbor.png";
 import dineOrDitchImg from "../assets/images/dineorditch.png";
 import thermostatImg from "../assets/images/thermostat.png";
 import SOSImg from "../assets/images/SOS.png";
 import inventoryImg from "../assets/images/inventory.png";
 import personaCampStore from "../assets/images/persona.png";
-import campstoreHeaderImg from "../assets/images/campstorePreview-doublescreen.png";
+import campstoreHeaderImg from "../assets/images/campstore/campstorePreview-doublescreen.png";
 
-import campstoreWireframe1 from "../assets/images/campstore_wireframe1.png";
-import campstoreWireframe2 from "../assets/images/campstore_wireframe2.png";
-import campstoreWireframe3 from "../assets/images/campstore_wireframe3.png";
-import campstoreWireframe4 from "../assets/images/campstore_wireframe4.png";
-import campstoredesign1 from "../assets/images/campstore_designsystem1.png";
-import campstoredesign2 from "../assets/images/campstore_designsystem2.png";
+import campstoreWireframe1 from "../assets/images/campstore/campstore_wireframe1.png";
+import campstoreWireframe2 from "../assets/images/campstore/campstore_wireframe2.png";
+import campstoreWireframe3 from "../assets/images/campstore/campstore_wireframe3.png";
+import campstoreWireframe4 from "../assets/images/campstore/campstore_wireframe4.png";
+import campstoredesign1 from "../assets/images/campstore/campstore_designsystem1.png";
+import campstoredesign2 from "../assets/images/campstore/campstore_designsystem2.png";
 
-import campstorelofi from "../assets/images/campstore_lofi_prototype.png";
-import campstorefinalDesign1 from "../assets/images/campstore_finalDesign1.png";
-import campstorefinalDesign2 from "../assets/images/campstore_finalDesign2.png";
+import campstorelofi from "../assets/images/campstore/campstore_lofi_prototype.png";
+import campstorefinalDesign1 from "../assets/images/campstore/campstore_finalDesign1.png";
+import campstorefinalDesign2 from "../assets/images/campstore/campstore_finalDesign2.png";
 
 export const caseStudies = [
   {

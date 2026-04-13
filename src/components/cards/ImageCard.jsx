@@ -1,4 +1,4 @@
-import "../styles/imageCard.css";
+import "../../styles/cards/imageCard.css";
 
 export default function ImageCard({ images, descriptions, intro }) {
   // used to determine if there is 0 or mor ethan 1 image in the images array. used for css style class name

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/footer.css";
+import "../../styles/sections/footer.css";
 import {
   FaEnvelope,
   FaPhone,
@@ -7,7 +7,7 @@ import {
   FaGithub,
   FaBehance,
 } from "react-icons/fa";
-import logo_navy from "../assets/images/logo-navy-joann-carter.png";
+import logo_navy from "../../assets/images/logo/logo-navy-joann-carter.png";
 const Footer = () => (
   <footer className="footer">
     <div className="footer-col left">

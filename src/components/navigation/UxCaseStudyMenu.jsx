@@ -1,4 +1,4 @@
-import "../styles/uxCaseStudyMenu.css";
+import "../../styles/navigation/uxCaseStudyMenu.css";
 import { Link } from "react-router-dom";
 // Populates the UX menu for the contents drop down and the side menu
 export default function UxCaseStudyMenu({ categories, onClose }) {

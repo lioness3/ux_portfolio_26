@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import InfoCard from "../components/InfoCard";
-import CaseStudySideMenu from "../components/CaseStudySideMenu";
-import CaseStudyContentsMenu from "../components/CaseStudyContentsMenu";
+import InfoCard from "../components/cards/InfoCard";
+import CaseStudySideMenu from "../components/navigation/CaseStudySideMenu";
+import CaseStudyContentsMenu from "../components/navigation/CaseStudyContentsMenu";
 import "../styles/caseStudyDetailPage.css";
 
 function CaseStudyDetail({ studies }) {

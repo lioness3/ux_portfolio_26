@@ -1,4 +1,4 @@
-import "../styles/globalMobileMenu.css";
+import "../../styles/navigation/globalMobileMenu.css";
 import { Link } from "react-router-dom";
 // used for the hamburger button instead of top nav on smaller screens
 export default function GlobalMobileMenu({ open, setOpen }) {

@@ -1,5 +1,5 @@
 // Mini block to render on the cards that uses the color palette as the background
-import "../styles/blockCard.css";
+import "../../styles/cards/blockCard.css";
 export default function BlockCardList({
   item,
   bgColor,

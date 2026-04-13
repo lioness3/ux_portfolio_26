@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "../styles/infoPopup.css";
-import "../styles/hero.css";
 export default function InfoPopup() {
   const [open, setOpen] = useState(false);
   // handles pop up when clicking on user experience engineer

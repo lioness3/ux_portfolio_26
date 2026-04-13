@@ -1,4 +1,4 @@
-import "../styles/caseStudyContentsMenu.css";
+import "../../styles/navigation/caseStudyContentsMenu.css";
 import UxCaseStudyMenu from "./UxCaseStudyMenu";
 
 // used for the contents menu that shows on the left of the bigger screens in the case study details page

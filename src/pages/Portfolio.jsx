@@ -1,15 +1,16 @@
-import Hero from "../components/Hero";
+import Hero from "../components/sections/Hero";
 import SectionTitle from "../components/SectionTitle";
-import CaseStudies from "../components/CaseStudies";
-import section_caseStudyBanner from "../assets/images/section_1.png";
-import section_resumeBanner from "../assets/images/section_2.png";
-import section_aboutBanner from "../assets/images/section_3.png";
-import section_processBanner from "../assets/images/section_4.png";
-import section_contactBanner from "../assets/images/section_5.png";
+import CaseStudies from "../components/sections/CaseStudies";
+import section_caseStudyBanner from "../assets/images/sections/section_1.png";
+import section_resumeBanner from "../assets/images/sections/section_2.png";
+import section_aboutBanner from "../assets/images/sections/section_3.png";
+import section_processBanner from "../assets/images/sections/section_4.png";
+import section_contactBanner from "../assets/images/sections/section_5.png";
 
-import MyProcess from "../components/MyProcess";
-import AboutMe from "../components/AboutMe";
-import Footer from "../components/Footer";
+import MyProcess from "../components/sections/MyProcess";
+import AboutMe from "../components/sections/AboutMe";
+import Resume from "../components/sections/Resume";
+import Footer from "../components/sections/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -30,7 +31,9 @@ function Portfolio({ studies }) {
   }, [location]);
   return (
     <main>
+      {/* HERO SECTION */}
       <Hero />
+      {/* CASE STUDIES SECTION */}
       <SectionTitle
         title={"Case Studies"}
         subtitle={
@@ -39,12 +42,14 @@ function Portfolio({ studies }) {
         image={section_caseStudyBanner}
       />
       <CaseStudies studies={studies} />
+      {/* MY PROCESS SECTION */}
       <SectionTitle
         title={"My Process"}
         subtitle={"A look into how I approach design challenges."}
         image={section_processBanner}
       />
       <MyProcess />
+      {/* ABOUT ME SECTION */}
       <SectionTitle
         title={"About me"}
         subtitle={
@@ -53,6 +58,7 @@ function Portfolio({ studies }) {
         image={section_aboutBanner}
       />
       <AboutMe />
+      {/* RESUME SECTION */}
       <SectionTitle
         title={"Resume"}
         subtitle={
@@ -60,6 +66,8 @@ function Portfolio({ studies }) {
         }
         image={section_resumeBanner}
       />
+      <Resume />
+      {/* CONTACT SECTION */}
       <SectionTitle
         title={"Contact"}
         subtitle={"Get in touch with me through email, text, or call."}

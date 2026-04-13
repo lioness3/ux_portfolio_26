@@ -1,11 +1,11 @@
 //top navigation bar
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
-import ThemeToggle from "./ThemeToggle";
-import Logo from "../assets/images/logo-joanncarter.png";
+import "../../styles/navigation/navbar.css";
+import ThemeToggle from "../ThemeToggle";
+import Logo from "../../assets/images/logo/logo-joanncarter.png";
 import GlobalMobileMenu from "./GlobalMobileMenu";
-import HamburgerIcon from "../assets/icons/hamburger.svg";
+import HamburgerIcon from "../../assets/icons/hamburger.svg";
 function Navbar() {
   const [globalOpen, setGlobalOpen] = useState(false);
   return (

@@ -1,8 +1,8 @@
-import personaMock from "../assets/images/persona-mockup.png";
-import lowFi from "../assets/images/low-fi-mockup.png";
-import highFi from "../assets/images/hi-fi-mockup.png";
-import developmentMockup from "../assets/images/development-mockup.png";
-import "../styles/myProcess.css";
+import personaMock from "../../assets/images/persona-mockup.png";
+import lowFi from "../../assets/images/low-fi-mockup.png";
+import highFi from "../../assets/images/hi-fi-mockup.png";
+import developmentMockup from "../../assets/images/development-mockup.png";
+import "../../styles/sections/myProcess.css";
 
 export default function MyProcess() {
   return (

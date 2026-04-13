@@ -1,5 +1,5 @@
-import portraitImage from "../assets/images/portrait.jpeg";
-import "../styles/aboutMe.css";
+import portraitImage from "../../assets/images/portrait.jpeg";
+import "../../styles/sections/aboutMe.css";
 export default function AboutMe() {
   return (
     <section className="about-wrapper" id="about-me">
