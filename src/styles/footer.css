@@ -7,7 +7,7 @@
   font-size: 1rem;
   gap: 2rem;
   flex-wrap: wrap;
-  height: 70vh;
+  height: 100vh -var(--section-title-height);
 }
 
 .footer-col {

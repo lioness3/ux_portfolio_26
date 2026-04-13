@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 // used for the hamburger button instead of top nav on smaller screens
 export default function GlobalMobileMenu({ open, setOpen }) {
   // look into this and why not using prev +> !prev
+  const rootStyles = getComputedStyle(document.documentElement);
+  const navHeight = parseInt(rootStyles.getPropertyValue("--nav-height"), 10); // turn the nav height css variable into a number
+
+  const scrollToBottom = document.body.scrollHeight - navHeight;
   return (
     <>
       <div
@@ -33,7 +37,7 @@ export default function GlobalMobileMenu({ open, setOpen }) {
           to="/"
           onClick={() =>
             window.scrollTo({
-              top: document.body.scrollHeight,
+              top: scrollToBottom,
               behavior: "smooth",
             })
           }

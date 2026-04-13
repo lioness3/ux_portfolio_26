@@ -1,10 +1,12 @@
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudies from "../components/CaseStudies";
-import section_banner from "../assets/images/section-banner.png";
-import section_about_banner from "../assets/images/Section-about-banner.png";
-import section_contact_banner from "../assets/images/section_contact_banner.png";
-import section_resume_banner from "../assets/images/section-resume-banner.png";
+import section_caseStudyBanner from "../assets/images/section_1.png";
+import section_resumeBanner from "../assets/images/section_2.png";
+import section_aboutBanner from "../assets/images/section_3.png";
+import section_processBanner from "../assets/images/section_4.png";
+import section_contactBanner from "../assets/images/section_5.png";
+
 import MyProcess from "../components/MyProcess";
 import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
@@ -34,13 +36,13 @@ function Portfolio({ studies }) {
         subtitle={
           "A mix of real-world and continuing education projects that I have collected over the past few years. "
         }
-        image={section_banner}
+        image={section_caseStudyBanner}
       />
       <CaseStudies studies={studies} />
       <SectionTitle
         title={"My Process"}
         subtitle={"A look into how I approach design challenges."}
-        image={section_banner}
+        image={section_processBanner}
       />
       <MyProcess />
       <SectionTitle
@@ -48,7 +50,7 @@ function Portfolio({ studies }) {
         subtitle={
           "Learn more about my background, skills, and experience as a UX designer."
         }
-        image={section_about_banner}
+        image={section_aboutBanner}
       />
       <AboutMe />
       <SectionTitle
@@ -56,12 +58,12 @@ function Portfolio({ studies }) {
         subtitle={
           "Download my resume to learn more about my background, skills, and experience."
         }
-        image={section_resume_banner}
+        image={section_resumeBanner}
       />
       <SectionTitle
         title={"Contact"}
         subtitle={"Get in touch with me through email, text, or call."}
-        image={section_contact_banner}
+        image={section_contactBanner}
       />
       <footer>
         <Footer />
