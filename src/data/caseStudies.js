@@ -40,6 +40,7 @@ import campstorefinalDesign2 from "../assets/images/campstore/campstore_finalDes
 
 export const caseStudies = [
   {
+    // CAMPSTORE - UX DESIGN
     mainImage: campstoreImg,
     caseStudyHeaderImage: campstoreHeaderImg,
     bgColor: "#8DA293",
@@ -257,6 +258,7 @@ export const caseStudies = [
   },
 
   {
+    // OHC - FULL STACK
     mainImage: OHCImg,
     bgColor: "#A2C9C9",
     title: "Ocean Harbor Condominium",
@@ -358,7 +360,7 @@ export const caseStudies = [
   },
   {
     mainImage: inventoryImg,
-    bgColor: "#D6ABA5",
+    bgColor: "#AFA39C",
     title: "Inventory",
     description: "Full Stack Development.",
 

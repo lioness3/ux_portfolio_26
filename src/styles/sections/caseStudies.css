@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  padding-bottom: 3rem;
   margin-top: 6rem;
   max-width: 80%;
   margin-inline: auto;
@@ -71,9 +70,12 @@
   margin: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 969px) {
   .case-studies-list {
     flex-direction: column;
     align-items: center;
+  }
+  .case-wrapper {
+    padding-bottom: calc(var(--section-padding-bottom) + 200px);
   }
 }

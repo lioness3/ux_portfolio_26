@@ -26,9 +26,9 @@ export default function GlobalMobileMenu({ open, setOpen }) {
         <Link to="/" state={{ scrollTo: "my-process" }}>
           My Process
         </Link>
-
-        <a href="#resume">Resume</a>
-
+        <Link to="/" state={{ scrollTo: "resume-section" }}>
+          <a href="#resume">Resume</a>
+        </Link>
         <Link to="/" state={{ scrollTo: "about-me" }}>
           About Me
         </Link>

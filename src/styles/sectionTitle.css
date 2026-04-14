@@ -52,5 +52,9 @@
   }
   .section-title-subtitle {
     font-size: 0.75rem;
+    max-width: 200px;
+  }
+  .section-title-image {
+    max-width: 40%;
   }
 }

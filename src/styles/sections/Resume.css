@@ -8,7 +8,7 @@
   padding-bottom: var(--section-padding-bottom);
 }
 /* so the section lines up at the correct y- axis when clicking on link to section */
-#resume {
+#resume-section {
   scroll-margin-top: var(--scroll-margin-top);
 }
 .resume-download-btn {
@@ -106,7 +106,7 @@
 }
 @media (max-width: 969px) {
   .resume-wrapper {
-    padding: 3rem;
+    padding: 3rem 3rem var(--section-padding-bottom) 3rem;
   }
   .resume-title-icon {
     max-width: 35px;

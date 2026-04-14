@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/sections/caseStudies.css";
 import CaseStudyCard from "../cards/CaseStudyCard";
-
+// props come from portfolio page
 const CaseStudies = ({ studies }) => {
   return (
     <section className="case-wrapper" id="case-studies">

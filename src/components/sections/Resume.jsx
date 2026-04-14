@@ -24,7 +24,7 @@ const Resume = () => {
     return allSkills;
   };
   return (
-    <section className="resume-wrapper" id="resume">
+    <section className="resume-wrapper" id="resume-section">
       <a
         href="/UX_Engineer_Resume_JoannCarter.pdf"
         download
