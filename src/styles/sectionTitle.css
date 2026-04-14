@@ -1,5 +1,5 @@
 .section-title-bg {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
   background: linear-gradient(to bottom, rgba(255, 192, 220, 0.1) 10%, #ffffff);
   text-align: center;
   height: var(--section-title-height);
@@ -25,24 +25,35 @@
 
 .section-title-heading {
   font-size: 4rem;
-  color: var(--text);
+  color: var(--text-90);
   margin: 0;
 }
 
 .section-title-subtitle {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--text-80);
   margin: auto;
   text-align: center;
   max-width: 250px;
 }
 
 @media (max-width: 600px) {
+  .section-title-bg {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
   .section-title-content {
     gap: 1rem;
     text-align: center;
   }
   .section-title-text {
     text-align: center;
+  }
+  .section-title-heading {
+    font-size: 2.5rem;
+  }
+  .section-title-subtitle {
+    font-size: 0.75rem;
+    max-width: 150px;
   }
 }

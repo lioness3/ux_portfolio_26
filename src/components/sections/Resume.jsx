@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFileDownload } from "react-icons/fa";
 import { useState } from "react";
 import { skillsList } from "../../data/skillsList";
 import workIcon from "../../assets/icons/work.svg";
@@ -24,6 +25,15 @@ const Resume = () => {
   };
   return (
     <section className="resume-wrapper" id="resume">
+      <a
+        href="/UX_Engineer_Resume_JoannCarter.pdf"
+        download
+        className="resume-download-btn"
+        onClick={() => console.log("Resume downloaded")}
+      >
+        <FaFileDownload />
+        Download
+      </a>
       {/* Work History */}
       <div className="resume-section">
         <div className="resume-title-wrapper">
@@ -37,7 +47,7 @@ const Resume = () => {
             <span className="resume-date">(2025 – Present)</span>
           </h3>
           <p className="resume-job-type">Private Contract</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Contributes to AI model development by testing, writing, and
             comparing code across HTML, Python, React, and JavaScript. Provides
             feedback to refine AI output and improve model accuracy.
@@ -50,7 +60,7 @@ const Resume = () => {
             <span className="resume-date">(2020 – Present)</span>
           </h3>
           <p className="resume-job-type">Private Contract</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Builds and refines front‑end and back‑end code for responsive web
             and mobile experiences. Focuses on clean performance, strong
             security, and smooth interaction.
@@ -62,7 +72,7 @@ const Resume = () => {
             Full‑Stack Internship <span className="resume-date">(2020)</span>
           </h3>
           <p className="resume-job-type">Molica</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Worked on an Ionic app using TypeScript and React. Improved scroll
             functions in the app’s calendar and organized codebase into reusable
             parts.
@@ -82,7 +92,7 @@ const Resume = () => {
             <span className="resume-date">(2025 – Present)</span>
           </h3>
           <p className="resume-job-type">Google, Coursera</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Expands skills in UX research, prototyping, and ideation. Includes
             hands‑on experience with user interviews, wireframing, and usability
             testing.
@@ -94,7 +104,7 @@ const Resume = () => {
             B.S. in Computer Science <span className="resume-date">(2023)</span>
           </h3>
           <p className="resume-job-type">Southern New Hampshire University</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Earned a Bachelor of Science in Software Engineering with a 4.0 GPA.
             Coursework included full‑stack development, system architecture, and
             cybersecurity.
@@ -107,7 +117,7 @@ const Resume = () => {
             <span className="resume-date">(2020)</span>
           </h3>
           <p className="resume-job-type">Epicodus, Portland, OR</p>
-          <p classname="resume-job-description">
+          <p className="resume-job-description">
             Completed an intensive coding bootcamp with pair‑programming.
             Strengthened communication and teamwork skills.
           </p>

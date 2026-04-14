@@ -60,6 +60,8 @@ GLOBAL STYLE SHEET  */
 
   /* Border Radius for all cards and blocks */
   --borderRadius: 12px;
+  /* Border Radius for Buttons */
+  --btnBorderRadius: 20px;
 
   /* Space between dual blocks */
   --blockGap: 0.25rem;

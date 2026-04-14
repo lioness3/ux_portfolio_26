@@ -5,13 +5,11 @@ export default function Button({
   icon = null,
   onClick,
   btnText = "",
+  //pass primary = false to this compoennt with a link to use the secondary button
   primary = true,
   link = "",
 }) {
-  console.log("====================================");
-  console.log(btnText);
-  console.log("====================================");
-  // PRIMARY BUTTON (real button)
+  // PRIMARY BUTTON - for navigation (default)
   if (primary) {
     return (
       <button
@@ -25,7 +23,7 @@ export default function Button({
     );
   }
 
-  // SECONDARY BUTTON (opens Figma link)
+  // SECONDARY BUTTON - for links
   return (
     <a
       href={link}

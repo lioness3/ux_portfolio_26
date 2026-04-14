@@ -3,7 +3,7 @@
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--btnBorderRadius);
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
@@ -36,8 +36,8 @@
 .custom-secondary-button {
   background: white;
   color: var(--primary);
-  border: 3px solid var(--primary);
-  border-radius: 8px;
+  border: 1px solid var(--primary);
+  border-radius: var(--btnBorderRadius);
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
