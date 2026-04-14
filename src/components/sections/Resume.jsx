@@ -37,7 +37,11 @@ const Resume = () => {
       {/* Work History */}
       <div className="resume-section">
         <div className="resume-title-wrapper">
-          <img src={workIcon} alt="briefcase icon" />
+          <img
+            className="resume-title-icon"
+            src={workIcon}
+            alt="briefcase icon"
+          />
           <h2 className="resume-title">Work History</h2>
         </div>
 
@@ -71,7 +75,7 @@ const Resume = () => {
           <h3 className="resume-job-title">
             Full‑Stack Internship <span className="resume-date">(2020)</span>
           </h3>
-          <p className="resume-job-type">Molica</p>
+          <p className="resume-job-type">Moica</p>
           <p className="resume-job-description">
             Worked on an Ionic app using TypeScript and React. Improved scroll
             functions in the app’s calendar and organized codebase into reusable
@@ -83,7 +87,11 @@ const Resume = () => {
       {/* Education */}
       <div className="resume-section">
         <div className="resume-title-wrapper">
-          <img src={eduIcon} alt="education icon" />
+          <img
+            className="resume-title-icon"
+            src={eduIcon}
+            alt="education icon"
+          />
           <h2>Education</h2>
         </div>
         <div className="resume-item">
@@ -127,7 +135,11 @@ const Resume = () => {
       {/* Skills */}
       <div className="resume-section">
         <div className="resume-title-wrapper">
-          <img src={skillsIcon} alt="skillset icon" />
+          <img
+            className="resume-title-icon"
+            src={skillsIcon}
+            alt="skillset icon"
+          />
           <h2>Skills</h2>
         </div>
         {/* FILTER BUTTONS */}
@@ -153,6 +165,7 @@ const Resume = () => {
             All
           </button>
         </div>
+        <p className="filter-description">Filter the skills by category.</p>
         {/* FILTERED SKILLS */}
         <ul className="skills-list">
           {getFilteredSkills().map((skill, idx) => (

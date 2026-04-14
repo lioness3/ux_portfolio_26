@@ -45,7 +45,6 @@
 .theme-toggle {
   background: none;
   border: 1px solid var(--border-primary);
-  padding: 0.35rem 0.6rem;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;

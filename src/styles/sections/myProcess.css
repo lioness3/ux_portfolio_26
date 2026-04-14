@@ -2,16 +2,16 @@
 .process-section {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding-top: 3rem;
+  padding: 10rem 2rem;
   justify-content: center;
   margin: auto;
 }
 .process-wrapper {
   padding-bottom: var(--section-padding-bottom);
 }
+/* so the section lines up at the correct y- axis when clicking on link to section */
 #my-process {
-  scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
+  scroll-margin-top: var(--scroll-margin-top);
 }
 /* Zig-zag: even sections flip */
 .process-section:nth-child(even) {
@@ -19,11 +19,13 @@
 }
 /* Text column */
 .process-text-container {
-  max-width: 800px;
+  max-width: 700px;
   text-align: center;
+  color: var(--text-90);
 }
 .process-text {
-  padding: 2% 20%;
+  padding: 3rem;
+  color: var(--text-80);
 }
 
 /* Media column */
@@ -42,19 +44,15 @@
 .img-subtext {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-60);
   text-align: center;
 }
 .process-bold-word {
   font-weight: bold;
 }
 #process-github-link {
-  color: var(--accent);
+  color: var(--primary);
   cursor: pointer;
-}
-/* adds padding to the bottom of the entire my process section  */
-.process-section:last-child {
-  padding-bottom: 4rem;
 }
 
 /* ⭐ Mobile layout */
@@ -64,14 +62,10 @@
     flex-direction: column;
     text-align: center;
   }
-
-  .media img {
-    width: 80%;
-    max-width: 350px;
+  .process-text-container h2 {
+    margin-bottom: 0;
   }
-
-  .text {
-    max-width: 90%;
-    margin: 0 auto;
+  .process-text {
+    padding-top: 1rem;
   }
 }

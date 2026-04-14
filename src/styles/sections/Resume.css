@@ -7,6 +7,10 @@
   margin: 0 auto;
   padding-bottom: var(--section-padding-bottom);
 }
+/* so the section lines up at the correct y- axis when clicking on link to section */
+#resume {
+  scroll-margin-top: var(--scroll-margin-top);
+}
 .resume-download-btn {
   background: none;
   border: 1px solid var(--primary);
@@ -14,7 +18,7 @@
   padding: 0.5rem 1rem;
   max-width: 200px;
   display: flex;
-  margin-top: -rem;
+  margin-top: -2rem;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
@@ -57,7 +61,7 @@
 .skills-filter {
   display: flex;
   gap: 1rem;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .skills-filter button {
@@ -74,7 +78,17 @@
   background: var(--primary);
   color: white;
 }
-
+.skills-filter .active {
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--box-shadow-selected);
+}
+.filter-description {
+  color: var(--text-60);
+  font-style: italic;
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+}
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -93,5 +107,12 @@
 @media (max-width: 969px) {
   .resume-wrapper {
     padding: 3rem;
+  }
+  .resume-title-icon {
+    max-width: 35px;
+  }
+
+  .filter-description {
+    margin-top: 0.25rem;
   }
 }

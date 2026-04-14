@@ -14,7 +14,7 @@
 }
 /* Adjusts scroll position so linked sections land at the proper vertical offset */
 #case-studies {
-  scroll-margin-top: calc(var(--section-title-height) + var(--nav-height));
+  scroll-margin-top: calc(var(--scroll-margin-top) + 100px);
 }
 
 .case-study-card {

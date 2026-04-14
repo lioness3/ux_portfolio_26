@@ -12,7 +12,7 @@ export default function MyProcess() {
           <h2>User Research</h2>
           <p className="process-text">
             User research grounds my design decisions in real evidence rather
-            than assumptions or trends. By
+            than assumptions or trends. By{" "}
             <span className="process-bold-word">
               uncovering genuine user needs
             </span>
@@ -30,7 +30,7 @@ export default function MyProcess() {
           <h2>Low-Fidelity Prototypes</h2>
           <p className="process-text">
             I use Low‑fi prototypes to help me
-            <span className="process-bold-word"> explore ideas quickly</span>
+            <span className="process-bold-word"> explore ideas quickly </span>
             and stay focused on the core experience without getting distracted
             by visuals. This lets me test and adjust before anything becomes too
             precious to change.

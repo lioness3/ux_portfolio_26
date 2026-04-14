@@ -3,8 +3,6 @@
   background: linear-gradient(to bottom, rgba(255, 192, 220, 0.1) 10%, #ffffff);
   text-align: center;
   height: var(--section-title-height);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .section-title-content {
@@ -37,7 +35,7 @@
   max-width: 250px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 969px) {
   .section-title-bg {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -54,6 +52,5 @@
   }
   .section-title-subtitle {
     font-size: 0.75rem;
-    max-width: 150px;
   }
 }
