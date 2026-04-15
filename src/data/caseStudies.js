@@ -27,6 +27,7 @@ import inventoryImg from "../assets/images/inventory.png";
 import personaCampStore from "../assets/images/persona.png";
 import campstoreHeaderImg from "../assets/images/campstore/campstorePreview-doublescreen.png";
 
+// CAMPSTORE
 import campstoreWireframe1 from "../assets/images/campstore/campstore_wireframe1.png";
 import campstoreWireframe2 from "../assets/images/campstore/campstore_wireframe2.png";
 import campstoreWireframe3 from "../assets/images/campstore/campstore_wireframe3.png";
@@ -37,6 +38,16 @@ import campstoredesign2 from "../assets/images/campstore/campstore_designsystem2
 import campstorelofi from "../assets/images/campstore/campstore_lofi_prototype.png";
 import campstorefinalDesign1 from "../assets/images/campstore/campstore_finalDesign1.png";
 import campstorefinalDesign2 from "../assets/images/campstore/campstore_finalDesign2.png";
+
+// OHC
+import OHC_final1 from "../assets/images/OHC/OHC_final1.png";
+import OHC_final2 from "../assets/images/OHC/OHC_Final2.png";
+
+// DINE OR DITCH
+import DineConstructionImg from "../assets/images/DineOrDitch/DineOrDitch_construction.png";
+
+//THERMOSTAT
+import thermostatDiagram from "../assets/images/thermostat/thermostat_diagram.png";
 
 export const caseStudies = [
   {
@@ -260,79 +271,174 @@ export const caseStudies = [
   {
     // OHC - FULL STACK
     mainImage: OHCImg,
+
+    caseStudyHeaderImage: OHCImg,
     bgColor: "#A2C9C9",
     title: "Ocean Harbor Condominium",
-    description: "Full Stack Development.",
+    type: "Full Stack Development Case Study",
+    description: "Full Stack Development",
+    summary:
+      "This website serves a condominium association in Florida. It features a public section with information for those interested in visiting Ocean Harbor, and a private residents-only portal for community interaction and exclusive resources.",
+    catchPhrase: "Explore. Connect. Belong.",
+    timeline: "1 year",
+    tools: "JavaScript, Wix",
+    palette: [
+      "rgba(24, 193, 192, 0.1)", //cyan blue
+      "rgba(68, 87, 109, 0.2)", //navy
+      "rgba(217, 217, 217, 0.2)", //light grey
+      "rgba(255, 255, 255, 0.1)", //white
+    ],
 
     categories: {
-      myRole: { headline: "", description: "" },
-      problem: {
-        headline: "",
-        description: "",
+      myRole: {
+        type: "text",
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Lead Developer & Designer",
+        description:
+          "I thoroughly reviewed the old site, noting areas for improvement, and created several wireframes. I worked closely with the client, discussing different use cases to decide on the functionality that best suited their needs. I then redesigned and published a brand-new website using Wix, incorporating custom JavaScript to dynamically show or hide information based on user interactions.",
       },
-      goal: {
-        headline: "",
-        description: "",
+      finalDesign: {
+        type: "final design",
+        title: "Final Design",
+        icon: finalDesignIcon,
+        buttonText: "Final Prototype",
+        link: "",
+        buttonDescription: "",
+        images: [OHC_final1, OHC_final2],
       },
-      userResearch: "",
-      persona: "",
-      wireframes: "",
-      designSystem: "",
-      finalDesign: "",
-      takeaways: "",
-      nextSteps: "",
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Strong Communication Builds Stronger Prototypes",
+        description:
+          "Looking back, I would collaborate closely with the client to obtain all required content before commencing the layout design process. And, I would create detailed mockups that incorporate interactive elements to provide a realistic user experience.",
+      },
+      nextSteps: {
+        type: "block",
+        title: "Next Steps",
+        icon: nextStepsIcon,
+        items: [
+          {
+            title: "Content Alignment",
+            description:
+              "Collaborate with the association to gather complete, up‑to‑date content before redesigning key pages, ensuring accuracy and reducing revision cycles.",
+          },
+          {
+            title: "Resident Portal Testing",
+            description:
+              "Conduct usability testing with actual residents to validate navigation, account access, and community‑specific features across devices.",
+          },
+          {
+            title: "Admin Workflow Improvements",
+            description:
+              "Work with board members to streamline how announcements, documents, and updates are posted, improving long‑term maintainability.",
+          },
+        ],
+      },
     },
   },
   {
+    // DINE OR DITCH - FULL STACK
     mainImage: dineOrDitchImg,
+
+    caseStudyHeaderImage: DineConstructionImg,
     bgColor: "#FFDFB1",
     title: "Dine or Ditch",
-    description: "Full Stack Development.",
+    type: "Full Stack Development Case Study",
+    description: "Full Stack Development",
+    summary:
+      "Dine or Ditch is a mobile application designed to assist users in choosing dining options based on their preferences, location, and current mood. The app provides a curated list of restaurant recommendations, helping users quickly decide where to eat with minimal hassle.",
+    catchPhrase: "Your Next Meal, Simplified.",
+    timeline: "1 year",
+    tools: "JavaScript, React Native",
+    palette: [
+      "rgba(0, 168, 0, 0.1)", //green
+      "rgba(210, 0, 0, 0.2)", //red
+      "rgba(166, 166, 166, 0.2)", //light grey
+      "rgba(0, 0, 0, 0.1)", //black
+    ],
 
     categories: {
-      myRole: { headline: "", description: "" },
-      problem: {
-        headline: "",
-        description: "",
+      myRole: {
+        type: "text",
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Lead Developer & Designer",
+        description:
+          "I have developed the backend, implementing RESTful APIs to manage data flow and securely access restaurant listings. As the full-stack developer, I was responsible for ensuring all components integrated smoothly. Throughout the process, I conducted extensive testing and prototyping, including unit, integration, and end-to-end testing, to ensure the app’s reliability and quality at every stage. The UX for this App is currently under construction.",
       },
-      goal: {
-        headline: "",
-        description: "",
+
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Better UX, Better Code, Better App.",
+        description:
+          "I should have started with the UX of this app first. Once that is completed, I will need to redo the front end logic and possibly the back end to make sure the app is coded securely.",
       },
-      userResearch: "",
-      persona: "",
-      wireframes: "",
-      designSystem: "",
-      finalDesign: "",
-      takeaways: "",
-      nextSteps: "",
+      nextSteps: {
+        type: "block",
+        title: "Next Steps",
+        icon: nextStepsIcon,
+        items: [
+          {
+            title: "UX Redesign",
+            description:
+              "Complete the full UX design to establish clear user flows, mood‑based decision paths, and a cohesive visual direction before rebuilding the interface.",
+          },
+          {
+            title: "Frontend Refactor",
+            description:
+              "Rebuild the frontend logic to align with the finalized UX, improving component structure, state management, and overall performance.",
+          },
+          {
+            title: "Backend Hardening",
+            description:
+              "Review and update backend endpoints to ensure secure data handling, improved validation, and scalable architecture as new features are introduced.",
+          },
+        ],
+      },
     },
   },
   {
+    // THERMOSTAT EMBEDDED SYSTEMS
     mainImage: thermostatImg,
+
+    caseStudyHeaderImage: thermostatDiagram,
     bgColor: "#E7E7E7",
     title: "Thermostat",
-    description: "Embedded Systems.",
+    type: "Embedded Systems Case Study",
+    description: "Embedded Systems",
+    summary:
+      "This project leverages a TI microcontroller to implement a basic thermostat system. The thermostat utilizes a set of buttons to adjust the desired temperature. A temperature sensor continuously monitors the ambient temperature, and an LED is controlled to simulate heating or cooling based on the set point and current temperature.",
+    catchPhrase: "Your Next Meal, Simplified.",
+    timeline: "1 week",
+    tools: "C",
+    palette: [],
 
     categories: {
-      myRole: { headline: "", description: "" },
-      problem: {
-        headline: "",
-        description: "",
+      myRole: {
+        type: "text",
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Engineering a Microcontroller System",
+        description:
+          "In this project, I successfully integrated multiple peripherals, including buttons, LEDs, temperature sensors, and timers, with the microcontroller. I developed firmware to read sensor data, process user input, and control the LED output based on temperature comparisons. Additionally, I implemented clear and concise code with comprehensive comments to enhance readability and maintainability.",
       },
-      goal: {
-        headline: "",
-        description: "",
+
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Refining the System Ahead.",
+        description:
+          "While this project provides a strong foundation in microcontroller programming, there are opportunities for improvement. The code could benefit from refactoring to enhance efficiency and readability. Implementing robust error handling mechanisms would increase the system's reliability. Exploring additional features like calibration, hysteresis, or remote control could further expand the functionality of the thermostat. Finally, a more user-friendly interface, such as an LCD display or a mobile app, could enhance the user experience.",
       },
-      userResearch: "",
-      persona: "",
-      wireframes: "",
-      designSystem: "",
-      finalDesign: "",
-      takeaways: "",
-      nextSteps: "",
     },
   },
+
   {
     mainImage: SOSImg,
     bgColor: "#D6ABA5",
