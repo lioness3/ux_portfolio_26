@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import Button from "../components/Button";
 import InfoCard from "../components/cards/InfoCard";
 import CaseStudySideMenu from "../components/navigation/CaseStudySideMenu";
 import CaseStudyContentsMenu from "../components/navigation/CaseStudyContentsMenu";
@@ -21,12 +23,12 @@ function CaseStudyDetail({ studies }) {
   const tools = study.tools;
   const catchPhrase = study.catchPhrase;
   const summary = study.summary;
+  const sourceCode = study.sourceCode;
 
   return (
     <div className="case-study-detail-layout">
       {/* LEFT SIDE MENU */}
       <CaseStudySideMenu categories={categories} />
-
       {/* RIGHT CONTENT */}
       <div className="case-study-right-col">
         {/* header */}
@@ -49,6 +51,15 @@ function CaseStudyDetail({ studies }) {
           </div>
           {/* bottom details in header */}
           <div className="case-study-header-bottom">
+            {sourceCode && (
+              <Button
+                classN="sourcecode_btn"
+                icon={<FaGithub />}
+                btnText="View the Source Code"
+                primary={false}
+                link={sourceCode}
+              />
+            )}
             <span>Role: </span>
             {role}
             <span> | </span>

@@ -35,7 +35,7 @@ function Navbar() {
           My Process
         </Link>
         <Link to="/" state={{ scrollTo: "resume-section" }}>
-          <a href="#resume">Resume</a>
+          Resume
         </Link>
         <Link to="/" state={{ scrollTo: "about-me" }}>
           About Me

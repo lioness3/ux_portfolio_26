@@ -64,3 +64,8 @@
   margin-right: auto;
   font-weight: bold;
 }
+
+/* SOURCE CODE BUTTON IN CASE STUDY DETAILS HEADER */
+.sourcecode_btn {
+  margin: 1rem 0 1rem 0;
+}

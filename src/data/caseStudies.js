@@ -49,6 +49,8 @@ import DineConstructionImg from "../assets/images/DineOrDitch/DineOrDitch_constr
 //THERMOSTAT
 import thermostatDiagram from "../assets/images/thermostat/thermostat_diagram.png";
 
+//SOS- MORSE CODE
+import morseDiagram from "../assets/images/sos/MORSECODE_Diagram.png";
 export const caseStudies = [
   {
     // CAMPSTORE - UX DESIGN
@@ -405,29 +407,38 @@ export const caseStudies = [
   {
     // THERMOSTAT EMBEDDED SYSTEMS
     mainImage: thermostatImg,
-
-    caseStudyHeaderImage: thermostatDiagram,
+    caseStudyHeaderImage: thermostatImg,
     bgColor: "#E7E7E7",
     title: "Thermostat",
     type: "Embedded Systems Case Study",
     description: "Embedded Systems",
     summary:
       "This project leverages a TI microcontroller to implement a basic thermostat system. The thermostat utilizes a set of buttons to adjust the desired temperature. A temperature sensor continuously monitors the ambient temperature, and an LED is controlled to simulate heating or cooling based on the set point and current temperature.",
-    catchPhrase: "Your Next Meal, Simplified.",
+    catchPhrase: "Multi‑Peripheral Design.",
+    sourceCode: "https://github.com/lioness3/EmbeddedSystems",
     timeline: "1 week",
-    tools: "C",
+    tools: "C, Lucidchart",
     palette: [],
 
     categories: {
       myRole: {
         type: "text",
+
         title: "My Role",
         icon: roleIcon,
         headline: "Engineering a Microcontroller System",
         description:
           "In this project, I successfully integrated multiple peripherals, including buttons, LEDs, temperature sensors, and timers, with the microcontroller. I developed firmware to read sensor data, process user input, and control the LED output based on temperature comparisons. Additionally, I implemented clear and concise code with comprehensive comments to enhance readability and maintainability.",
       },
-
+      wireframes: {
+        type: "image",
+        title: "Wireframes",
+        icon: wireframesIcon,
+        images: [thermostatDiagram],
+        imagesIntro:
+          "The thermostat is adjusted using an up and down button to change the set point for the desired temperature. Then, the temperature sensor is read from the board and an LED light is either turned on or off depending on the current state of the program. If the set point is lower than the room temperature, the light is turned off. If the set point is higher, the light is ON to replicate a heater.",
+        imageDescriptions: ["Lucidchart was used to create this diagram."],
+      },
       takeaways: {
         type: "text",
         title: "Takeaways",
@@ -438,32 +449,52 @@ export const caseStudies = [
       },
     },
   },
-
   {
+    // SOS- MORSE CODE EMBEDDED SYSTEMS
     mainImage: SOSImg,
+    caseStudyHeaderImage: SOSImg,
     bgColor: "#D6ABA5",
     title: "SOS",
-    description: "Embedded Systems.",
+    type: "Embedded Systems Case Study",
+    description: "Embedded Systems",
+    summary:
+      "This project demonstrates the application of state machines and GPIO pins to create a Morse code SOS signal. The device cycles through the SOS pattern using two LEDs until a user-initiated button press triggers a different LED sequence to signal an 'OK' message.",
+    catchPhrase: "From SOS to OK, All in Code.",
+    sourceCode: "https://github.com/lioness3/EmbeddedSystems",
+    timeline: "1 week",
+    tools: "C, Lucidchart, TI LaunchPad",
+    palette: [],
 
     categories: {
-      myRole: { headline: "", description: "" },
-      problem: {
-        headline: "",
-        description: "",
+      myRole: {
+        type: "text",
+
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Coding Clear Signals With Simple Hardware",
+        description:
+          "In this project, I successfully implemented a state machine in C to control the LED sequences and button input. I also configured and utilized GPIO pins to interface with the LEDs and button. Additionally, I thoroughly documented the code, making it easy to understand and modify.",
       },
-      goal: {
-        headline: "",
-        description: "",
+      wireframes: {
+        type: "image",
+        title: "Wireframes",
+        icon: wireframesIcon,
+        images: [morseDiagram],
+        imagesIntro:
+          "The diagram illustrates how the system transitions between SOS flashing, a pause state, and an OK signal depending on button presses.",
+        imageDescriptions: ["Lucidchart was used to create this diagram."],
       },
-      userResearch: "",
-      persona: "",
-      wireframes: "",
-      designSystem: "",
-      finalDesign: "",
-      takeaways: "",
-      nextSteps: "",
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Refining the System Ahead.",
+        description:
+          "While this project successfully demonstrates state‑machine logic and GPIO control, there is still room for refinement. Improving the code’s modularity and readability through refactoring would strengthen its structure, and adding error‑handling would make the system more robust. Future enhancements such as, customizable Morse sequences, wireless features, or expanded user interaction could further elevate the project. Overall, this work sharpened my ability to navigate the TI manual and reinforced skills I can confidently carry into more advanced embedded projects.",
+      },
     },
   },
+  // ....................
   {
     mainImage: inventoryImg,
     bgColor: "#AFA39C",

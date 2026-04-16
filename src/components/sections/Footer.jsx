@@ -34,7 +34,11 @@ const Footer = () => (
         >
           <FaLinkedin />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/lioness3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
         <a href="https://behance.net" target="_blank" rel="noopener noreferrer">
