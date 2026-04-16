@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import Button from "../components/Button";
+import Tooltip from "../components/Tooltip";
 import InfoCard from "../components/cards/InfoCard";
 import CaseStudySideMenu from "../components/navigation/CaseStudySideMenu";
 import CaseStudyContentsMenu from "../components/navigation/CaseStudyContentsMenu";
@@ -33,6 +34,7 @@ function CaseStudyDetail({ studies }) {
       {/* RIGHT CONTENT */}
       <div className="case-study-right-col">
         {/* header */}
+
         <div className="case-study-header">
           {/* left column in header */}
           <div className="case-study-header-col1">
@@ -43,7 +45,16 @@ function CaseStudyDetail({ studies }) {
                 className="header-toggle-btn"
                 onClick={() => setHeaderOpen((prev) => !prev)}
               >
-                {headerOpen ? "▲" : "▼"}
+                {/* uses tooltip to instruct user to hide or show the extra header details */}
+                {headerOpen ? (
+                  <Tooltip label="See Less" position="right">
+                    ▲
+                  </Tooltip>
+                ) : (
+                  <Tooltip label="See More" position="right">
+                    ▼
+                  </Tooltip>
+                )}
               </button>
             </div>
 
