@@ -51,6 +51,12 @@ import thermostatDiagram from "../assets/images/thermostat/thermostat_diagram.pn
 
 //SOS- MORSE CODE
 import morseDiagram from "../assets/images/sos/MORSECODE_Diagram.png";
+
+// INVENTORY MANAGEMENT
+import inventoryHeaderImg from "../assets/images/inventory-bar/inventoryHeader.png";
+import inventory_final1 from "../assets/images/inventory-bar/inventory_final1.png";
+import inventory_final2 from "../assets/images/inventory-bar/inventory_final2.png";
+
 export const caseStudies = [
   {
     // CAMPSTORE - UX DESIGN
@@ -459,7 +465,7 @@ export const caseStudies = [
     description: "Embedded Systems",
     summary:
       "This project demonstrates the application of state machines and GPIO pins to create a Morse code SOS signal. The device cycles through the SOS pattern using two LEDs until a user-initiated button press triggers a different LED sequence to signal an 'OK' message.",
-    catchPhrase: "From SOS to OK, All in Code.",
+    catchPhrase: "From 'SOS' to 'OK', Done in Code.",
     sourceCode: "https://github.com/lioness3/EmbeddedSystems",
     timeline: "1 week",
     tools: "C, Lucidchart, TI LaunchPad",
@@ -494,30 +500,76 @@ export const caseStudies = [
       },
     },
   },
-  // ....................
   {
+    // INVENTORY - FULL STACK
     mainImage: inventoryImg,
+    caseStudyHeaderImage: inventoryHeaderImg,
     bgColor: "#AFA39C",
     title: "Inventory",
-    description: "Full Stack Development.",
+    type: "Full Stack Development Case Study",
+    description: "Full Stack Development",
+    summary:
+      "Bar Inventory is a mock website created for a fictional bar company called 'Glass'. This site serves as a basic inventory management tool, allowing users to add beer kegs to the system and display them on the main screen.",
+    catchPhrase: "Track Kegs. Stay Stocked.",
+    timeline: "1 day",
+    tools: "JavaScript, HTML, CSS, REACT",
+    palette: [
+      "rgba(149, 172, 172, 0.1)", //slate grey
+      "rgba(56, 24, 18, 0.1)", //brown
+      "rgba(238, 0, 0, 0.1)", //red
+      "rgba(0, 0, 0, 0.1)", //black
+    ],
 
     categories: {
-      myRole: { headline: "", description: "" },
-      problem: {
-        headline: "",
-        description: "",
+      myRole: {
+        type: "text",
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Lead Developer",
+        description:
+          "As the sole developer on this project, I was responsible for designing and implementing the entire application from start to finish. This included setting up a solid React structure to ensure a scalable, maintainable codebase and applying UI design principles to create an intuitive user experience. The project served as a code review challenge, where I demonstrated my foundational knowledge in React components, state management, and component-based architecture. I also focused on creating a cohesive visual design, carefully considering layout, styling, and interaction to align with the needs of a simple inventory management system.",
       },
-      goal: {
-        headline: "",
-        description: "",
+      finalDesign: {
+        type: "final design",
+        title: "Final Design",
+        icon: finalDesignIcon,
+        buttonText: "Final Prototype",
+        link: "",
+        buttonDescription: "",
+        images: [inventory_final1, inventory_final2],
       },
-      userResearch: "",
-      persona: "",
-      wireframes: "",
-      designSystem: "",
-      finalDesign: "",
-      takeaways: "",
-      nextSteps: "",
+
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Refining the Process for Better UI.",
+        description:
+          "Reflecting on this project, I would invest more time in the design phase, starting with detailed mockups and a well-defined color palette, rather than choosing colors directly from the site to use in my demo. Additionally, I would create sample data to improve the visual consistency and usability of the interface.",
+      },
+
+      nextSteps: {
+        type: "block",
+        title: "Next Steps",
+        icon: nextStepsIcon,
+        items: [
+          {
+            title: "Expand Inventory Features",
+            description:
+              "Add support for editing, removing, and updating keg entries to create a more complete inventory workflow.",
+          },
+          {
+            title: "Improve Data Structure",
+            description:
+              "Refactor how items are stored to support future scalability, such as categories, quantities, and keg status tracking.",
+          },
+          {
+            title: "Enhance UI Consistency",
+            description:
+              "Introduce a defined color palette, typography system, and sample data to create a more polished and realistic interface.",
+          },
+        ],
+      },
     },
   },
 ];
