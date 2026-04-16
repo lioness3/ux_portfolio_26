@@ -11,6 +11,7 @@ function CaseStudyDetail({ studies }) {
   const { id } = useParams();
   const study = studies.find((s, idx) => String(idx) === id);
   const [contentsOpen, setContentsOpen] = useState(false);
+  const [headerOpen, setHeaderOpen] = useState(true);
   if (!study) return <div>Case study not found.</div>;
 
   const categories = study.categories;
@@ -35,40 +36,57 @@ function CaseStudyDetail({ studies }) {
         <div className="case-study-header">
           {/* left column in header */}
           <div className="case-study-header-col1">
-            <h1 className="case-study-header-title">{study.title}</h1>
+            {/* HIDES AND SHOWS THE HEADER DETAILS */}
+            <div className="header-title-row">
+              <h1 className="case-study-header-title">{study.title}</h1>
+              <button
+                className="header-toggle-btn"
+                onClick={() => setHeaderOpen((prev) => !prev)}
+              >
+                {headerOpen ? "▲" : "▼"}
+              </button>
+            </div>
 
             <span className="case-study-header-type">{study.type}</span>
-            <h2 className="case-study-header-catchPhrase">{catchPhrase}</h2>
-            <p className="case-study-header-summary">{summary}</p>
+            {headerOpen && (
+              <>
+                <h2 className="case-study-header-catchPhrase">{catchPhrase}</h2>
+                <p className="case-study-header-summary">{summary}</p>
+              </>
+            )}
           </div>
           {/* right content in header- image */}
-          <div className="case-study-header-col2">
-            <img
-              src={study.caseStudyHeaderImage}
-              alt={study.title}
-              className="case-study-header-image"
-            />
-          </div>
-          {/* bottom details in header */}
-          <div className="case-study-header-bottom">
-            {sourceCode && (
-              <Button
-                classN="sourcecode_btn"
-                icon={<FaGithub />}
-                btnText="View the Source Code"
-                primary={false}
-                link={sourceCode}
+          {headerOpen && (
+            <div className="case-study-header-col2">
+              <img
+                src={study.caseStudyHeaderImage}
+                alt={study.title}
+                className="case-study-header-image"
               />
-            )}
-            <span>Role: </span>
-            {role}
-            <span> | </span>
-            <span>Timeline: </span>
-            {timeline}
-            <span> | </span>
-            <span>Tools: </span>
-            {tools}
-          </div>
+            </div>
+          )}
+          {/* bottom details in header */}
+          {headerOpen && (
+            <div className="case-study-header-bottom">
+              {sourceCode && (
+                <Button
+                  classN="sourcecode_btn"
+                  icon={<FaGithub />}
+                  btnText="View the Source Code"
+                  primary={false}
+                  link={sourceCode}
+                />
+              )}
+              <span>Role: </span>
+              {role}
+              <span> | </span>
+              <span>Timeline: </span>
+              {timeline}
+              <span> | </span>
+              <span>Tools: </span>
+              {tools}
+            </div>
+          )}
           {/* Mobile-only Contents button */}
           <button
             className="contents-btn"

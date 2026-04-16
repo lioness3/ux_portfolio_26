@@ -554,6 +554,11 @@ export const caseStudies = [
         icon: nextStepsIcon,
         items: [
           {
+            title: "Enhance UI Consistency",
+            description:
+              "Introduce a defined color palette, typography system, and sample data to create a more polished and realistic interface.",
+          },
+          {
             title: "Expand Inventory Features",
             description:
               "Add support for editing, removing, and updating keg entries to create a more complete inventory workflow.",
@@ -562,11 +567,6 @@ export const caseStudies = [
             title: "Improve Data Structure",
             description:
               "Refactor how items are stored to support future scalability, such as categories, quantities, and keg status tracking.",
-          },
-          {
-            title: "Enhance UI Consistency",
-            description:
-              "Introduce a defined color palette, typography system, and sample data to create a more polished and realistic interface.",
           },
         ],
       },

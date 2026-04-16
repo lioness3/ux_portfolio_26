@@ -33,6 +33,21 @@
   padding: 2rem 0.25rem;
   border-bottom: 2px solid var(--border-secondary);
 }
+/* HIDES AND SHOWS THE HEADER DETAILS */
+
+.header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
 .case-study-header-col1 {
   grid-area: col1;
   padding-left: 1rem;
@@ -98,6 +113,7 @@
 .side-menu-list {
   list-style: none;
   padding: 1rem;
+  gap: 1rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -105,10 +121,6 @@
   overflow-y: auto;
   min-height: 0;
   border-bottom: 1px solid var(--border-secondary);
-}
-
-.side-menu-item {
-  flex: 1;
 }
 
 .side-menu-link {
