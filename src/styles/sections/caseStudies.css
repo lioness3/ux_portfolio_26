@@ -69,6 +69,35 @@
   color: var(--text-70);
   margin: 0;
 }
+.featured-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+.featured-star {
+  max-width: 30px;
+  opacity: 1;
+  animation: twinkle 1.8s infinite ease-in-out;
+  transform-origin: center;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.9) rotate(0deg);
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(10deg);
+    filter: brightness(1.4);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9) rotate(0deg);
+    filter: brightness(1);
+  }
+}
 
 @media (max-width: 969px) {
   .case-studies-list {

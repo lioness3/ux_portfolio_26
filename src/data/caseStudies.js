@@ -62,6 +62,7 @@ export const caseStudies = [
     // CAMPSTORE - UX DESIGN
     mainImage: campstoreImg,
     caseStudyHeaderImage: campstoreHeaderImg,
+    featured: true,
     bgColor: "#8DA293",
     title: "Camp Store App",
     type: "UX Case Study",
@@ -281,6 +282,7 @@ export const caseStudies = [
     mainImage: OHCImg,
 
     caseStudyHeaderImage: OHCImg,
+    featured: false,
     bgColor: "#A2C9C9",
     title: "Ocean Harbor Condominium",
     type: "Full Stack Development Case Study",
@@ -352,6 +354,7 @@ export const caseStudies = [
     mainImage: dineOrDitchImg,
 
     caseStudyHeaderImage: DineConstructionImg,
+    featured: false,
     bgColor: "#FFDFB1",
     title: "Dine or Ditch",
     type: "Full Stack Development Case Study",
@@ -414,6 +417,7 @@ export const caseStudies = [
     // THERMOSTAT EMBEDDED SYSTEMS
     mainImage: thermostatImg,
     caseStudyHeaderImage: thermostatImg,
+    featured: false,
     bgColor: "#E7E7E7",
     title: "Thermostat",
     type: "Embedded Systems Case Study",
@@ -459,6 +463,7 @@ export const caseStudies = [
     // SOS- MORSE CODE EMBEDDED SYSTEMS
     mainImage: SOSImg,
     caseStudyHeaderImage: SOSImg,
+    featured: false,
     bgColor: "#D6ABA5",
     title: "SOS",
     type: "Embedded Systems Case Study",
@@ -504,6 +509,7 @@ export const caseStudies = [
     // INVENTORY - FULL STACK
     mainImage: inventoryImg,
     caseStudyHeaderImage: inventoryHeaderImg,
+    featured: false,
     bgColor: "#AFA39C",
     title: "Inventory",
     type: "Full Stack Development Case Study",
