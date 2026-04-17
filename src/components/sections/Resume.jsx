@@ -27,6 +27,7 @@ const Resume = () => {
     <section className="resume-wrapper" id="resume-section">
       <a
         href="/UX_Engineer_Resume_JoannCarter.pdf"
+        type="application/pdf"
         download
         className="resume-download-btn"
         onClick={() => console.log("Resume downloaded")}
