@@ -13,7 +13,6 @@ function CaseStudyDetail({ studies }) {
   const study = studies.find((s, idx) => String(idx) === id);
   const [contentsOpen, setContentsOpen] = useState(false);
   const [headerOpen, setHeaderOpen] = useState(true);
-  if (!study) return <div>Case study not found.</div>;
 
   const categories = study.categories;
   const caseStudyInfo = Object.entries(categories);
@@ -26,6 +25,9 @@ function CaseStudyDetail({ studies }) {
   const catchPhrase = study.catchPhrase;
   const summary = study.summary;
   const sourceCode = study.sourceCode;
+
+  // Error handling for lost case study data
+  if (!study) return <div>Case study not found.</div>;
 
   return (
     <div className="case-study-detail-layout">
@@ -60,10 +62,10 @@ function CaseStudyDetail({ studies }) {
 
             <span className="case-study-header-type">{study.type}</span>
             {headerOpen && (
-              <>
+              <div>
                 <h2 className="case-study-header-catchPhrase">{catchPhrase}</h2>
                 <p className="case-study-header-summary">{summary}</p>
-              </>
+              </div>
             )}
           </div>
           {/* right content in header- image */}

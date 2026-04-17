@@ -44,10 +44,13 @@
 .header-toggle-btn {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   padding: 0;
+  color: var(--primary);
+  opacity: 0.8;
 }
+
 .case-study-header-col1 {
   grid-area: col1;
   padding-left: 1rem;
