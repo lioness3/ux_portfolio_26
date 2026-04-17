@@ -157,7 +157,24 @@
 .side-menu-text {
   line-height: 1;
 }
+/* used to highlight the side menu item as the user scrolls */
+.side-menu-item.active {
+  background: rgba(0, 0, 0, 0.06);
+  border-left: 3px solid var(--accent);
+  font-weight: 600;
+  color: var(--accent);
+}
 
+.side-menu-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
 @media (max-width: 969px) {
   .case-study-detail-layout {
     display: flex; /* stack everything */

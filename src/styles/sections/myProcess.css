@@ -26,6 +26,7 @@
 .process-text {
   padding: 3rem;
   color: var(--text-80);
+  font-size: 1.25rem;
 }
 
 /* Media column */

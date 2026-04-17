@@ -28,7 +28,7 @@ const Footer = () => (
       <div className="footer-updated">Last Updated: March 2026</div>
       <div className="footer-socials">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/joann-carter/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,7 +41,11 @@ const Footer = () => (
         >
           <FaGithub />
         </a>
-        <a href="https://behance.net" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.behance.net/Carter-Joann"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaBehance />
         </a>
       </div>

@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row;
   /* used to place the card in the users view when the menu item on the left is clicked  */
-  scroll-margin-top: 50vh;
+  scroll-margin-top: var(--dynamic-header-height);
 }
 /* seperates the last card from the bottom of the screen */
 .info-card:last-child {
