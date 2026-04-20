@@ -71,6 +71,9 @@ GLOBAL STYLE SHEET  */
   --scroll-margin-top: calc(
     var(--section-title-height) + var(--nav-height) + 40px
   );
+
+  /* Scroll margin for case study cards */
+  --case-study-scroll-margin-top: 120px;
 }
 
 /* Dark theme overrides */

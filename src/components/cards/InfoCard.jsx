@@ -6,6 +6,8 @@ import ImageCard from "./ImageCard";
 import PrototypeCard from "./PrototypeCard";
 import UsabilityCard from "./UsabilityCard";
 import FinalDesignCard from "./FinalDesignCard";
+import Button from "../Button";
+import { FaGithub } from "react-icons/fa";
 
 // Gets the data to display from the case studies data
 // determines what card to display through the type key in the categories part of the data
@@ -97,6 +99,34 @@ export default function InfoCard({ id, category, colorPalette }) {
               link={category.link}
               buttonDescription={category.buttonDescription}
             />
+          </div>
+        )}
+        {/* Display for OVERVIEW Card */}
+        {category.type === "overview" && (
+          <div>
+            <h4 className="info-card-headline">{category.catchPhrase}</h4>
+            <p className="info-card-description">{category.summary}</p>
+            <img
+              src={category.image}
+              alt={category.title}
+              className="info-card-image"
+            />
+            <div className="overview-details">
+              <span>Role: {category.role}</span>
+              <span> | </span>
+              <span>Timeline: {category.timeline}</span>
+              <span> | </span>
+              <span>Tools: {category.tools}</span>
+            </div>
+            {category.sourceCode && (
+              <Button
+                classN="sourcecode_btn"
+                icon={<FaGithub />}
+                btnText="View the Source Code"
+                primary={false}
+                link={category.sourceCode}
+              />
+            )}
           </div>
         )}
       </div>

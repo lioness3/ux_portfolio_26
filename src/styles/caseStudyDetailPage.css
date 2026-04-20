@@ -17,6 +17,28 @@
     "content";
   min-height: 0; /* CRITICAL for scroll */
 }
+/* Simple Header */
+.case-study-simple-header {
+  position: sticky;
+  top: var(--nav-height);
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--border-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.simple-header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-90);
+  margin: 0;
+}
+.simple-header-type {
+  font-size: 1rem;
+  color: var(--text-70);
+}
 /* right sticker header */
 .case-study-header {
   color: var(--text-80);
@@ -32,6 +54,10 @@
     "bottom bottom";
   padding: 2rem 0.25rem;
   border-bottom: 2px solid var(--border-secondary);
+  transition:
+    height 0.3s ease,
+    opacity 0.3s ease;
+  overflow: hidden;
 }
 /* HIDES AND SHOWS THE HEADER DETAILS */
 
@@ -50,7 +76,11 @@
   color: var(--primary);
   opacity: 0.8;
 }
-
+.case-study-header.collapsed {
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+}
 .case-study-header-col1 {
   grid-area: col1;
   padding-left: 1rem;
@@ -179,7 +209,7 @@
   .case-study-detail-layout {
     display: flex; /* stack everything */
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
   }
   .case-study-header {
     padding: 0.5rem;
