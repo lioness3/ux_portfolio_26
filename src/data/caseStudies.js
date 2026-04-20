@@ -16,46 +16,54 @@ import finalDesignIcon from "../assets/icons/FinalDesign.svg";
 import userFeedbackIcon from "../assets/icons/Feedback.svg";
 import takeawaysIcon from "../assets/icons/Takeaways.svg";
 import nextStepsIcon from "../assets/icons/NextSteps.svg";
+import bookIcon from "../assets/icons/Book.svg";
+import laptopIcon from "../assets/icons/laptopIcon.svg";
+import featuresIcon from "../assets/icons/features.svg";
+import developmentIcon from "../assets/icons/development.svg";
 
 //images
-import campstoreImg from "../assets/images/campstore/campstore.png";
-import OHCImg from "../assets/images/oceanharbor.png";
-import dineOrDitchImg from "../assets/images/dineorditch.png";
-import thermostatImg from "../assets/images/thermostat.png";
-import SOSImg from "../assets/images/SOS.png";
-import inventoryImg from "../assets/images/inventory.png";
-import personaCampStore from "../assets/images/persona.png";
-import campstoreHeaderImg from "../assets/images/campstore/campstorePreview-doublescreen.png";
 
 // CAMPSTORE
+import campstoreHeaderImg from "../assets/images/campstore/campstorePreview-doublescreen.png";
+import campstoreImg from "../assets/images/campstore/campstore.png";
 import campstoreWireframe1 from "../assets/images/campstore/campstore_wireframe1.png";
 import campstoreWireframe2 from "../assets/images/campstore/campstore_wireframe2.png";
 import campstoreWireframe3 from "../assets/images/campstore/campstore_wireframe3.png";
 import campstoreWireframe4 from "../assets/images/campstore/campstore_wireframe4.png";
 import campstoredesign1 from "../assets/images/campstore/campstore_designsystem1.png";
 import campstoredesign2 from "../assets/images/campstore/campstore_designsystem2.png";
-
+import personaCampStore from "../assets/images/persona.png";
 import campstorelofi from "../assets/images/campstore/campstore_lofi_prototype.png";
 import campstorefinalDesign1 from "../assets/images/campstore/campstore_finalDesign1.png";
 import campstorefinalDesign2 from "../assets/images/campstore/campstore_finalDesign2.png";
 
 // OHC
+import OHCImg from "../assets/images/oceanharbor.png";
 import OHC_final1 from "../assets/images/OHC/OHC_final1.png";
 import OHC_final2 from "../assets/images/OHC/OHC_Final2.png";
 
 // DINE OR DITCH
+import dineOrDitchImg from "../assets/images/dineorditch.png";
 import DineConstructionImg from "../assets/images/DineOrDitch/DineOrDitch_construction.png";
 
 //THERMOSTAT
+import thermostatImg from "../assets/images/thermostat.png";
 import thermostatDiagram from "../assets/images/thermostat/thermostat_diagram.png";
 
 //SOS- MORSE CODE
+import SOSImg from "../assets/images/SOS.png";
 import morseDiagram from "../assets/images/sos/MORSECODE_Diagram.png";
 
 // INVENTORY MANAGEMENT
+import inventoryImg from "../assets/images/inventory.png";
 import inventoryHeaderImg from "../assets/images/inventory-bar/inventoryHeader.png";
 import inventory_final1 from "../assets/images/inventory-bar/inventory_final1.png";
 import inventory_final2 from "../assets/images/inventory-bar/inventory_final2.png";
+
+//ANDROID APP - Inventroy TRACKING
+import androidAppImg from "../assets/images/AndroidApp/Android1.png";
+import androidAppImg2 from "../assets/images/AndroidApp/Android2.png";
+import androidAppCodeImg from "../assets/images/AndroidApp/Android3.png";
 
 export const caseStudies = [
   {
@@ -63,6 +71,7 @@ export const caseStudies = [
     mainImage: campstoreImg,
     caseStudyHeaderImage: campstoreHeaderImg,
     featured: true,
+    overViewIcon: bookIcon,
     bgColor: "#8DA293",
     title: "Camp Store App",
     type: "UX Case Study",
@@ -80,6 +89,18 @@ export const caseStudies = [
     ],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Camp More, Stress Less!",
+        summary:
+          "The Camp Store app gives campers a faster, easier way to shop by letting them browse items, check product details, and place orders without waiting in line. It also keeps users informed about current inventory, special offers, and upcoming events at their campground.",
+        image: campstoreHeaderImg,
+        role: "Lead UX Designer",
+        timeline: "4 Months",
+        tools: "Figma",
+      },
       myRole: {
         type: "text",
         title: "My Role",
@@ -283,6 +304,7 @@ export const caseStudies = [
 
     caseStudyHeaderImage: OHCImg,
     featured: false,
+    overViewIcon: bookIcon,
     bgColor: "#A2C9C9",
     title: "Ocean Harbor Condominium",
     type: "Full Stack Development Case Study",
@@ -300,6 +322,18 @@ export const caseStudies = [
     ],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Explore. Connect. Belong.",
+        summary:
+          "This website serves a condominium association in Florida. It features a public section with information for those interested in visiting Ocean Harbor, and a private residents-only portal for community interaction and exclusive resources.",
+        image: OHCImg,
+        role: "Lead Developer & Designer",
+        timeline: "1 year",
+        tools: "JavaScript, Wix",
+      },
       myRole: {
         type: "text",
         title: "My Role",
@@ -355,6 +389,7 @@ export const caseStudies = [
 
     caseStudyHeaderImage: DineConstructionImg,
     featured: false,
+    overViewIcon: bookIcon,
     bgColor: "#FFDFB1",
     title: "Dine or Ditch",
     type: "Full Stack Development Case Study",
@@ -372,6 +407,18 @@ export const caseStudies = [
     ],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Your Next Meal, Simplified.",
+        summary:
+          "Dine or Ditch is a mobile application designed to assist users in choosing dining options based on their preferences, location, and current mood. The app provides a curated list of restaurant recommendations, helping users quickly decide where to eat with minimal hassle.",
+        image: DineConstructionImg,
+        role: "Lead Developer & Designer",
+        timeline: "1 year",
+        tools: "JavaScript, React Native",
+      },
       myRole: {
         type: "text",
         title: "My Role",
@@ -418,6 +465,7 @@ export const caseStudies = [
     mainImage: thermostatImg,
     caseStudyHeaderImage: thermostatImg,
     featured: false,
+    overViewIcon: bookIcon,
     bgColor: "#E7E7E7",
     title: "Thermostat",
     type: "Embedded Systems Case Study",
@@ -431,6 +479,19 @@ export const caseStudies = [
     palette: [],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Multi‑Peripheral Design.",
+        summary:
+          "This project leverages a TI microcontroller to implement a basic thermostat system. The thermostat utilizes a set of buttons to adjust the desired temperature. A temperature sensor continuously monitors the ambient temperature, and an LED is controlled to simulate heating or cooling based on the set point and current temperature.",
+        image: thermostatImg,
+        role: "Engineering a Microcontroller System",
+        timeline: "1 week",
+        tools: "C, Lucidchart",
+        sourceCode: "https://github.com/lioness3/EmbeddedSystems",
+      },
       myRole: {
         type: "text",
 
@@ -464,6 +525,7 @@ export const caseStudies = [
     mainImage: SOSImg,
     caseStudyHeaderImage: SOSImg,
     featured: false,
+    overViewIcon: bookIcon,
     bgColor: "#D6ABA5",
     title: "SOS",
     type: "Embedded Systems Case Study",
@@ -477,6 +539,19 @@ export const caseStudies = [
     palette: [],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "From 'SOS' to 'OK', Done in Code.",
+        summary:
+          "This project demonstrates the application of state machines and GPIO pins to create a Morse code SOS signal. The device cycles through the SOS pattern using two LEDs until a user-initiated button press triggers a different LED sequence to signal an 'OK' message.",
+        image: SOSImg,
+        role: "Coding Clear Signals With Simple Hardware",
+        timeline: "1 week",
+        tools: "C, Lucidchart, TI LaunchPad",
+        sourceCode: "https://github.com/lioness3/EmbeddedSystems",
+      },
       myRole: {
         type: "text",
 
@@ -510,6 +585,7 @@ export const caseStudies = [
     mainImage: inventoryImg,
     caseStudyHeaderImage: inventoryHeaderImg,
     featured: false,
+    overViewIcon: bookIcon,
     bgColor: "#AFA39C",
     title: "Inventory",
     type: "Full Stack Development Case Study",
@@ -527,6 +603,18 @@ export const caseStudies = [
     ],
 
     categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Track Kegs. Stay Stocked.",
+        summary:
+          "Bar Inventory is a mock website created for a fictional bar company called 'Glass'. This site serves as a basic inventory management tool, allowing users to add beer kegs to the system and display them on the main screen.",
+        image: inventoryHeaderImg,
+        role: "Lead Developer",
+        timeline: "1 day",
+        tools: "JavaScript, HTML, CSS, REACT",
+      },
       myRole: {
         type: "text",
         title: "My Role",
@@ -575,6 +663,219 @@ export const caseStudies = [
               "Refactor how items are stored to support future scalability, such as categories, quantities, and keg status tracking.",
           },
         ],
+      },
+    },
+  },
+  {
+    // INVENTORY TRACKING ANDROID APP
+    mainImage: androidAppImg2,
+    caseStudyHeaderImage: androidAppCodeImg,
+    featured: false,
+    overViewIcon: bookIcon,
+    bgColor: "#4A90E2",
+    title: "Inventory Tracking Android App",
+    type: "Mobile App Development",
+    description: "Android Development & SQLite",
+    summary:
+      "A user-friendly Android application designed to simplify inventory management. The app enables users to efficiently add, edit, and delete inventory items with real-time quantity tracking. Built with robust user authentication and SQLite integration, it provides a secure and reliable solution for managing inventory data with ease.",
+    catchPhrase: "Track Smart, Manage Simple",
+    timeline: "Ongoing Development",
+    tools: "Android Studio, Java, SQLite",
+    palette: [
+      "rgba(136, 8, 8, 0.1)", //red
+      "rgba(26, 82, 118, 0.1)", //blue
+      "rgba(84, 153, 199, 0.1)", //light blue
+      "rgba(211, 211, 211 0.1)", //light grey
+    ],
+
+    categories: {
+      overview: {
+        type: "overview",
+        title: "Overview",
+        icon: bookIcon,
+        catchPhrase: "Track Smart, Manage Simple",
+        summary:
+          "A user-friendly Android application designed to simplify inventory management. The app enables users to efficiently add, edit, and delete inventory items with real-time quantity tracking. Built with robust user authentication and SQLite integration, it provides a secure and reliable solution for managing inventory data with ease.",
+        image: androidAppCodeImg,
+        role: "Full-Stack Developer",
+        timeline: "Ongoing Development",
+        tools: "Android Studio, Java, SQLite",
+        ourceCode: "https://github.com/lioness3/InventoryTrackingAndroidApp",
+      },
+
+      myRole: {
+        type: "text",
+        title: "My Role",
+        icon: roleIcon,
+        headline: "Full-Stack Developer",
+        description:
+          "As the developer for this project, I designed and implemented a complete Android application from the ground up. My responsibilities included architecting the user interface for seamless interaction, integrating SQLite for reliable data persistence, implementing secure user authentication and account creation systems, and conducting rigorous testing and debugging to ensure stability and reliability.",
+      },
+
+      problem: {
+        type: "text",
+        title: "Problem",
+        icon: problemIcon,
+        headline: "Inventory Management Complexity",
+        description:
+          "Traditional inventory tracking methods are time-consuming and error-prone. Users struggle to efficiently manage items, track quantities, and maintain secure access to inventory data. The lack of a dedicated, secure mobile solution creates friction in everyday inventory management workflows.",
+      },
+
+      goal: {
+        type: "text",
+        title: "Goal",
+        icon: goalIcon,
+        headline: "Simplify Inventory Management",
+        description:
+          "Create a secure, user-friendly Android application that enables users to quickly and easily manage their inventory. The app prioritizes simplicity and core functionality, allowing users to add, edit, and delete items with real-time quantity updates while ensuring data security through authentication and reliable storage.",
+      },
+
+      technology: {
+        type: "text",
+        title: "Technology Stack",
+        icon: laptopIcon,
+        headline: "Modern Android Development",
+        description:
+          "Built with Java in Android Studio, the application leverages SQLite for robust local data storage and retrieval. The architecture prioritizes data persistence and security, with a clean, intuitive user interface designed for accessibility and ease of use.",
+      },
+
+      keyFeatures: {
+        type: "block",
+        title: "Key Features",
+        icon: featuresIcon,
+        items: [
+          {
+            title: "User Authentication",
+            description:
+              "Secure login and account creation system to protect user data and control access to the application.",
+          },
+          {
+            title: "Inventory Management",
+            description:
+              "Easily add, edit, and delete inventory items with real-time quantity tracking.",
+          },
+          {
+            title: "SQLite Integration",
+            description:
+              "Reliable data persistence and retrieval with SQLite database for secure, local storage.",
+          },
+          {
+            title: "Intuitive UI",
+            description:
+              "Clean, simple interface focused on core functionality with an emphasis on ease of use.",
+          },
+        ],
+      },
+
+      painPoints: {
+        type: "block",
+        title: "Challenges Addressed",
+        icon: painPointsIcon,
+        items: [
+          {
+            title: "Data Security",
+            description:
+              "Implemented user authentication to ensure only authorized users can access inventory data.",
+          },
+          {
+            title: "Data Persistence",
+            description:
+              "Integrated SQLite to reliably store and retrieve inventory information without data loss.",
+          },
+          {
+            title: "User Complexity",
+            description:
+              "Designed a simplified interface prioritizing core features for intuitive navigation.",
+          },
+          {
+            title: "Account Management",
+            description:
+              "Developed seamless account creation and login processes for new and returning users.",
+          },
+        ],
+      },
+
+      development: {
+        type: "text",
+        title: "Development Process",
+        icon: developmentIcon,
+        headline: "From Design to Implementation",
+        description:
+          "The development process began with careful UI design to ensure a seamless user experience. The SQLite database was integrated to provide reliable data persistence. User authentication was implemented using secure practices to protect sensitive user information. Throughout the development cycle, rigorous testing and debugging ensured the app's stability, reliability, and performance across different Android devices.",
+      },
+
+      contributions: {
+        type: "text",
+        title: "Contributions",
+        icon: roleIcon,
+        headline: "Complete Application Development",
+        description:
+          "For this project, I developed a robust and user-friendly Android application to efficiently manage inventory. I designed and implemented the user interface, ensuring a seamless user experience. I integrated SQLite to store and retrieve inventory data, ensuring data persistence and security. Additionally, I implemented user authentication and account creation features to protect user data and control access to the application. Through rigorous testing and debugging, I ensured the app's stability and reliability.",
+      },
+
+      accessibility: {
+        type: "block",
+        title: "Design Principles",
+        icon: accessibilityIcon,
+        items: [
+          {
+            title: "Simplicity First",
+            description:
+              "Focused on core inventory management features without unnecessary complexity.",
+          },
+          {
+            title: "User-Centric Design",
+            description:
+              "Intuitive interface designed for users of varying technical expertise.",
+          },
+          {
+            title: "Data Security",
+            description:
+              "Authentication and secure storage protect user data and control system access.",
+          },
+        ],
+      },
+
+      nextSteps: {
+        type: "block",
+        title: "Future Enhancements",
+        icon: nextStepsIcon,
+        items: [
+          {
+            title: "Password Reset",
+            description:
+              "Implement secure password recovery functionality for enhanced account management.",
+          },
+          {
+            title: "Advanced Search & Filtering",
+            description:
+              "Add powerful search and filtering capabilities for faster inventory item discovery.",
+          },
+          {
+            title: "Barcode Scanning",
+            description:
+              "Integrate barcode scanning to streamline item entry and tracking processes.",
+          },
+          {
+            title: "Cloud Synchronization",
+            description:
+              "Enable cloud-based sync for multi-device access and backup functionality.",
+          },
+          {
+            title: "Role-Based Access",
+            description:
+              "Implement user role-based permissions for advanced access control and team collaboration.",
+          },
+        ],
+      },
+
+      takeaways: {
+        type: "text",
+        title: "Takeaways",
+        icon: takeawaysIcon,
+        headline: "Building Foundation for Scalability",
+        description:
+          "This version of the app provides a solid foundation for inventory management. The focus on core functionality and user experience ensures reliability and ease of use. The architecture and implementation practices establish a strong base for future enhancements, allowing the app to evolve into a comprehensive and powerful inventory management solution.",
       },
     },
   },

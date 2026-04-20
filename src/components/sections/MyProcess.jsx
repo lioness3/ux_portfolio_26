@@ -68,11 +68,16 @@ export default function MyProcess() {
           <h2>Development</h2>
           <p className="process-text">
             I also develop the code that makes my prototypes functional. Several
-            of my development projects are available to view on
-            <span className="process-bold-word" id="process-github-link">
-              {" "}
+            of my development projects are available to view on{" "}
+            <a
+              href="https://github.com/lioness3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="process-bold-word"
+              id="process-github-link"
+            >
               GitHub
-            </span>
+            </a>
             .
           </p>
         </div>

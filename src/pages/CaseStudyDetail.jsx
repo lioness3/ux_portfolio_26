@@ -3,28 +3,16 @@ import { useEffect, useState, useRef } from "react";
 
 import InfoCard from "../components/cards/InfoCard";
 import CaseStudySideMenu from "../components/navigation/CaseStudySideMenu";
+import CaseStudyContentsMenu from "../components/navigation/CaseStudyContentsMenu";
 import "../styles/caseStudyDetailPage.css";
 
 function CaseStudyDetail({ studies }) {
   const { id } = useParams();
   const study = studies.find((s, idx) => String(idx) === id);
+  const [contentsOpen, setContentsOpen] = useState(false);
 
   const categories = study.categories;
-  const allCategories = {
-    overview: {
-      type: "overview",
-      title: "Overview",
-      catchPhrase: study.catchPhrase,
-      summary: study.summary,
-      image: study.caseStudyHeaderImage,
-      role: categories.myRole.headline,
-      timeline: study.timeline,
-      tools: study.tools,
-      sourceCode: study.sourceCode,
-    },
-    ...categories,
-  };
-  const caseStudyInfo = Object.entries(allCategories);
+  const caseStudyInfo = Object.entries(categories);
   // color palette of the case study used for block coloring on some info cards
   const colorPalette = study.palette;
 
@@ -67,13 +55,29 @@ function CaseStudyDetail({ studies }) {
   return (
     <div className="case-study-detail-layout">
       {/* LEFT SIDE MENU */}
-      <CaseStudySideMenu categories={allCategories} activeId={activeId} />
+      <CaseStudySideMenu categories={categories} activeId={activeId} />
       {/* RIGHT CONTENT */}
       <div className="case-study-right-col">
         {/* Simple Header */}
         <div className="case-study-simple-header">
-          <h1 className="simple-header-title">{study.title}</h1>
-          <span className="simple-header-type">{study.type}</span>
+          <div className="header-left">
+            <h1 className="simple-header-title">{study.title}</h1>
+            <span className="simple-header-type">{study.type}</span>
+          </div>
+          {/* Mobile Contents */}
+          <div className="mobile-contents">
+            <button
+              className="contents-btn"
+              onClick={() => setContentsOpen((prev) => !prev)}
+            >
+              Contents ▾
+            </button>
+            <CaseStudyContentsMenu
+              categories={categories}
+              open={contentsOpen}
+              setOpen={setContentsOpen}
+            />
+          </div>
         </div>
         <div className="case-study-scrolling-container" ref={scrollRef}>
           {/* Loops through the caseStudies.js data file and displays the info on cards  */}

@@ -74,8 +74,37 @@ GLOBAL STYLE SHEET  */
 
   /* Scroll margin for case study cards */
   --case-study-scroll-margin-top: 120px;
+
+  /* SCROLL BAR */
+
+  --scroll-track: var(--ltGrey); /* background of scrollbar */
+  --scroll-thumb: var(--primary); /* pink */
+  --scroll-thumb-hover: #e25492; /* darker pink on hover */
 }
 
+/* SCROLL BAR */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb);
+  border-radius: 10px;
+  border: 2px solid var(--scroll-track);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-hover);
+}
 /* Dark theme overrides */
 html[data-theme="dark"] {
   --bg: #0b0f14;
