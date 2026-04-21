@@ -98,8 +98,8 @@
 }
 
 .skills-list li {
-  background: var(--secondary);
-  color: white;
+  background: var(--medGrey);
+  color: var(--text-80);
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
   font-size: 0.9rem;
