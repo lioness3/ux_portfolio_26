@@ -1,49 +1,43 @@
 /* Styles the contact section at bottom of portfolio page */
+
 .footer {
   display: flex;
   padding: 2rem;
   background: white;
   color: var(--text-70);
-  font-size: 1rem;
-  gap: 2rem;
+  font-size: 2rem;
   flex-wrap: wrap;
-  height: 100vh -var(--section-title-height);
+  height: 50vh;
 }
 
+.contact-header {
+  gap: 2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-header a {
+  color: var(--primary);
+  transition: color 0.2s;
+}
 .footer-col {
   flex: 1 1 0;
   min-width: 220px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .footer-col.center {
-  align-items: center;
   text-align: center;
-  justify-content: end;
-}
-
-.footer-image {
-  max-width: 150px;
-  height: auto;
-}
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
   margin: auto;
 }
 
-.footer-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--primary);
-}
-
-.footer-icon {
-  font-size: 1.2rem;
+.footer-image {
+  max-width: 220px;
+  margin: auto;
 }
 
 .footer-location {
@@ -65,8 +59,8 @@
 }
 
 .footer-socials a {
-  color: #e754a6;
-  font-size: 1.3rem;
+  color: var(--primary);
+
   transition: color 0.2s;
 }
 
@@ -79,17 +73,22 @@
   color: var(--text-50);
   margin-top: 0.5rem;
 }
+.left {
+  color: var(--primary);
+  gap: 0.3rem;
+  margin: auto;
+}
 
 .right {
-  font-size: 1rem;
-  color: var(--text-80);
+  font-size: 1.25rem;
+  color: var(--secondary);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   margin: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 969px) {
   .footer {
     flex-direction: column;
     align-items: center;

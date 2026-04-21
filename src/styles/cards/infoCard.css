@@ -38,7 +38,7 @@
 .info-card-headline {
   font-size: 1rem;
   color: var(--text-90);
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .info-card-description {
@@ -50,9 +50,9 @@
   max-width: 90%;
 }
 .overview-details {
-  margin-top: 1rem;
-  font-size: 0.9rem;
   color: var(--text-80);
+  margin-bottom: 1rem;
+  margin-top: -1rem; /* matches the margin on the info-card-title to avoid excessive spacing */
 }
 .info-card-image {
   width: 100%;

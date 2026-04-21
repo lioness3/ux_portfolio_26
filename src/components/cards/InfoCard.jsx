@@ -27,8 +27,37 @@ export default function InfoCard({ id, category, colorPalette }) {
 
       <div className="info-card-col2">
         <h2 className="info-card-title">{category.title}</h2>
+        {/* grey divider  */}
         <div className="info-card-divider" />
+        {/* Display for OVERVIEW Card */}
+        {category.type === "overview" && (
+          <div>
+            <div className="overview-details">
+              <span>Role: {category.role}</span>
+              <span> | </span>
+              <span>Timeline: {category.timeline}</span>
+              <span> | </span>
+              <span>Tools: {category.tools}</span>
+            </div>
+            <h4 className="info-card-headline">{category.catchPhrase}</h4>
+            <p className="info-card-description">{category.summary}</p>
+            <img
+              src={category.image}
+              alt={category.title}
+              className="info-card-image"
+            />
 
+            {category.sourceCode && (
+              <Button
+                classN="sourcecode_btn"
+                icon={<FaGithub />}
+                btnText="View the Source Code"
+                primary={false}
+                link={category.sourceCode}
+              />
+            )}
+          </div>
+        )}
         {/* Display for text cards */}
         {category.type === "text" && (
           <div>
@@ -99,34 +128,6 @@ export default function InfoCard({ id, category, colorPalette }) {
               link={category.link}
               buttonDescription={category.buttonDescription}
             />
-          </div>
-        )}
-        {/* Display for OVERVIEW Card */}
-        {category.type === "overview" && (
-          <div>
-            <h4 className="info-card-headline">{category.catchPhrase}</h4>
-            <p className="info-card-description">{category.summary}</p>
-            <img
-              src={category.image}
-              alt={category.title}
-              className="info-card-image"
-            />
-            <div className="overview-details">
-              <span>Role: {category.role}</span>
-              <span> | </span>
-              <span>Timeline: {category.timeline}</span>
-              <span> | </span>
-              <span>Tools: {category.tools}</span>
-            </div>
-            {category.sourceCode && (
-              <Button
-                classN="sourcecode_btn"
-                icon={<FaGithub />}
-                btnText="View the Source Code"
-                primary={false}
-                link={category.sourceCode}
-              />
-            )}
           </div>
         )}
       </div>

@@ -10,22 +10,20 @@ import {
 import logo_navy from "../../assets/images/logo/logo-navy-joann-carter.png";
 const Footer = () => (
   <footer className="footer">
+    <div className="contact-header">
+      <a href="mailto:joann333carter@gmail.com">
+        <FaEnvelope />
+      </a>
+
+      <a href="tel:+16035665610">
+        {" "}
+        <FaPhone />{" "}
+      </a>
+    </div>
     <div className="footer-col left">
-      <div className="footer-contact">
-        <div className="footer-contact-item">
-          <FaEnvelope className="footer-icon" />
-          <span>Joann333Carter@gmail.com</span>
-        </div>
-        <div className="footer-contact-item">
-          <FaPhone className="footer-icon" />
-          <span>(603)566-5610</span>
-        </div>
-      </div>
+      <img src={logo_navy} alt="Joann Carter logo" className="footer-image" />
     </div>
     <div className="footer-col center">
-      <img src={logo_navy} alt="Joann Carter logo" className="footer-image" />
-      <div className="footer-location">Based in New Hampshire, EST</div>
-      <div className="footer-updated">Last Updated: March 2026</div>
       <div className="footer-socials">
         <a
           href="https://www.linkedin.com/in/joann-carter/"
@@ -49,6 +47,9 @@ const Footer = () => (
           <FaBehance />
         </a>
       </div>
+      <div className="footer-updated">Last Updated: March 2026</div>
+      <div className="footer-location">Based in New Hampshire, EST</div>
+
       <div className="footer-copyright">
         © 2026 Joann Carter. All rights reserved
       </div>

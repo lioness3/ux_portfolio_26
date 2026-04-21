@@ -668,11 +668,11 @@ export const caseStudies = [
   },
   {
     // INVENTORY TRACKING ANDROID APP
-    mainImage: androidAppImg2,
+    mainImage: androidAppCodeImg,
     caseStudyHeaderImage: androidAppCodeImg,
     featured: false,
     overViewIcon: bookIcon,
-    bgColor: "#4A90E2",
+    bgColor: "#b9d9fd",
     title: "Inventory Tracking Android App",
     type: "Mobile App Development",
     description: "Android Development & SQLite",
@@ -695,12 +695,12 @@ export const caseStudies = [
         icon: bookIcon,
         catchPhrase: "Track Smart, Manage Simple",
         summary:
-          "A user-friendly Android application designed to simplify inventory management. The app enables users to efficiently add, edit, and delete inventory items with real-time quantity tracking. Built with robust user authentication and SQLite integration, it provides a secure and reliable solution for managing inventory data with ease.",
+          "I developed this Android application end‑to‑end, designing and architecting the user interface for a seamless experience while integrating SQLite for secure, reliable data persistence. I implemented user authentication and account creation to protect access, and ensured overall stability through rigorous testing and debugging.",
         image: androidAppCodeImg,
         role: "Full-Stack Developer",
         timeline: "Ongoing Development",
         tools: "Android Studio, Java, SQLite",
-        ourceCode: "https://github.com/lioness3/InventoryTrackingAndroidApp",
+        sourceCode: "https://github.com/lioness3/InventoryTrackingAndroidApp",
       },
 
       myRole: {
@@ -759,39 +759,6 @@ export const caseStudies = [
             description:
               "Reliable data persistence and retrieval with SQLite database for secure, local storage.",
           },
-          {
-            title: "Intuitive UI",
-            description:
-              "Clean, simple interface focused on core functionality with an emphasis on ease of use.",
-          },
-        ],
-      },
-
-      painPoints: {
-        type: "block",
-        title: "Challenges Addressed",
-        icon: painPointsIcon,
-        items: [
-          {
-            title: "Data Security",
-            description:
-              "Implemented user authentication to ensure only authorized users can access inventory data.",
-          },
-          {
-            title: "Data Persistence",
-            description:
-              "Integrated SQLite to reliably store and retrieve inventory information without data loss.",
-          },
-          {
-            title: "User Complexity",
-            description:
-              "Designed a simplified interface prioritizing core features for intuitive navigation.",
-          },
-          {
-            title: "Account Management",
-            description:
-              "Developed seamless account creation and login processes for new and returning users.",
-          },
         ],
       },
 
@@ -802,15 +769,6 @@ export const caseStudies = [
         headline: "From Design to Implementation",
         description:
           "The development process began with careful UI design to ensure a seamless user experience. The SQLite database was integrated to provide reliable data persistence. User authentication was implemented using secure practices to protect sensitive user information. Throughout the development cycle, rigorous testing and debugging ensured the app's stability, reliability, and performance across different Android devices.",
-      },
-
-      contributions: {
-        type: "text",
-        title: "Contributions",
-        icon: roleIcon,
-        headline: "Complete Application Development",
-        description:
-          "For this project, I developed a robust and user-friendly Android application to efficiently manage inventory. I designed and implemented the user interface, ensuring a seamless user experience. I integrated SQLite to store and retrieve inventory data, ensuring data persistence and security. Additionally, I implemented user authentication and account creation features to protect user data and control access to the application. Through rigorous testing and debugging, I ensured the app's stability and reliability.",
       },
 
       accessibility: {
@@ -838,7 +796,7 @@ export const caseStudies = [
 
       nextSteps: {
         type: "block",
-        title: "Future Enhancements",
+        title: "Next Steps",
         icon: nextStepsIcon,
         items: [
           {
@@ -846,21 +804,13 @@ export const caseStudies = [
             description:
               "Implement secure password recovery functionality for enhanced account management.",
           },
-          {
-            title: "Advanced Search & Filtering",
-            description:
-              "Add powerful search and filtering capabilities for faster inventory item discovery.",
-          },
+
           {
             title: "Barcode Scanning",
             description:
               "Integrate barcode scanning to streamline item entry and tracking processes.",
           },
-          {
-            title: "Cloud Synchronization",
-            description:
-              "Enable cloud-based sync for multi-device access and backup functionality.",
-          },
+
           {
             title: "Role-Based Access",
             description:
