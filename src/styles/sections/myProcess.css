@@ -59,7 +59,7 @@
 }
 
 /* ⭐ Mobile layout */
-@media (max-width: 800px) {
+@media (max-width: 969px) {
   .process-section,
   .process-section:nth-child(even) {
     flex-direction: column;
@@ -70,5 +70,8 @@
   }
   .process-text {
     padding-top: 1rem;
+  }
+  .process-section {
+    padding: 3rem 1rem;
   }
 }

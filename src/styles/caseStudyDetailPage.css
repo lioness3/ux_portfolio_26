@@ -155,6 +155,8 @@
 .case-study-scrolling-container {
   background-color: var(--medGrey);
   grid-area: content;
+  max-width: 100vw;
+  border: 2px solid yellow;
 }
 
 /* side menu  */
@@ -239,6 +241,7 @@
     display: flex; /* stack everything */
     flex-direction: column;
     max-width: 100vw;
+    border: 2px solid green;
   }
   .case-study-header {
     padding: 0.5rem;
@@ -262,14 +265,14 @@
     max-width: 200px;
   }
   /* header becomes full-width block */
-  .case-study-header {
+  /* .case-study-header {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-
+    border: 2px solid purple;
     font-size: 0.75rem;
-  }
+  } */
   .case-study-header-summary {
     padding: 0;
     margin: auto;

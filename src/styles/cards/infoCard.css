@@ -9,7 +9,7 @@
   margin-top: 32px;
   display: flex;
   flex-direction: row;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* used to place the card in the users view when the menu item on the left is clicked  */
   scroll-margin-top: var(--case-study-scroll-margin-top);
 }
@@ -54,12 +54,12 @@
   margin-bottom: 1rem;
   margin-top: -1rem; /* matches the margin on the info-card-title to avoid excessive spacing */
 }
-.info-card-image {
+/* .info-card-image {
   width: 100%;
   max-width: 400px;
   margin-top: 1rem;
   border-radius: var(--borderRadius);
-}
+} */
 .info-card-block-row {
   display: flex;
   flex-direction: row;
@@ -73,7 +73,8 @@
 }
 @media (max-width: 969px) {
   .info-card {
-    width: 50%;
+    max-width: 100%;
+    padding: 0.75rem 0.5rem;
   }
   .info-card-title {
     font-size: 1.25rem;
@@ -82,9 +83,10 @@
     max-width: 30px;
     max-height: 30px;
   }
-}
-/* @media (min-width: 1200px) {
-  .info-card {
-    padding: 5rem;
+  .info-card-col1 {
+    margin-right: 0.25rem;
   }
-} */
+  .info-card-title {
+    padding-left: 1rem;
+  }
+}
