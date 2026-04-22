@@ -19,7 +19,7 @@
 .case-study-card {
   position: relative;
   width: 340px;
-  min-width: 340px;
+  min-width: 20vw;
   height: 420px;
   min-height: 420px;
   box-sizing: border-box;
@@ -103,8 +103,12 @@
   .case-studies-list {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
   }
   .case-wrapper {
     padding-bottom: calc(var(--section-padding-bottom) + 200px);
+  }
+  .case-study-card {
+    width: 80vw;
   }
 }

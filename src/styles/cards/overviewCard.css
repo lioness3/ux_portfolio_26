@@ -1,0 +1,37 @@
+.overview-details {
+  color: var(--text-80);
+  margin-bottom: 1rem;
+  margin-top: -1rem; /* matches the margin on the info-card-title to avoid excessive spacing */
+}
+
+.info-card-headline {
+  font-size: 1rem;
+  color: var(--text-90);
+  margin-bottom: 0.5rem;
+}
+
+.info-card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-70);
+  margin: 0 0;
+  white-space: pre-line;
+  max-width: 90%;
+}
+
+.info-card-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+  border-radius: var(--borderRadius);
+}
+
+@media (max-width: 969px) {
+  .info-card-headline {
+    font-size: 0.95rem;
+  }
+
+  .info-card-description {
+    font-size: 0.95rem;
+  }
+}

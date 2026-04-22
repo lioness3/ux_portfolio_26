@@ -47,7 +47,7 @@ function CaseStudyDetail({ studies }) {
     sections.forEach((sec) => observer.current.observe(sec));
 
     return () => observer.current.disconnect();
-  }, []);
+  }, [id]); // < rerun this when the case study changes
 
   // Error handling for lost case study data
   if (!study) return <div>Case study not found.</div>;
