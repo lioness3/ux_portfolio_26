@@ -15,7 +15,7 @@
 }
 /* seperates the last card from the bottom of the screen */
 .info-card:last-child {
-  margin-bottom: 10vh;
+  margin-bottom: 50vh;
 }
 .info-card-col1 {
   margin-right: 1.75rem;

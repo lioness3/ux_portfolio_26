@@ -53,7 +53,8 @@ GLOBAL STYLE SHEET  */
 
   /* Height for the top navigation bar  */
   --nav-height: 70px;
-
+  /* CASE STUDY HEADER HEIGHT */
+  --case-study-header-height: 70px;
   /* Height for each section title */
   --section-title-height: 300px;
 
