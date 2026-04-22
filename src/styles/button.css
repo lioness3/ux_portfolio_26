@@ -8,7 +8,7 @@
   cursor: pointer;
   transition: background 0.2s;
   padding: 1rem 3rem;
-  opacity: 0.9;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .custom-primary-button:hover {
-  opacity: 1;
+  background: var(--btn-hover);
 }
 
 .custom-primary-button-text {
@@ -29,6 +29,7 @@
   align-items: center;
   color: white;
   vertical-align: middle;
+  font-size: 1.2rem;
 }
 
 /* CUSTOM SECONDARY BUTTON-outline style */
@@ -68,4 +69,9 @@
 /* SOURCE CODE BUTTON IN CASE STUDY DETAILS HEADER */
 .sourcecode_btn {
   margin: 1.75rem 0 1rem 0;
+}
+
+/* CONTACT button */
+.contact-btn {
+  margin: 0.5rem;
 }

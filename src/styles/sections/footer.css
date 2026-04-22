@@ -7,20 +7,8 @@
   color: var(--text-70);
   font-size: 2rem;
   flex-wrap: wrap;
-  height: 50vh;
 }
 
-.contact-header {
-  gap: 2rem;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-header a {
-  color: var(--primary);
-  transition: color 0.2s;
-}
 .footer-col {
   flex: 1 1 0;
   min-width: 220px;
@@ -60,7 +48,6 @@
 
 .footer-socials a {
   color: var(--primary);
-
   transition: color 0.2s;
 }
 

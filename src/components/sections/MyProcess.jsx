@@ -3,7 +3,7 @@ import lowFi from "../../assets/images/low-fi-mockup.png";
 import highFi from "../../assets/images/hi-fi-mockup.png";
 import developmentMockup from "../../assets/images/development-mockup.png";
 import "../../styles/sections/myProcess.css";
-
+// This section explains my dersign process and uses a igag display pattern
 export default function MyProcess() {
   return (
     <section id="my-process" className="process-wrapper">

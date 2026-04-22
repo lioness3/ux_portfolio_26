@@ -10,7 +10,7 @@ import section_contactBanner from "../assets/images/sections/section_5.png";
 import MyProcess from "../components/sections/MyProcess";
 import AboutMe from "../components/sections/AboutMe";
 import Resume from "../components/sections/Resume";
-import Footer from "../components/sections/Footer";
+import Contact from "../components/sections/Contact";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -49,15 +49,6 @@ function Portfolio({ studies }) {
         image={section_processBanner}
       />
       <MyProcess />
-      {/* ABOUT ME SECTION */}
-      <SectionTitle
-        title={"About me"}
-        subtitle={
-          "Learn more about my background, skills, and experience as a UX designer."
-        }
-        image={section_aboutBanner}
-      />
-      <AboutMe />
       {/* RESUME SECTION */}
       <SectionTitle
         title={"Resume"}
@@ -67,15 +58,23 @@ function Portfolio({ studies }) {
         image={section_resumeBanner}
       />
       <Resume />
+      {/* ABOUT ME SECTION */}
+      <SectionTitle
+        title={"About me"}
+        subtitle={
+          "Learn more about my background, skills, and experience as a UX designer."
+        }
+        image={section_aboutBanner}
+      />
+      <AboutMe />
+
       {/* CONTACT SECTION */}
       <SectionTitle
         title={"Contact"}
-        subtitle={"Get in touch with me through email, text, or call."}
+        subtitle={"Get in touch with me through email, call, or text."}
         image={section_contactBanner}
       />
-      <footer>
-        <Footer />
-      </footer>
+      <Contact />
     </main>
   );
 }

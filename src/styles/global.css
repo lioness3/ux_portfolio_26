@@ -30,8 +30,9 @@ GLOBAL STYLE SHEET  */
   --box-shadow-hover: 0 8px 32px rgb(from var(--secondary) r g b / 0.16);
   --box-shadow-selected: 0 3px 3px rgb(from var(--secondary) r g b / 0.25);
 
+  /* Hover BUTTON color */
+  --btn-hover: #e04386;
   /* borders  */
-
   --border-primary: rgb(from var(--primary) r g b / 0.2);
   --border-secondary: rgb(from var(--secondary) r g b / 0.2);
   /* Semantic colors (light mode defaults) */
@@ -175,7 +176,7 @@ h1 {
   :root {
     /* Height for each section title on smaller screens*/
     --section-title-height: 175px;
-    /* bottom spacing for each process section on smaller screen */
+    /* bottom spacing for each  section on smaller screen */
     --section-padding-bottom: 100px;
   }
 }

@@ -1,5 +1,4 @@
 .section-title-bg {
-  margin-bottom: 1rem;
   background: linear-gradient(to bottom, rgba(255, 192, 220, 0.1) 10%, #ffffff);
   text-align: center;
   height: var(--section-title-height);
@@ -11,10 +10,11 @@
 }
 
 .section-title-image {
-  max-width: 30%;
-  height: auto;
+  max-height: 100px;
+  width: auto;
   margin: 0 auto;
   display: block;
+  opacity: 0.8;
 }
 
 .section-title-text {

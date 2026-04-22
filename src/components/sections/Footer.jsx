@@ -10,16 +10,6 @@ import {
 import logo_navy from "../../assets/images/logo/logo-navy-joann-carter.png";
 const Footer = () => (
   <footer className="footer">
-    <div className="contact-header">
-      <a href="mailto:joann333carter@gmail.com">
-        <FaEnvelope />
-      </a>
-
-      <a href="tel:+16035665610">
-        {" "}
-        <FaPhone />{" "}
-      </a>
-    </div>
     <div className="footer-col left">
       <img src={logo_navy} alt="Joann Carter logo" className="footer-image" />
     </div>
