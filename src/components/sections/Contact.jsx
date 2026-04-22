@@ -13,7 +13,7 @@ const Contact = () => {
   const handleEmail = () => {
     const subject = encodeURIComponent("Inquiry from Portfolio");
     const body = encodeURIComponent(
-      "Hi Joann, I’d like to get in touch regarding...",
+      "Hi Joann, I'd like to get in touch regarding...",
     );
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   };
