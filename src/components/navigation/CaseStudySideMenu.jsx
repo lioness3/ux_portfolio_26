@@ -9,6 +9,7 @@ export default function CaseStudySideMenu({ categories, activeId }) {
       <div className="side-menu">
         <ul className="side-menu-list">
           {menuItems.map(([key, category], idx) => {
+            // CHECKS TO SEE IF current menu item matches the scroll-spy
             const isActive = activeId === key;
 
             return (

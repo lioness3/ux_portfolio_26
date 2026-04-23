@@ -44,6 +44,7 @@ function CaseStudyDetail({ studies }) {
     }, options);
 
     const sections = document.querySelectorAll(".info-card");
+
     sections.forEach((sec) => observer.current.observe(sec));
 
     return () => observer.current.disconnect();
