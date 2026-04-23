@@ -1,7 +1,7 @@
 import "../../styles/caseStudyDetailPage.css";
 import { Link } from "react-router-dom";
 // used to show the sections/ contents of the case studies detail page. displayed on the left side of the bigger screens
-export default function CaseStudySideMenu({ categories, activeId }) {
+export default function CaseStudySideMenu({ categories, activeId, onSelect }) {
   const menuItems = Object.entries(categories);
 
   return (
@@ -15,11 +15,12 @@ export default function CaseStudySideMenu({ categories, activeId }) {
               <li
                 key={idx}
                 className={`side-menu-item ${isActive ? "active" : ""}`}
-                onClick={() =>
+                onClick={() => {
+                  if (onSelect) onSelect(key);
                   document
                     .getElementById(key)
-                    .scrollIntoView({ behavior: "smooth" })
-                }
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
               >
                 {category.icon && (
                   <img

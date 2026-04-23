@@ -19,6 +19,8 @@ function CaseStudyDetail({ studies }) {
   const [activeId, setActiveId] = useState(null);
   const observer = useRef(null);
   const scrollRef = useRef(null);
+  const suppressObserverRef = useRef(false);
+  const suppressTimeoutRef = useRef(null);
 
   // RESETS THE SCROLL POSITION WHEN THE CASE STUDY CHANGES
   useEffect(() => {
@@ -29,13 +31,16 @@ function CaseStudyDetail({ studies }) {
 
   // FIGURES OUT THE POSITION OF THE CARD IN VIEW WHILE SCROLLING
   useEffect(() => {
+    if (!scrollRef.current) return;
+
     const options = {
-      root: null,
+      root: scrollRef.current,
       rootMargin: "-40% 0px -40% 0px",
       threshold: 0.1,
     };
 
     observer.current = new IntersectionObserver((entries) => {
+      if (suppressObserverRef.current) return;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveId(entry.target.id);
@@ -43,11 +48,33 @@ function CaseStudyDetail({ studies }) {
       });
     }, options);
 
-    const sections = document.querySelectorAll(".info-card");
+    const sections = scrollRef.current.querySelectorAll(".info-card");
     sections.forEach((sec) => observer.current.observe(sec));
 
     return () => observer.current.disconnect();
   }, [id]); // < rerun this when the case study changes
+
+  // Called when a side-menu / contents item is clicked. Pins the active id and
+  // mutes the IntersectionObserver while the smooth scroll animates, so
+  // intermediate sections can't flicker the highlight onto the wrong item.
+  const handleMenuSelect = (key) => {
+    setActiveId(key);
+    suppressObserverRef.current = true;
+    if (suppressTimeoutRef.current) clearTimeout(suppressTimeoutRef.current);
+
+    const release = () => {
+      suppressObserverRef.current = false;
+      if (suppressTimeoutRef.current) {
+        clearTimeout(suppressTimeoutRef.current);
+        suppressTimeoutRef.current = null;
+      }
+      scrollRef.current?.removeEventListener("scrollend", release);
+    };
+
+    scrollRef.current?.addEventListener("scrollend", release, { once: true });
+    // Fallback for browsers without scrollend, or if no scroll ever fires.
+    suppressTimeoutRef.current = setTimeout(release, 1200);
+  };
 
   // Error handling for lost case study data
   if (!study) return <div>Case study not found.</div>;
@@ -55,7 +82,11 @@ function CaseStudyDetail({ studies }) {
   return (
     <div className="case-study-detail-layout">
       {/* LEFT SIDE MENU */}
-      <CaseStudySideMenu categories={categories} activeId={activeId} />
+      <CaseStudySideMenu
+        categories={categories}
+        activeId={activeId}
+        onSelect={handleMenuSelect}
+      />
       {/* RIGHT CONTENT */}
       <div className="case-study-right-col">
         {/* Simple Header */}
