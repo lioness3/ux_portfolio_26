@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../../styles/cards/HeaderCard.css";
+import "../../styles/cards/headerCard.css";
 
 export default function HeaderCard({
   title,

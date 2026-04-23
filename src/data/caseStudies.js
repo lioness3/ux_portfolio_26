@@ -16,7 +16,7 @@ import finalDesignIcon from "../assets/icons/FinalDesign.svg";
 import userFeedbackIcon from "../assets/icons/Feedback.svg";
 import takeawaysIcon from "../assets/icons/Takeaways.svg";
 import nextStepsIcon from "../assets/icons/NextSteps.svg";
-import bookIcon from "../assets/icons/Book.svg";
+import bookIcon from "../assets/icons/book.svg";
 import laptopIcon from "../assets/icons/laptopIcon.svg";
 import featuresIcon from "../assets/icons/features.svg";
 import developmentIcon from "../assets/icons/development.svg";

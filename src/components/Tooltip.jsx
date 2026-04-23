@@ -1,7 +1,7 @@
 // used for hover interactions as a tool tip
 
 import { useState, useRef, useEffect } from "react";
-import "../styles/tooltip.css";
+import "../styles/Tooltip.css";
 
 export default function Tooltip({ label, position = "top", children }) {
   const [visible, setVisible] = useState(false);

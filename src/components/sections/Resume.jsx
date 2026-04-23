@@ -2,7 +2,7 @@ import React from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { useState } from "react";
 import { skillsList } from "../../data/skillsList";
-import workIcon from "../../assets/icons/work.svg";
+import workIcon from "../../assets/icons/Work.svg";
 import eduIcon from "../../assets/icons/Edu.svg";
 import skillsIcon from "../../assets/icons/brain.svg";
 import "../../styles/sections/Resume.css";
