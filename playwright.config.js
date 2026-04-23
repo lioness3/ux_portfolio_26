@@ -1,5 +1,6 @@
 /// <reference types="node" />
 import { defineConfig, devices } from "@playwright/test";
+import process from "process";
 
 export default defineConfig({
   testDir: "./e2e",
