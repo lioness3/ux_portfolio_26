@@ -32,18 +32,16 @@
 /* slide-out menu */
 .global-mobile-menu {
   position: fixed;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  top: var(--nav-height);
   right: 0;
-  width: 260px;
-  height: 100vh;
-  background: white;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  background: var(--offWhite);
   transform: translateX(100%);
   transition: transform 0.35s ease;
-  padding: 2rem 1.5rem;
   z-index: 999;
-}
-.global-mobile-menu-list {
-  list-style: none;
 }
 
 .global-mobile-menu.open {

@@ -48,7 +48,7 @@ function CaseStudyDetail({ studies }) {
       });
     }, options);
 
-    const sections = scrollRef.current.querySelectorAll(".info-card");
+    const sections = document.querySelectorAll(".info-card");
     sections.forEach((sec) => observer.current.observe(sec));
 
     return () => observer.current.disconnect();
