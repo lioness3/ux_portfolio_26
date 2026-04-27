@@ -20,8 +20,8 @@
   position: relative;
   width: 340px;
   min-width: 20vw;
-  height: 420px;
-  min-height: 420px;
+  height: auto;
+  min-height: 330px;
   box-sizing: border-box;
   background-size: cover;
   background-position: center;

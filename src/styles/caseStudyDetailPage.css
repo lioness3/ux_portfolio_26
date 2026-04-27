@@ -226,9 +226,9 @@
 /* used to highlight the side menu item as the user scrolls */
 .side-menu-item.active {
   background: rgba(0, 0, 0, 0.06);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--primary);
   font-weight: 600;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .side-menu-item {

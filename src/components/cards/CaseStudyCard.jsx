@@ -22,7 +22,7 @@ const CaseStudyCard = ({
         style={{
           backgroundImage: `url(${mainImage})`,
           backgroundColor: bgColor,
-          backgroundSize: "100% auto",
+          backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}

@@ -19,7 +19,7 @@
 /* slide-out panel */
 .contents-menu {
   position: fixed;
-  top: var(nav-height);
+  top: var(--nav-height);
   left: 0;
   width: 100vw;
   height: calc(100vh - var(--nav-height));
@@ -43,4 +43,26 @@
 
 .contents-menu.open {
   transform: translateX(0);
+}
+
+/* close button for contents menu */
+.contents-menu-close-btn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-90);
+  cursor: pointer;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.contents-menu-close-btn:hover {
+  color: var(--primary);
 }
