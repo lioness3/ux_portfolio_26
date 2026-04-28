@@ -61,7 +61,7 @@ test.describe("Case Studies", () => {
     await page.goto("/case-study/0");
 
     // Find and click the back link/button
-    const backLink = page.locator(".ux-case-study-menu-back");
+    const backLink = page.locator(".side-menu-back");
     await expect(backLink).toBeVisible();
     await backLink.click();
 

@@ -1,6 +1,6 @@
 .info-card {
-  background: white;
-  border: 1px solid #e4e6ea;
+  background: var(--mainBg);
+  border: 1px solid var(--border-secondary);
   width: 80%;
   margin: auto;
   border-radius: var(--borderRadius);
@@ -19,15 +19,18 @@
 }
 .info-card-col1 {
   margin-right: 1.75rem;
+  flex-shrink: 0;
 }
 .info-card-col2 {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 .info-card-divider {
   border-top: 1px solid var(--border-secondary);
   margin-top: 0.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .info-card-title {
   font-size: 1.75rem;
@@ -37,29 +40,22 @@
 }
 .info-card-headline {
   font-size: 1rem;
-  color: var(--text-90);
+  color: var(--text-80);
   margin-bottom: 0.5rem;
 }
-
 .info-card-description {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text-70);
   margin: 0 0;
   white-space: pre-line;
-  max-width: 90%;
+  max-width: 100%;
 }
 .overview-details {
   color: var(--text-80);
   margin-bottom: 1rem;
   margin-top: -1rem; /* matches the margin on the info-card-title to avoid excessive spacing */
 }
-/* .info-card-image {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 1rem;
-  border-radius: var(--borderRadius);
-} */
 .info-card-block-row {
   display: flex;
   flex-direction: row;
@@ -70,23 +66,54 @@
 .info-card-image-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.info-card-image-row img {
+  max-width: 100%;
+  height: auto;
 }
 @media (max-width: 969px) {
   .info-card {
+    width: calc(100% - 2rem);
     max-width: 100%;
-    padding: 0.75rem 0.5rem;
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+    background: transparent;
   }
-  .info-card-title {
-    font-size: 1.25rem;
-  }
-  .card-icon {
-    max-width: 30px;
-    max-height: 30px;
+  .info-card:last-child {
+    margin-bottom: 5rem;
   }
   .info-card-col1 {
-    margin-right: 0.25rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .card-icon {
+    max-width: 40px;
+    max-height: 40px;
   }
   .info-card-title {
-    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .info-card-col2 {
+    width: 100%;
+  }
+  .info-card-block-row {
+    flex-direction: column;
+  }
+  .info-card-image-row {
+    flex-direction: column;
+  }
+  .info-card-image-row img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .info-card-description {
+    max-width: 100%;
   }
 }

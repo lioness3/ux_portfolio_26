@@ -1,5 +1,6 @@
 .nav-bar {
-  background: white;
+  background: var(--mainBg);
+  box-sizing: border-box;
   border-bottom: 1px solid var(--border-primary);
   position: sticky;
   top: 0;
@@ -8,7 +9,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: end;
-
   font-size: 1rem;
 }
 .nav-bar-menu-items {
@@ -16,15 +16,18 @@
   align-items: end;
   width: 70%;
 }
-
+/* CONTAINER FOR LOGO IMAGE  */
 .logo {
   flex: 0 0 10%; /* 1/10 of the nav width */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-
+/* LOGO IMAGE */
 .logo img {
-  display: block;
   width: 60%;
-  height: auto;
+  height: 90%;
 }
 
 .nav-bar a {
@@ -35,20 +38,21 @@
 .nav-bar a:hover {
   color: var(--primary);
 }
-
+/* CONTAINER FOR THEME TOGGLE */
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
-
+/* THEME TOGGLE BUTTON */
 .theme-toggle {
   background: none;
   border: 1px solid var(--border-primary);
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 1rem;
   cursor: pointer;
   color: var(--text);
+  padding: 0.75rem;
+  opacity: 0.8;
 }
 .theme-toggle:hover {
   background-color: var(--offWhite);
@@ -60,8 +64,9 @@
 @media (max-width: 969px) {
   .nav-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0.25rem 0;
   }
   .nav-bar-menu-items {
     display: none;
@@ -69,9 +74,11 @@
   .hamburger-btn,
   .hamburger-btn img {
     display: block;
-    padding-left: 1rem;
   }
   .logo {
-    flex: 0 0 20%; /* 1/5 of the nav width */
+    flex: 0 0 25%; /* 1/4 of the nav width */
+  }
+  .theme-toggle {
+    padding: 0.5rem;
   }
 }

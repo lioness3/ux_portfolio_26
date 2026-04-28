@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 
 import InfoCard from "../components/cards/InfoCard";
@@ -95,8 +95,15 @@ function CaseStudyDetail({ studies }) {
             <h1 className="simple-header-title">{study.title}</h1>
             <span className="simple-header-type">{study.type}</span>
           </div>
-          {/* Mobile Contents */}
+          {/* Mobile Contents - shows the back to case studies button and contents drop down */}
           <div className="mobile-contents">
+            <Link
+              to="/"
+              state={{ scrollTo: "case-studies" }}
+              className="mobile-back-btn"
+            >
+              ←
+            </Link>
             <button
               className="contents-btn"
               onClick={() => setContentsOpen((prev) => !prev)}

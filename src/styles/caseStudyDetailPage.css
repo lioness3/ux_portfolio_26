@@ -23,14 +23,23 @@
 .case-study-simple-header {
   position: sticky;
   top: var(--nav-height);
-  background-color: white;
+  background-color: var(--mainBg);
   padding: 1rem 2rem;
   border-bottom: 2px solid var(--border-secondary);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   z-index: 7;
   height: var(--case-study-header-height);
+}
+@media (max-width: 969px) {
+  .case-study-simple-header {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    z-index: 1001;
+  }
 }
 .header-left {
   display: flex;
@@ -40,12 +49,13 @@
 .simple-header-title {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--text-90);
+  color: var(--text-80);
   margin: 0;
 }
+
 .simple-header-type {
   font-size: 1rem;
-  color: var(--text-70);
+  color: var(--text-80);
 }
 .simple-header-summary {
   font-size: 1rem;
@@ -55,10 +65,14 @@
 }
 .mobile-contents {
   display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  order: -1;
 }
 @media (max-width: 969px) {
   .mobile-contents {
-    display: block;
+    display: flex;
   }
 }
 .contents-btn {
@@ -70,26 +84,20 @@
   font-size: 1rem;
   color: var(--text-80);
 }
-/* right sticker header */
-.case-study-header {
-  color: var(--text-80);
-  min-width: none;
-  grid-area: head;
-  align-self: start;
-  position: sticky;
-  top: var(--nav-height);
-  background-color: white;
-  display: grid;
-  grid-template-areas:
-    "col1 col2"
-    "bottom bottom";
-  padding: 2rem 0.25rem;
-  border-bottom: 2px solid var(--border-secondary);
-  transition:
-    height 0.3s ease,
-    opacity 0.3s ease;
-  overflow: hidden;
+.mobile-back-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-90);
+  padding: 0;
+  transition: color 0.2s ease;
 }
+.mobile-back-btn:hover {
+  color: var(--primary);
+}
+
 /* HIDES AND SHOWS THE HEADER DETAILS */
 
 .header-title-row {
@@ -159,6 +167,8 @@
   max-width: 100vw;
   height: calc(100vh - var(--nav-height) - var(--case-study-header-height));
   overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* side menu  */
@@ -175,6 +185,7 @@
   background-color: var(--offWhite);
 
   border-right: 1px solid var(--border-secondary);
+  overflow-x: hidden;
 }
 
 .side-menu-list {
@@ -252,6 +263,10 @@
     padding: 1rem 0.25rem;
   }
 
+  .simple-header-title {
+    font-size: 1.25rem;
+  }
+
   /* hide  the side menu */
   .side-menu {
     display: none;
@@ -275,7 +290,14 @@
     margin: auto;
     width: 80vw;
   }
+  .case-study-scrolling-container {
+    background-color: var(--mainBg);
+    overflow-x: hidden;
+  }
   .case-study-header-bottom {
     padding: 0;
+  }
+  .mobile-back-btn {
+    display: block;
   }
 }

@@ -8,10 +8,11 @@ GLOBAL STYLE SHEET  */
 */
 :root {
   /* LIGHT MODE - Color palette */
-  --primary: #ff65a7;
+  --primary: #e3549d;
   --secondary: #112240;
 
   /* LIGHT MODE - Backgrounds */
+  --mainBg: #ffffff;
   --offWhite: #f7f7f8;
   --ltGrey: #efeff1;
   --medGrey: #e4e4e7;
@@ -42,13 +43,13 @@ GLOBAL STYLE SHEET  */
   --scroll-thumb: var(--primary);
   --scroll-thumb-hover: #e25492;
 
-  /* LAYOUT DIMENSIONS - Same for both themes */
+  /* LAYOUT DIMENSIONS  */
   --nav-height: 70px;
   --case-study-header-height: 70px;
   --section-title-height: 300px;
   --section-padding-bottom: 300px;
 
-  /* SPACING & BORDERS - Same for both themes */
+  /* SPACING & BORDERS  */
   --borderRadius: 12px;
   --btnBorderRadius: 20px;
   --blockGap: 0.25rem;
@@ -87,6 +88,7 @@ GLOBAL STYLE SHEET  */
 /* DARK MODE OVERRIDES */
 html[data-theme="dark"] {
   /* DARK MODE - Backgrounds */
+  --mainBg: #2d3543;
   --offWhite: #1a1f27;
   --ltGrey: #242b33;
   --medGrey: #2d3740;
@@ -111,13 +113,6 @@ html[data-theme="dark"] {
   /* DARK MODE - Borders */
   --border-primary: rgba(255, 101, 167, 0.25);
   --border-secondary: rgba(230, 238, 246, 0.1);
-
-  /* DARK MODE - Semantic colors */
-  --bg: #0b0f14;
-  --surface: #0f1720;
-  --text: #e6eef6;
-  --accent: #ff7ab6;
-  /* --border: rgba(255, 255, 255, 0.08); */
 
   /* DARK MODE - Scrollbar */
   --scroll-track: var(--ltGrey);
@@ -174,7 +169,11 @@ h1 {
    =================================== */
 @media (max-width: 969px) {
   :root {
+    --nav-height: max-content;
     --section-title-height: 175px;
     --section-padding-bottom: 100px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
