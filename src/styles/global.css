@@ -25,6 +25,12 @@ GLOBAL STYLE SHEET  */
   --text-60: rgb(from var(--secondary) r g b / 0.6); /* WCAG AA: 7.5:1 */
   --text-50: rgb(from var(--secondary) r g b / 0.5); /* WCAG AA: 4.9:1 */
 
+  /* LIGHT MODE - section GRADIENT */
+  --section-gradient: linear-gradient(
+    to bottom,
+    rgb(from var(--primary) r g b / 0.12) 10%,
+    var(--mainBg)
+  );
   /* LIGHT MODE - Shadows */
   --box-shadow: 0 4px 24px rgb(from var(--secondary) r g b / 0.08);
   --box-shadow-deep: 0 12px 24px rgb(from var(--secondary) r g b / 0.2);
@@ -101,6 +107,9 @@ html[data-theme="dark"] {
   --text-60: #a2abc6; /* WCAG AA: 7.9:1 on dark bg */
   --text-50: #8b94b6; /* WCAG AA: 5.0:1 on dark bg */
 
+  /* DARK MODE- section GRADIENT (removes gradient background in dark mode) */
+  --section-gradient: var(--mainBg);
+
   /* DARK MODE - Shadows (more prominent on dark backgrounds) */
   --box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   --box-shadow-deep: 0 12px 24px rgba(0, 0, 0, 0.6);
@@ -170,7 +179,7 @@ h1 {
 @media (max-width: 969px) {
   :root {
     --nav-height: max-content;
-    --section-title-height: 175px;
+    --section-title-height: max-content;
     --section-padding-bottom: 100px;
   }
   body {

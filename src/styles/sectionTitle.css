@@ -1,5 +1,5 @@
 .section-title-bg {
-  background: linear-gradient(to bottom, rgba(255, 192, 220, 0.1) 10%, #ffffff);
+  background: var(--section-gradient);
   text-align: center;
   height: var(--section-title-height);
 }

@@ -42,6 +42,7 @@
 .nav-actions {
   display: flex;
   align-items: center;
+  margin: auto 0;
 }
 /* THEME TOGGLE BUTTON */
 .theme-toggle {
