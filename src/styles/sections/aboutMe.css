@@ -2,6 +2,7 @@
 .about-wrapper {
   width: 100%;
   padding-bottom: var(--section-padding-bottom);
+  background-color: var(--mainBg);
 }
 /* so the section lines up at the correct y- axis when clicking on link to section */
 #about-me {
@@ -24,6 +25,7 @@
   margin-bottom: 1.5rem;
   max-width: 30%;
   text-align: center;
+  color: var(--text-90);
 }
 
 .about-description {
@@ -33,6 +35,7 @@
   margin: auto;
   padding-top: 2rem;
   text-align: center;
+  color: var(--text-80);
 }
 
 .about-image img {

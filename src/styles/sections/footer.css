@@ -3,7 +3,7 @@
 .footer {
   display: flex;
   padding: 2rem;
-  background: white;
+  background: var(--mainBg);
   color: var(--text-70);
   font-size: 2rem;
   flex-wrap: wrap;
@@ -68,7 +68,7 @@
 
 .right {
   font-size: 1.25rem;
-  color: var(--secondary);
+  color: var(--text-90);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
