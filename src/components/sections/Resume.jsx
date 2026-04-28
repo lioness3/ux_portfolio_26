@@ -36,7 +36,7 @@ const Resume = () => {
         Download
       </a>
       {/* Work History */}
-      <div className="resume-section">
+      <div className="resume-content-section">
         <div className="resume-title-wrapper">
           <img
             className="resume-title-icon"
@@ -86,7 +86,7 @@ const Resume = () => {
       </div>
 
       {/* Education */}
-      <div className="resume-section">
+      <div className="resume-content-section">
         <div className="resume-title-wrapper">
           <img
             className="resume-title-icon"
@@ -134,7 +134,7 @@ const Resume = () => {
       </div>
 
       {/* Skills */}
-      <div className="resume-section">
+      <div className="resume-content-section">
         <div className="resume-title-wrapper">
           <img
             className="resume-title-icon"

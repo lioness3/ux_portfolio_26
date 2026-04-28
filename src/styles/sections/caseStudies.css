@@ -4,12 +4,13 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin-top: 6rem;
+  padding-top: 6rem;
   max-width: 80%;
   margin-inline: auto;
 }
 .case-wrapper {
   padding-bottom: var(--section-padding-bottom);
+  background: var(--mainBg);
 }
 /* Adjusts scroll position so linked sections land at the proper vertical offset */
 #case-studies {
