@@ -1,9 +1,8 @@
 import "../../styles/navigation/caseStudyContentsMenu.css";
 import UxCaseStudyMenu from "./UxCaseStudyMenu";
 
-// used for the contents menu that shows on the left of the bigger screens in the case study details page
+// used for the contents menu that shows on small screens in the the case study details page
 export default function CaseStudyContentsMenu({ categories, open, setOpen }) {
-  // look into this and why not using prev +> !prev
   return (
     <>
       <div

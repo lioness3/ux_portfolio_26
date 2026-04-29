@@ -91,7 +91,7 @@ function CaseStudyDetail({ studies }) {
       <div className="case-study-right-col">
         {/* Simple Header */}
         <div className="case-study-simple-header">
-          <div className="header-left">
+          <div className="header-right">
             <h1 className="simple-header-title">{study.title}</h1>
             <span className="simple-header-type">{study.type}</span>
           </div>

@@ -18,10 +18,11 @@
 }
 /* slide-out panel */
 .contents-menu {
-  position: fixed;
-  top: var(--nav-height);
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100vw;
+  margin: 0;
+  width: 99vw;
   height: calc(100vh - var(--nav-height));
   background: var(--offWhite);
   transform: translateX(-100%);

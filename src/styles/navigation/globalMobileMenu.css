@@ -31,12 +31,15 @@
 
 /* slide-out menu */
 .global-mobile-menu {
+  box-sizing: border-box;
   position: fixed;
   display: flex;
   flex-direction: column;
   top: var(--nav-height);
   right: 0;
   width: 100vw;
+  border: 2px solid pink;
+  margin: 0;
   height: calc(100vh - var(--nav-height));
   background: var(--offWhite);
   transform: translateX(100%);
@@ -48,13 +51,14 @@
 
 .global-mobile-menu.open {
   transform: translateX(0);
+  max-width: 100vw;
 }
 
 /* close button for mobile menu */
-.close-btn {
+.global-close-btn {
   align-self: flex-start;
   background: none;
-  border: none;
+  border: 2px solid yellow;
   font-size: 2rem;
   color: var(--text-90);
   cursor: pointer;

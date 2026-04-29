@@ -15,7 +15,7 @@ export default function GlobalMobileMenu({ open, setOpen }) {
       />
 
       <nav className={`global-mobile-menu ${open ? "open" : ""}`}>
-        <button className="close-btn" onClick={() => setOpen(false)}>
+        <button className="global-close-btn" onClick={() => setOpen(false)}>
           ×
         </button>
 
