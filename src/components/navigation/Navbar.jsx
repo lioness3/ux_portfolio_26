@@ -1,5 +1,5 @@
 //top navigation bar
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/navigation/navbar.css";
 import ThemeToggle from "../ThemeToggle";
@@ -8,8 +8,24 @@ import GlobalMobileMenu from "./GlobalMobileMenu";
 import HamburgerIcon from "../../assets/icons/hamburger.svg";
 function Navbar() {
   const [globalOpen, setGlobalOpen] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const syncHeight = () => {
+      if (navRef.current) {
+        document.documentElement.style.setProperty(
+          "--nav-height",
+          `${navRef.current.offsetHeight}px`
+        );
+      }
+    };
+    syncHeight();
+    window.addEventListener("resize", syncHeight);
+    return () => window.removeEventListener("resize", syncHeight);
+  }, []);
+
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar" ref={navRef}>
       <button
         className="hamburger-btn"
         onClick={() => setGlobalOpen((prev) => !prev)}

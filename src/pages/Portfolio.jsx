@@ -13,10 +13,11 @@ import Resume from "../components/sections/Resume";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Portfolio({ studies }) {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -28,6 +29,8 @@ function Portfolio({ studies }) {
           el.scrollIntoView({ behavior: "smooth" });
         }, 50);
       }
+      // Clear state so a page reload doesn't re-trigger the scroll
+      navigate(location.pathname, { replace: true, state: null });
     }
   }, [location]);
   return (

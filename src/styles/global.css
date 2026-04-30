@@ -137,20 +137,21 @@ html[data-theme="dark"] {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-y: visible;
-  overflow-x: hidden; /* gets rid of weird horizontal scroll */
 }
 
 /* Apply semantic colors to the document */
-html,
-body {
+html {
   width: 100vw;
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 body {
-  overflow-y: hidden;
+  width: 100vw;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   margin: 0;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -184,6 +185,7 @@ h1 {
   :root {
     --nav-height: max-content;
     --section-title-height: max-content;
+    --case-study-header-height: max-content;
     --section-padding-bottom: 100px;
   }
 }

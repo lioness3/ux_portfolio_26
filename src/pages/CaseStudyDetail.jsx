@@ -27,14 +27,16 @@ function CaseStudyDetail({ studies }) {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({ top: 0, behavior: "instant" });
     }
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [id]);
 
   // FIGURES OUT THE POSITION OF THE CARD IN VIEW WHILE SCROLLING
   useEffect(() => {
     if (!scrollRef.current) return;
 
+    const isMobile = window.innerWidth <= 969;
     const options = {
-      root: scrollRef.current,
+      root: isMobile ? null : scrollRef.current,
       rootMargin: "-40% 0px -40% 0px",
       threshold: 0.1,
     };
@@ -69,9 +71,15 @@ function CaseStudyDetail({ studies }) {
         suppressTimeoutRef.current = null;
       }
       scrollRef.current?.removeEventListener("scrollend", release);
+      window.removeEventListener("scrollend", release);
     };
 
-    scrollRef.current?.addEventListener("scrollend", release, { once: true });
+    const isMobile = window.innerWidth <= 969;
+    if (isMobile) {
+      window.addEventListener("scrollend", release, { once: true });
+    } else {
+      scrollRef.current?.addEventListener("scrollend", release, { once: true });
+    }
     // Fallback for browsers without scrollend, or if no scroll ever fires.
     suppressTimeoutRef.current = setTimeout(release, 1200);
   };
